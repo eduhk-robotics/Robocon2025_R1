@@ -1,0 +1,41 @@
+[2.299s] Invoking command in '/home/eric/2025R2_ws/src/ps4': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ps4 build --build-base /home/eric/2025R2_ws/build/ps4/build install --record /home/eric/2025R2_ws/build/ps4/install.log --single-version-externally-managed install_data
+[2.738s] running egg_info
+[2.738s] creating ../../build/ps4/ps4.egg-info
+[2.765s] writing ../../build/ps4/ps4.egg-info/PKG-INFO
+[2.766s] writing dependency_links to ../../build/ps4/ps4.egg-info/dependency_links.txt
+[2.766s] writing entry points to ../../build/ps4/ps4.egg-info/entry_points.txt
+[2.766s] writing requirements to ../../build/ps4/ps4.egg-info/requires.txt
+[2.766s] writing top-level names to ../../build/ps4/ps4.egg-info/top_level.txt
+[2.766s] writing manifest file '../../build/ps4/ps4.egg-info/SOURCES.txt'
+[2.827s] reading manifest file '../../build/ps4/ps4.egg-info/SOURCES.txt'
+[2.828s] writing manifest file '../../build/ps4/ps4.egg-info/SOURCES.txt'
+[2.828s] running build
+[2.829s] running build_py
+[2.829s] creating /home/eric/2025R2_ws/build/ps4/build
+[2.829s] creating /home/eric/2025R2_ws/build/ps4/build/lib
+[2.829s] creating /home/eric/2025R2_ws/build/ps4/build/lib/ps4
+[2.830s] copying ps4/ps4_subscriber.py -> /home/eric/2025R2_ws/build/ps4/build/lib/ps4
+[2.830s] copying ps4/__init__.py -> /home/eric/2025R2_ws/build/ps4/build/lib/ps4
+[2.830s] copying ps4/ps4_publisher.py -> /home/eric/2025R2_ws/build/ps4/build/lib/ps4
+[2.830s] running install
+[2.840s] running install_lib
+[2.868s] creating /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4
+[2.868s] copying /home/eric/2025R2_ws/build/ps4/build/lib/ps4/ps4_subscriber.py -> /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4
+[2.868s] copying /home/eric/2025R2_ws/build/ps4/build/lib/ps4/__init__.py -> /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4
+[2.869s] copying /home/eric/2025R2_ws/build/ps4/build/lib/ps4/ps4_publisher.py -> /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4
+[2.870s] byte-compiling /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4/ps4_subscriber.py to ps4_subscriber.cpython-312.pyc
+[2.870s] byte-compiling /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4/__init__.py to __init__.cpython-312.pyc
+[2.871s] byte-compiling /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4/ps4_publisher.py to ps4_publisher.cpython-312.pyc
+[2.872s] running install_data
+[2.872s] creating /home/eric/2025R2_ws/install/ps4/share/ament_index
+[2.873s] creating /home/eric/2025R2_ws/install/ps4/share/ament_index/resource_index
+[2.873s] creating /home/eric/2025R2_ws/install/ps4/share/ament_index/resource_index/packages
+[2.873s] copying resource/ps4 -> /home/eric/2025R2_ws/install/ps4/share/ament_index/resource_index/packages
+[2.873s] copying package.xml -> /home/eric/2025R2_ws/install/ps4/share/ps4
+[2.873s] running install_egg_info
+[2.910s] Copying ../../build/ps4/ps4.egg-info to /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4-0.0.0-py3.12.egg-info
+[2.911s] running install_scripts
+[3.131s] Installing ps4_publisher script to /home/eric/2025R2_ws/install/ps4/lib/ps4
+[3.131s] Installing ps4_subscriber script to /home/eric/2025R2_ws/install/ps4/lib/ps4
+[3.131s] writing list of installed files to '/home/eric/2025R2_ws/build/ps4/install.log'
+[3.265s] Invoked command in '/home/eric/2025R2_ws/src/ps4' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ps4 build --build-base /home/eric/2025R2_ws/build/ps4/build install --record /home/eric/2025R2_ws/build/ps4/install.log --single-version-externally-managed install_data

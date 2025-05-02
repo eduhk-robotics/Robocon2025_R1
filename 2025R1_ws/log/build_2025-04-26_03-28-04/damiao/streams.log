@@ -1,0 +1,37 @@
+[2.281s] Invoking command in '/home/eric/2025R2_ws/src/damiao': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/damiao build --build-base /home/eric/2025R2_ws/build/damiao/build install --record /home/eric/2025R2_ws/build/damiao/install.log --single-version-externally-managed install_data
+[2.689s] running egg_info
+[2.689s] creating ../../build/damiao/damiao.egg-info
+[2.719s] writing ../../build/damiao/damiao.egg-info/PKG-INFO
+[2.719s] writing dependency_links to ../../build/damiao/damiao.egg-info/dependency_links.txt
+[2.720s] writing entry points to ../../build/damiao/damiao.egg-info/entry_points.txt
+[2.720s] writing requirements to ../../build/damiao/damiao.egg-info/requires.txt
+[2.720s] writing top-level names to ../../build/damiao/damiao.egg-info/top_level.txt
+[2.720s] writing manifest file '../../build/damiao/damiao.egg-info/SOURCES.txt'
+[2.775s] reading manifest file '../../build/damiao/damiao.egg-info/SOURCES.txt'
+[2.776s] writing manifest file '../../build/damiao/damiao.egg-info/SOURCES.txt'
+[2.776s] running build
+[2.776s] running build_py
+[2.776s] creating /home/eric/2025R2_ws/build/damiao/build
+[2.776s] creating /home/eric/2025R2_ws/build/damiao/build/lib
+[2.776s] creating /home/eric/2025R2_ws/build/damiao/build/lib/damiao
+[2.776s] copying damiao/__init__.py -> /home/eric/2025R2_ws/build/damiao/build/lib/damiao
+[2.777s] copying damiao/damiao_node.py -> /home/eric/2025R2_ws/build/damiao/build/lib/damiao
+[2.777s] running install
+[2.786s] running install_lib
+[2.818s] creating /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao
+[2.818s] copying /home/eric/2025R2_ws/build/damiao/build/lib/damiao/__init__.py -> /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao
+[2.818s] copying /home/eric/2025R2_ws/build/damiao/build/lib/damiao/damiao_node.py -> /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao
+[2.819s] byte-compiling /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao/__init__.py to __init__.cpython-312.pyc
+[2.820s] byte-compiling /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao/damiao_node.py to damiao_node.cpython-312.pyc
+[2.825s] running install_data
+[2.825s] creating /home/eric/2025R2_ws/install/damiao/share/ament_index
+[2.825s] creating /home/eric/2025R2_ws/install/damiao/share/ament_index/resource_index
+[2.825s] creating /home/eric/2025R2_ws/install/damiao/share/ament_index/resource_index/packages
+[2.825s] copying resource/damiao -> /home/eric/2025R2_ws/install/damiao/share/ament_index/resource_index/packages
+[2.825s] copying package.xml -> /home/eric/2025R2_ws/install/damiao/share/damiao
+[2.826s] running install_egg_info
+[2.854s] Copying ../../build/damiao/damiao.egg-info to /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao-0.0.0-py3.12.egg-info
+[2.856s] running install_scripts
+[3.056s] Installing damiao_node script to /home/eric/2025R2_ws/install/damiao/lib/damiao
+[3.057s] writing list of installed files to '/home/eric/2025R2_ws/build/damiao/install.log'
+[3.189s] Invoked command in '/home/eric/2025R2_ws/src/damiao' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/damiao build --build-base /home/eric/2025R2_ws/build/damiao/build install --record /home/eric/2025R2_ws/build/damiao/install.log --single-version-externally-managed install_data

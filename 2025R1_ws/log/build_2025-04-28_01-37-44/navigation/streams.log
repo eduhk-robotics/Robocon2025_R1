@@ -1,0 +1,20 @@
+[4.354s] Invoking command in '/home/eric/Robocon2025_R2/2025R2_ws/build/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/Robocon2025_R2/2025R2_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/Robocon2025_R2/2025R2_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/Robocon2025_R2/2025R2_ws/build/navigation/build --no-deps symlink_data
+[5.610s] running develop
+[6.371s] running egg_info
+[6.437s] writing navigation.egg-info/PKG-INFO
+[6.437s] writing dependency_links to navigation.egg-info/dependency_links.txt
+[6.440s] writing entry points to navigation.egg-info/entry_points.txt
+[6.441s] writing requirements to navigation.egg-info/requires.txt
+[6.443s] writing top-level names to navigation.egg-info/top_level.txt
+[6.595s] reading manifest file 'navigation.egg-info/SOURCES.txt'
+[6.597s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[6.687s] running build_ext
+[6.688s] Creating /home/eric/Robocon2025_R2/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation.egg-link (link to .)
+[6.691s] Installing navigation_node script to /home/eric/Robocon2025_R2/2025R2_ws/install/navigation/lib/navigation
+[6.693s] Installing omni_wheel_speed_node script to /home/eric/Robocon2025_R2/2025R2_ws/install/navigation/lib/navigation
+[6.693s] 
+[6.694s] Installed /home/eric/Robocon2025_R2/2025R2_ws/build/navigation
+[6.694s] running symlink_data
+[6.694s] error: [Errno 17] File exists: '/home/eric/Robocon2025_R2/2025R2_ws/build/navigation/resource/navigation' -> '/home/eric/Robocon2025_R2/2025R2_ws/install/navigation/share/ament_index/resource_index/packages/navigation'
+[6.697s] symbolically linking /home/eric/Robocon2025_R2/2025R2_ws/build/navigation/resource/navigation -> /home/eric/Robocon2025_R2/2025R2_ws/install/navigation/share/ament_index/resource_index/packages
+[6.892s] Invoked command in '/home/eric/Robocon2025_R2/2025R2_ws/build/navigation' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/Robocon2025_R2/2025R2_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/Robocon2025_R2/2025R2_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/Robocon2025_R2/2025R2_ws/build/navigation/build --no-deps symlink_data

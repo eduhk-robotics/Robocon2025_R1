@@ -1,0 +1,19 @@
+[4.431s] Invoking command in '/home/eric/Robocon2025_R2/2025R2_ws/build/ps4': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/Robocon2025_R2/2025R2_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/Robocon2025_R2/2025R2_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/Robocon2025_R2/2025R2_ws/build/ps4/build --no-deps symlink_data
+[5.521s] running develop
+[6.187s] running egg_info
+[6.251s] writing ps4.egg-info/PKG-INFO
+[6.252s] writing dependency_links to ps4.egg-info/dependency_links.txt
+[6.253s] writing entry points to ps4.egg-info/entry_points.txt
+[6.253s] writing requirements to ps4.egg-info/requires.txt
+[6.254s] writing top-level names to ps4.egg-info/top_level.txt
+[6.382s] reading manifest file 'ps4.egg-info/SOURCES.txt'
+[6.384s] writing manifest file 'ps4.egg-info/SOURCES.txt'
+[6.456s] running build_ext
+[6.457s] Creating /home/eric/Robocon2025_R2/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4.egg-link (link to .)
+[6.460s] Installing ps4_publisher script to /home/eric/Robocon2025_R2/2025R2_ws/install/ps4/lib/ps4
+[6.461s] Installing ps4_subscriber script to /home/eric/Robocon2025_R2/2025R2_ws/install/ps4/lib/ps4
+[6.461s] 
+[6.462s] Installed /home/eric/Robocon2025_R2/2025R2_ws/build/ps4
+[6.463s] running symlink_data
+[6.463s] symbolically linking /home/eric/Robocon2025_R2/2025R2_ws/build/ps4/resource/ps4 -> /home/eric/Robocon2025_R2/2025R2_ws/install/ps4/share/ament_index/resource_index/packages
+[6.464s] error: [Errno 17] File exists: '/home/eric/Robocon2025_R2/2025R2_ws/build/ps4/resource/ps4' -> '/home/eric/Robocon2025_R2/2025R2_ws/install/ps4/share/ament_index/resource_index/packages/ps4'

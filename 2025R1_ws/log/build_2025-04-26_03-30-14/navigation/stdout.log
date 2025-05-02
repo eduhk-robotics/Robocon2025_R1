@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/navigation/navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/navigation/navigation.egg-info to /home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info
+running install_scripts
+Installing navigation_node script to /home/eric/2025R2_ws/install/navigation/lib/navigation
+Installing omni_wheel_speed_node script to /home/eric/2025R2_ws/install/navigation/lib/navigation
+writing list of installed files to '/home/eric/2025R2_ws/build/navigation/install.log'

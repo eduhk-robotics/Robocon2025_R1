@@ -1,0 +1,18 @@
+[2.053s] Invoking command in '/home/eric/2025R2_ws/build/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/navigation/build --no-deps symlink_data
+[2.567s] running develop
+[2.858s] running egg_info
+[2.884s] writing navigation.egg-info/PKG-INFO
+[2.884s] writing dependency_links to navigation.egg-info/dependency_links.txt
+[2.885s] writing entry points to navigation.egg-info/entry_points.txt
+[2.886s] writing requirements to navigation.egg-info/requires.txt
+[2.887s] writing top-level names to navigation.egg-info/top_level.txt
+[2.944s] reading manifest file 'navigation.egg-info/SOURCES.txt'
+[2.945s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[2.993s] running build_ext
+[2.993s] Creating /home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation.egg-link (link to .)
+[2.995s] Installing navigation_node script to /home/eric/2025R2_ws/install/navigation/lib/navigation
+[2.995s] Installing omni_wheel_speed_node script to /home/eric/2025R2_ws/install/navigation/lib/navigation
+[2.996s] 
+[2.996s] Installed /home/eric/2025R2_ws/build/navigation
+[2.996s] running symlink_data
+[3.140s] Invoked command in '/home/eric/2025R2_ws/build/navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/navigation/build --no-deps symlink_data

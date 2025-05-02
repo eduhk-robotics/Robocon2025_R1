@@ -1,0 +1,20 @@
+running develop
+running egg_info
+writing damiao.egg-info/PKG-INFO
+writing dependency_links to damiao.egg-info/dependency_links.txt
+writing entry points to damiao.egg-info/entry_points.txt
+writing requirements to damiao.egg-info/requires.txt
+writing top-level names to damiao.egg-info/top_level.txt
+reading manifest file 'damiao.egg-info/SOURCES.txt'
+writing manifest file 'damiao.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robotics/Robocon2025_R2/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao.egg-link (link to .)
+Installing damiao_node script to /home/robotics/Robocon2025_R2/2025R2_ws/install/damiao/lib/damiao
+
+Installed /home/robotics/Robocon2025_R2/2025R2_ws/build/damiao
+running symlink_data
+creating /home/robotics/Robocon2025_R2/2025R2_ws/install/damiao/share/ament_index
+creating /home/robotics/Robocon2025_R2/2025R2_ws/install/damiao/share/ament_index/resource_index
+creating /home/robotics/Robocon2025_R2/2025R2_ws/install/damiao/share/ament_index/resource_index/packages
+symbolically linking /home/robotics/Robocon2025_R2/2025R2_ws/build/damiao/resource/damiao -> /home/robotics/Robocon2025_R2/2025R2_ws/install/damiao/share/ament_index/resource_index/packages
+symbolically linking /home/robotics/Robocon2025_R2/2025R2_ws/build/damiao/package.xml -> /home/robotics/Robocon2025_R2/2025R2_ws/install/damiao/share/damiao

@@ -1,0 +1,19 @@
+[4.253s] Invoking command in '/home/eric/Robocon2025_R2/2025R2_ws/build/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/Robocon2025_R2/2025R2_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/Robocon2025_R2/2025R2_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/Robocon2025_R2/2025R2_ws/build/navigation/build --no-deps symlink_data
+[5.381s] running develop
+[6.063s] running egg_info
+[6.134s] writing navigation.egg-info/PKG-INFO
+[6.135s] writing dependency_links to navigation.egg-info/dependency_links.txt
+[6.135s] writing entry points to navigation.egg-info/entry_points.txt
+[6.135s] writing requirements to navigation.egg-info/requires.txt
+[6.136s] writing top-level names to navigation.egg-info/top_level.txt
+[6.289s] reading manifest file 'navigation.egg-info/SOURCES.txt'
+[6.290s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[6.418s] running build_ext
+[6.418s] Creating /home/eric/Robocon2025_R2/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation.egg-link (link to .)
+[6.423s] Installing navigation_node script to /home/eric/Robocon2025_R2/2025R2_ws/install/navigation/lib/navigation
+[6.423s] Installing omni_wheel_speed_node script to /home/eric/Robocon2025_R2/2025R2_ws/install/navigation/lib/navigation
+[6.430s] 
+[6.430s] Installed /home/eric/Robocon2025_R2/2025R2_ws/build/navigation
+[6.431s] running symlink_data
+[6.431s] symbolically linking /home/eric/Robocon2025_R2/2025R2_ws/build/navigation/resource/navigation -> /home/eric/Robocon2025_R2/2025R2_ws/install/navigation/share/ament_index/resource_index/packages
+[6.438s] error: [Errno 17] File exists: '/home/eric/Robocon2025_R2/2025R2_ws/build/navigation/resource/navigation' -> '/home/eric/Robocon2025_R2/2025R2_ws/install/navigation/share/ament_index/resource_index/packages/navigation'

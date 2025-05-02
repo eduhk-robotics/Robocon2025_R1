@@ -1,0 +1,22 @@
+[4.276s] Invoking command in '/home/eric/Robocon2025_R2/2025R2_ws/build/damiao': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/Robocon2025_R2/2025R2_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/Robocon2025_R2/2025R2_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/Robocon2025_R2/2025R2_ws/build/damiao/build --no-deps symlink_data
+[5.401s] running develop
+[6.087s] running egg_info
+[6.151s] writing damiao.egg-info/PKG-INFO
+[6.158s] writing dependency_links to damiao.egg-info/dependency_links.txt
+[6.159s] writing entry points to damiao.egg-info/entry_points.txt
+[6.159s] writing requirements to damiao.egg-info/requires.txt
+[6.159s] writing top-level names to damiao.egg-info/top_level.txt
+[6.287s] reading manifest file 'damiao.egg-info/SOURCES.txt'
+[6.289s] writing manifest file 'damiao.egg-info/SOURCES.txt'
+[6.359s] running build_ext
+[6.360s] Creating /home/eric/Robocon2025_R2/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao.egg-link (link to .)
+[6.366s] Installing damiao_node script to /home/eric/Robocon2025_R2/2025R2_ws/install/damiao/lib/damiao
+[6.367s] 
+[6.367s] Installed /home/eric/Robocon2025_R2/2025R2_ws/build/damiao
+[6.368s] running symlink_data
+[6.368s] creating /home/eric/Robocon2025_R2/2025R2_ws/install/damiao/share/ament_index
+[6.369s] creating /home/eric/Robocon2025_R2/2025R2_ws/install/damiao/share/ament_index/resource_index
+[6.369s] creating /home/eric/Robocon2025_R2/2025R2_ws/install/damiao/share/ament_index/resource_index/packages
+[6.370s] symbolically linking /home/eric/Robocon2025_R2/2025R2_ws/build/damiao/resource/damiao -> /home/eric/Robocon2025_R2/2025R2_ws/install/damiao/share/ament_index/resource_index/packages
+[6.371s] symbolically linking /home/eric/Robocon2025_R2/2025R2_ws/build/damiao/package.xml -> /home/eric/Robocon2025_R2/2025R2_ws/install/damiao/share/damiao
+[6.553s] Invoked command in '/home/eric/Robocon2025_R2/2025R2_ws/build/damiao' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/Robocon2025_R2/2025R2_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/Robocon2025_R2/2025R2_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/Robocon2025_R2/2025R2_ws/build/damiao/build --no-deps symlink_data

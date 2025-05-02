@@ -1,0 +1,19 @@
+[2.816s] Invoking command in '/home/eric/2025R2_ws/build/damiao': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/damiao/build --no-deps symlink_data --force
+[3.329s] running develop
+[3.619s] running egg_info
+[3.648s] writing damiao.egg-info/PKG-INFO
+[3.650s] writing dependency_links to damiao.egg-info/dependency_links.txt
+[3.652s] writing entry points to damiao.egg-info/entry_points.txt
+[3.652s] writing requirements to damiao.egg-info/requires.txt
+[3.652s] writing top-level names to damiao.egg-info/top_level.txt
+[3.707s] reading manifest file 'damiao.egg-info/SOURCES.txt'
+[3.709s] writing manifest file 'damiao.egg-info/SOURCES.txt'
+[3.742s] running build_ext
+[3.742s] Creating /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao.egg-link (link to .)
+[3.743s] Installing damiao_node script to /home/eric/2025R2_ws/install/damiao/lib/damiao
+[3.743s] 
+[3.744s] Installed /home/eric/2025R2_ws/build/damiao
+[3.744s] running symlink_data
+[3.744s] symbolically linking /home/eric/2025R2_ws/build/damiao/resource/damiao -> /home/eric/2025R2_ws/install/damiao/share/ament_index/resource_index/packages
+[3.747s] symbolically linking /home/eric/2025R2_ws/build/damiao/package.xml -> /home/eric/2025R2_ws/install/damiao/share/damiao
+[3.974s] Invoked command in '/home/eric/2025R2_ws/build/damiao' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/damiao/build --no-deps symlink_data --force

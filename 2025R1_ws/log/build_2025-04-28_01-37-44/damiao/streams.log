@@ -1,0 +1,18 @@
+[4.294s] Invoking command in '/home/eric/Robocon2025_R2/2025R2_ws/build/damiao': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/Robocon2025_R2/2025R2_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/Robocon2025_R2/2025R2_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/Robocon2025_R2/2025R2_ws/build/damiao/build --no-deps symlink_data
+[5.618s] running develop
+[6.391s] running egg_info
+[6.458s] writing damiao.egg-info/PKG-INFO
+[6.460s] writing dependency_links to damiao.egg-info/dependency_links.txt
+[6.463s] writing entry points to damiao.egg-info/entry_points.txt
+[6.465s] writing requirements to damiao.egg-info/requires.txt
+[6.465s] writing top-level names to damiao.egg-info/top_level.txt
+[6.606s] reading manifest file 'damiao.egg-info/SOURCES.txt'
+[6.610s] writing manifest file 'damiao.egg-info/SOURCES.txt'
+[6.730s] running build_ext
+[6.732s] Creating /home/eric/Robocon2025_R2/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao.egg-link (link to .)
+[6.735s] Installing damiao_node script to /home/eric/Robocon2025_R2/2025R2_ws/install/damiao/lib/damiao
+[6.737s] 
+[6.738s] Installed /home/eric/Robocon2025_R2/2025R2_ws/build/damiao
+[6.739s] error: [Errno 17] File exists: '/home/eric/Robocon2025_R2/2025R2_ws/build/damiao/resource/damiao' -> '/home/eric/Robocon2025_R2/2025R2_ws/install/damiao/share/ament_index/resource_index/packages/damiao'
+[6.739s] running symlink_data
+[6.740s] symbolically linking /home/eric/Robocon2025_R2/2025R2_ws/build/damiao/resource/damiao -> /home/eric/Robocon2025_R2/2025R2_ws/install/damiao/share/ament_index/resource_index/packages

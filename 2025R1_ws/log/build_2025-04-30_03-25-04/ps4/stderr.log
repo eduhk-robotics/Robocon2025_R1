@@ -1,0 +1,3 @@
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+  self.local_index = Environment(self.shadow_path + sys.path)
+error: [Errno 17] File exists: '/home/robotics/Robocon2025_R2/2025R2_ws/build/ps4/resource/ps4' -> '/home/robotics/Robocon2025_R2/2025R2_ws/install/ps4/share/ament_index/resource_index/packages/ps4'

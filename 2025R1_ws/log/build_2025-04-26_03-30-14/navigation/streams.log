@@ -1,0 +1,22 @@
+[2.328s] Invoking command in '/home/eric/2025R2_ws/src/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/eric/2025R2_ws/build/navigation/build install --record /home/eric/2025R2_ws/build/navigation/install.log --single-version-externally-managed install_data
+[2.779s] running egg_info
+[2.813s] writing ../../build/navigation/navigation.egg-info/PKG-INFO
+[2.813s] writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+[2.814s] writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+[2.815s] writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+[2.816s] writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+[2.875s] reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[2.877s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[2.877s] running build
+[2.877s] running build_py
+[2.877s] running install
+[2.888s] running install_lib
+[2.924s] running install_data
+[2.924s] running install_egg_info
+[2.959s] removing '/home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info' (and everything under it)
+[2.959s] Copying ../../build/navigation/navigation.egg-info to /home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info
+[2.961s] running install_scripts
+[3.230s] Installing navigation_node script to /home/eric/2025R2_ws/install/navigation/lib/navigation
+[3.231s] Installing omni_wheel_speed_node script to /home/eric/2025R2_ws/install/navigation/lib/navigation
+[3.232s] writing list of installed files to '/home/eric/2025R2_ws/build/navigation/install.log'
+[3.346s] Invoked command in '/home/eric/2025R2_ws/src/navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/eric/2025R2_ws/build/navigation/build install --record /home/eric/2025R2_ws/build/navigation/install.log --single-version-externally-managed install_data

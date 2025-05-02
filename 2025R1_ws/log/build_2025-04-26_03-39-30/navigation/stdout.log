@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing navigation.egg-info/PKG-INFO
+writing dependency_links to navigation.egg-info/dependency_links.txt
+writing entry points to navigation.egg-info/entry_points.txt
+writing requirements to navigation.egg-info/requires.txt
+writing top-level names to navigation.egg-info/top_level.txt
+reading manifest file 'navigation.egg-info/SOURCES.txt'
+writing manifest file 'navigation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation.egg-link (link to .)
+Installing navigation_node script to /home/eric/2025R2_ws/install/navigation/lib/navigation
+Installing omni_wheel_speed_node script to /home/eric/2025R2_ws/install/navigation/lib/navigation
+
+Installed /home/eric/2025R2_ws/build/navigation
+running symlink_data
+symbolically linking /home/eric/2025R2_ws/build/navigation/resource/navigation -> /home/eric/2025R2_ws/install/navigation/share/ament_index/resource_index/packages
+symbolically linking /home/eric/2025R2_ws/build/navigation/package.xml -> /home/eric/2025R2_ws/install/navigation/share/navigation

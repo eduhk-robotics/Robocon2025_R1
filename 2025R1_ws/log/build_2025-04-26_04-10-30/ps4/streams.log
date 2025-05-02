@@ -1,0 +1,18 @@
+[2.756s] Invoking command in '/home/eric/2025R2_ws/build/ps4': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/ps4/build --no-deps symlink_data
+[3.381s] running develop
+[3.785s] running egg_info
+[3.811s] writing ps4.egg-info/PKG-INFO
+[3.812s] writing dependency_links to ps4.egg-info/dependency_links.txt
+[3.813s] writing entry points to ps4.egg-info/entry_points.txt
+[3.813s] writing requirements to ps4.egg-info/requires.txt
+[3.814s] writing top-level names to ps4.egg-info/top_level.txt
+[3.923s] reading manifest file 'ps4.egg-info/SOURCES.txt'
+[3.926s] writing manifest file 'ps4.egg-info/SOURCES.txt'
+[3.958s] running build_ext
+[3.959s] Creating /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4.egg-link (link to .)
+[3.960s] Installing ps4_publisher script to /home/eric/2025R2_ws/install/ps4/lib/ps4
+[3.960s] Installing ps4_subscriber script to /home/eric/2025R2_ws/install/ps4/lib/ps4
+[3.961s] 
+[3.961s] Installed /home/eric/2025R2_ws/build/ps4
+[3.961s] running symlink_data
+[4.134s] Invoked command in '/home/eric/2025R2_ws/build/ps4' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/ps4/build --no-deps symlink_data

@@ -1,0 +1,21 @@
+[2.721s] Invoking command in '/home/robotics/Robocon2025_R2/2025R2_ws/build/ps4': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R2/2025R2_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R2/2025R2_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R2/2025R2_ws/build/ps4/build --no-deps symlink_data
+[3.236s] running develop
+[3.474s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[3.474s]   self.local_index = Environment(self.shadow_path + sys.path)
+[3.526s] running egg_info
+[3.553s] writing ps4.egg-info/PKG-INFO
+[3.553s] writing dependency_links to ps4.egg-info/dependency_links.txt
+[3.554s] writing entry points to ps4.egg-info/entry_points.txt
+[3.555s] writing requirements to ps4.egg-info/requires.txt
+[3.556s] writing top-level names to ps4.egg-info/top_level.txt
+[3.618s] reading manifest file 'ps4.egg-info/SOURCES.txt'
+[3.619s] writing manifest file 'ps4.egg-info/SOURCES.txt'
+[3.656s] running build_ext
+[3.656s] Creating /home/robotics/Robocon2025_R2/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4.egg-link (link to .)
+[3.658s] Installing ps4_publisher script to /home/robotics/Robocon2025_R2/2025R2_ws/install/ps4/lib/ps4
+[3.658s] Installing ps4_subscriber script to /home/robotics/Robocon2025_R2/2025R2_ws/install/ps4/lib/ps4
+[3.659s] 
+[3.659s] Installed /home/robotics/Robocon2025_R2/2025R2_ws/build/ps4
+[3.660s] running symlink_data
+[3.661s] symbolically linking /home/robotics/Robocon2025_R2/2025R2_ws/build/ps4/resource/ps4 -> /home/robotics/Robocon2025_R2/2025R2_ws/install/ps4/share/ament_index/resource_index/packages
+[3.662s] error: [Errno 17] File exists: '/home/robotics/Robocon2025_R2/2025R2_ws/build/ps4/resource/ps4' -> '/home/robotics/Robocon2025_R2/2025R2_ws/install/ps4/share/ament_index/resource_index/packages/ps4'

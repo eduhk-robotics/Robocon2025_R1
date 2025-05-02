@@ -1,0 +1,41 @@
+[2.241s] Invoking command in '/home/eric/2025R2_ws/src/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/eric/2025R2_ws/build/navigation/build install --record /home/eric/2025R2_ws/build/navigation/install.log --single-version-externally-managed install_data
+[2.655s] running egg_info
+[2.655s] creating ../../build/navigation/navigation.egg-info
+[2.685s] writing ../../build/navigation/navigation.egg-info/PKG-INFO
+[2.685s] writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+[2.686s] writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+[2.686s] writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+[2.686s] writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+[2.686s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[2.741s] reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[2.742s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[2.743s] running build
+[2.743s] running build_py
+[2.743s] creating /home/eric/2025R2_ws/build/navigation/build
+[2.743s] creating /home/eric/2025R2_ws/build/navigation/build/lib
+[2.743s] creating /home/eric/2025R2_ws/build/navigation/build/lib/navigation
+[2.743s] copying navigation/__init__.py -> /home/eric/2025R2_ws/build/navigation/build/lib/navigation
+[2.744s] copying navigation/omni_wheel_speed_node.py -> /home/eric/2025R2_ws/build/navigation/build/lib/navigation
+[2.744s] copying navigation/navigation_node.py -> /home/eric/2025R2_ws/build/navigation/build/lib/navigation
+[2.744s] running install
+[2.754s] running install_lib
+[2.786s] creating /home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation
+[2.786s] copying /home/eric/2025R2_ws/build/navigation/build/lib/navigation/__init__.py -> /home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation
+[2.786s] copying /home/eric/2025R2_ws/build/navigation/build/lib/navigation/omni_wheel_speed_node.py -> /home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation
+[2.786s] copying /home/eric/2025R2_ws/build/navigation/build/lib/navigation/navigation_node.py -> /home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation
+[2.787s] byte-compiling /home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation/__init__.py to __init__.cpython-312.pyc
+[2.787s] byte-compiling /home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation/omni_wheel_speed_node.py to omni_wheel_speed_node.cpython-312.pyc
+[2.788s] byte-compiling /home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation/navigation_node.py to navigation_node.cpython-312.pyc
+[2.789s] running install_data
+[2.789s] creating /home/eric/2025R2_ws/install/navigation/share/ament_index
+[2.790s] creating /home/eric/2025R2_ws/install/navigation/share/ament_index/resource_index
+[2.790s] creating /home/eric/2025R2_ws/install/navigation/share/ament_index/resource_index/packages
+[2.790s] copying resource/navigation -> /home/eric/2025R2_ws/install/navigation/share/ament_index/resource_index/packages
+[2.790s] copying package.xml -> /home/eric/2025R2_ws/install/navigation/share/navigation
+[2.790s] running install_egg_info
+[2.820s] Copying ../../build/navigation/navigation.egg-info to /home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info
+[2.821s] running install_scripts
+[3.022s] Installing navigation_node script to /home/eric/2025R2_ws/install/navigation/lib/navigation
+[3.022s] Installing omni_wheel_speed_node script to /home/eric/2025R2_ws/install/navigation/lib/navigation
+[3.023s] writing list of installed files to '/home/eric/2025R2_ws/build/navigation/install.log'
+[3.132s] Invoked command in '/home/eric/2025R2_ws/src/navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/eric/2025R2_ws/build/navigation/build install --record /home/eric/2025R2_ws/build/navigation/install.log --single-version-externally-managed install_data

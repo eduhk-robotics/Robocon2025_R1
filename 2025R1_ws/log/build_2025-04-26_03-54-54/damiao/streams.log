@@ -1,0 +1,17 @@
+[2.093s] Invoking command in '/home/eric/2025R2_ws/build/damiao': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/damiao/build --no-deps symlink_data
+[2.602s] running develop
+[2.890s] running egg_info
+[2.921s] writing damiao.egg-info/PKG-INFO
+[2.921s] writing dependency_links to damiao.egg-info/dependency_links.txt
+[2.921s] writing entry points to damiao.egg-info/entry_points.txt
+[2.921s] writing requirements to damiao.egg-info/requires.txt
+[2.921s] writing top-level names to damiao.egg-info/top_level.txt
+[2.975s] reading manifest file 'damiao.egg-info/SOURCES.txt'
+[2.976s] writing manifest file 'damiao.egg-info/SOURCES.txt'
+[3.005s] running build_ext
+[3.006s] Creating /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao.egg-link (link to .)
+[3.007s] Installing damiao_node script to /home/eric/2025R2_ws/install/damiao/lib/damiao
+[3.007s] 
+[3.007s] Installed /home/eric/2025R2_ws/build/damiao
+[3.007s] running symlink_data
+[3.150s] Invoked command in '/home/eric/2025R2_ws/build/damiao' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/damiao/build --no-deps symlink_data

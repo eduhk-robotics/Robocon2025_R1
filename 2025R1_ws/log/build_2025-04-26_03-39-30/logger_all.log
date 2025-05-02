@@ -1,0 +1,251 @@
+[0.379s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.380s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb37ea7e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb37ea840>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb37ea840>>)
+[0.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.512s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/eric/2025R2_ws'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extensions ['ignore', 'ignore_ament_install']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extension 'ignore'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extension 'ignore_ament_install'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extensions ['colcon_pkg']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extension 'colcon_pkg'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extensions ['colcon_meta']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extension 'colcon_meta'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extensions ['ros']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extension 'ros'
+[0.604s] DEBUG:colcon.colcon_core.package_identification:Package 'src/damiao' with type 'ros.ament_python' and name 'damiao'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore_ament_install'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_pkg']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_pkg'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_meta']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_meta'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ros']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ros'
+[0.606s] DEBUG:colcon.colcon_core.package_identification:Package 'src/navigation' with type 'ros.ament_python' and name 'navigation'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extensions ['ignore', 'ignore_ament_install']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extension 'ignore'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extension 'ignore_ament_install'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extensions ['colcon_pkg']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extension 'colcon_pkg'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extensions ['colcon_meta']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extension 'colcon_meta'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extensions ['ros']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extension 'ros'
+[0.607s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ps4' with type 'ros.ament_python' and name 'ps4'
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.607s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.660s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.660s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.668s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 427 installed packages in /opt/ros/jazzy
+[0.670s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'cmake_args' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'cmake_target' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'cmake_clean_cache' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'cmake_clean_first' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'cmake_force_configure' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'ament_cmake_args' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'catkin_cmake_args' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.761s] DEBUG:colcon.colcon_core.verb:Building package 'damiao' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eric/2025R2_ws/build/damiao', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eric/2025R2_ws/install/damiao', 'merge_install': False, 'path': '/home/eric/2025R2_ws/src/damiao', 'symlink_install': True, 'test_result_base': None}
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_args' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_target' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.762s] DEBUG:colcon.colcon_core.verb:Building package 'navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eric/2025R2_ws/build/navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eric/2025R2_ws/install/navigation', 'merge_install': False, 'path': '/home/eric/2025R2_ws/src/navigation', 'symlink_install': True, 'test_result_base': None}
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'cmake_args' from command line to 'None'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'cmake_target' from command line to 'None'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'cmake_clean_cache' from command line to 'False'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'cmake_clean_first' from command line to 'False'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'cmake_force_configure' from command line to 'False'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'ament_cmake_args' from command line to 'None'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'catkin_cmake_args' from command line to 'None'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.762s] DEBUG:colcon.colcon_core.verb:Building package 'ps4' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eric/2025R2_ws/build/ps4', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eric/2025R2_ws/install/ps4', 'merge_install': False, 'path': '/home/eric/2025R2_ws/src/ps4', 'symlink_install': True, 'test_result_base': None}
+[0.763s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.764s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.765s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/eric/2025R2_ws/src/damiao' with build type 'ament_python'
+[0.766s] Level 1:colcon.colcon_core.shell:create_environment_hook('damiao', 'ament_prefix_path')
+[0.775s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/install/damiao/share/damiao/hook/ament_prefix_path.ps1'
+[0.777s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eric/2025R2_ws/install/damiao/share/damiao/hook/ament_prefix_path.dsv'
+[0.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/install/damiao/share/damiao/hook/ament_prefix_path.sh'
+[0.783s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.783s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.791s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/eric/2025R2_ws/src/navigation' with build type 'ament_python'
+[0.791s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'ament_prefix_path')
+[0.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/install/navigation/share/navigation/hook/ament_prefix_path.ps1'
+[0.793s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eric/2025R2_ws/install/navigation/share/navigation/hook/ament_prefix_path.dsv'
+[0.794s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/install/navigation/share/navigation/hook/ament_prefix_path.sh'
+[0.794s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.795s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.803s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/eric/2025R2_ws/src/ps4' with build type 'ament_python'
+[0.804s] Level 1:colcon.colcon_core.shell:create_environment_hook('ps4', 'ament_prefix_path')
+[0.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/install/ps4/share/ps4/hook/ament_prefix_path.ps1'
+[0.806s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eric/2025R2_ws/install/ps4/share/ps4/hook/ament_prefix_path.dsv'
+[0.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/install/ps4/share/ps4/hook/ament_prefix_path.sh'
+[0.809s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.809s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.166s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/eric/2025R2_ws/src/damiao'
+[1.167s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.167s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.508s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/eric/2025R2_ws/src/navigation'
+[1.508s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.508s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.835s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/eric/2025R2_ws/src/ps4'
+[1.835s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.836s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.558s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/eric/2025R2_ws/install/ps4/share/ament_index/resource_index/packages/ps4
+[3.558s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/eric/2025R2_ws/install/ps4/share/ps4/package.xml
+[3.558s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/eric/2025R2_ws/install/ps4/share/ps4
+[3.559s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/eric/2025R2_ws/install/ps4/lib/ps4/ps4_publisher
+[3.559s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/eric/2025R2_ws/install/ps4/lib/ps4/ps4_subscriber
+[3.560s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eric/2025R2_ws/build/ps4': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/ps4/build --no-deps symlink_data --force
+[3.566s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/eric/2025R2_ws/install/navigation/share/ament_index/resource_index/packages/navigation
+[3.567s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/eric/2025R2_ws/install/navigation/share/navigation/package.xml
+[3.567s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/eric/2025R2_ws/install/navigation/share/navigation
+[3.567s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/eric/2025R2_ws/install/navigation/lib/navigation/navigation_node
+[3.567s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/eric/2025R2_ws/install/navigation/lib/navigation/omni_wheel_speed_node
+[3.570s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eric/2025R2_ws/build/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/navigation/build --no-deps symlink_data --force
+[3.576s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/eric/2025R2_ws/install/damiao/share/ament_index/resource_index/packages/damiao
+[3.576s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/eric/2025R2_ws/install/damiao/share/damiao/package.xml
+[3.577s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/eric/2025R2_ws/install/damiao/lib/damiao/damiao_node
+[3.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eric/2025R2_ws/build/damiao': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/damiao/build --no-deps symlink_data --force
+[4.655s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'pythonpath_develop')
+[4.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/build/navigation/share/navigation/hook/pythonpath_develop.ps1'
+[4.657s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eric/2025R2_ws/build/navigation/share/navigation/hook/pythonpath_develop.dsv'
+[4.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eric/2025R2_ws/build/navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/navigation/build --no-deps symlink_data --force
+[4.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/build/navigation/share/navigation/hook/pythonpath_develop.sh'
+[4.701s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/navigation' for CMake module files
+[4.702s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/navigation' for CMake config files
+[4.705s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/navigation/lib'
+[4.705s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/navigation/bin'
+[4.705s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/navigation/lib/pkgconfig/navigation.pc'
+[4.706s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/navigation/lib/python3.12/site-packages'
+[4.706s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'pythonpath')
+[4.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/install/navigation/share/navigation/hook/pythonpath.ps1'
+[4.707s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eric/2025R2_ws/install/navigation/share/navigation/hook/pythonpath.dsv'
+[4.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/install/navigation/share/navigation/hook/pythonpath.sh'
+[4.709s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/navigation/bin'
+[4.709s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation)
+[4.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/eric/2025R2_ws/install/navigation/share/navigation/package.ps1'
+[4.711s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eric/2025R2_ws/install/navigation/share/navigation/package.dsv'
+[4.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/eric/2025R2_ws/install/navigation/share/navigation/package.sh'
+[4.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/eric/2025R2_ws/install/navigation/share/navigation/package.bash'
+[4.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/eric/2025R2_ws/install/navigation/share/navigation/package.zsh'
+[4.718s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eric/2025R2_ws/install/navigation/share/colcon-core/packages/navigation)
+[4.721s] Level 1:colcon.colcon_core.shell:create_environment_hook('ps4', 'pythonpath_develop')
+[4.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/build/ps4/share/ps4/hook/pythonpath_develop.ps1'
+[4.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eric/2025R2_ws/build/ps4' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/ps4/build --no-deps symlink_data --force
+[4.723s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eric/2025R2_ws/build/ps4/share/ps4/hook/pythonpath_develop.dsv'
+[4.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/build/ps4/share/ps4/hook/pythonpath_develop.sh'
+[4.726s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/ps4' for CMake module files
+[4.727s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/ps4' for CMake config files
+[4.730s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/ps4/lib'
+[4.730s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/ps4/bin'
+[4.730s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/ps4/lib/pkgconfig/ps4.pc'
+[4.730s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages'
+[4.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('ps4', 'pythonpath')
+[4.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/install/ps4/share/ps4/hook/pythonpath.ps1'
+[4.731s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eric/2025R2_ws/install/ps4/share/ps4/hook/pythonpath.dsv'
+[4.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/install/ps4/share/ps4/hook/pythonpath.sh'
+[4.733s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/ps4/bin'
+[4.733s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ps4)
+[4.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/eric/2025R2_ws/install/ps4/share/ps4/package.ps1'
+[4.734s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eric/2025R2_ws/install/ps4/share/ps4/package.dsv'
+[4.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/eric/2025R2_ws/install/ps4/share/ps4/package.sh'
+[4.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/eric/2025R2_ws/install/ps4/share/ps4/package.bash'
+[4.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/eric/2025R2_ws/install/ps4/share/ps4/package.zsh'
+[4.737s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eric/2025R2_ws/install/ps4/share/colcon-core/packages/ps4)
+[4.738s] Level 1:colcon.colcon_core.shell:create_environment_hook('damiao', 'pythonpath_develop')
+[4.738s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/build/damiao/share/damiao/hook/pythonpath_develop.ps1'
+[4.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eric/2025R2_ws/build/damiao' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/eric/2025R2_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eric/2025R2_ws/build/damiao/build --no-deps symlink_data --force
+[4.740s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eric/2025R2_ws/build/damiao/share/damiao/hook/pythonpath_develop.dsv'
+[4.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/build/damiao/share/damiao/hook/pythonpath_develop.sh'
+[4.741s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/damiao' for CMake module files
+[4.741s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/damiao' for CMake config files
+[4.747s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/damiao/lib'
+[4.747s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/damiao/bin'
+[4.747s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/damiao/lib/pkgconfig/damiao.pc'
+[4.748s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages'
+[4.748s] Level 1:colcon.colcon_core.shell:create_environment_hook('damiao', 'pythonpath')
+[4.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/install/damiao/share/damiao/hook/pythonpath.ps1'
+[4.749s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eric/2025R2_ws/install/damiao/share/damiao/hook/pythonpath.dsv'
+[4.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eric/2025R2_ws/install/damiao/share/damiao/hook/pythonpath.sh'
+[4.751s] Level 1:colcon.colcon_core.environment:checking '/home/eric/2025R2_ws/install/damiao/bin'
+[4.752s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(damiao)
+[4.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/eric/2025R2_ws/install/damiao/share/damiao/package.ps1'
+[4.754s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eric/2025R2_ws/install/damiao/share/damiao/package.dsv'
+[4.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/eric/2025R2_ws/install/damiao/share/damiao/package.sh'
+[4.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/eric/2025R2_ws/install/damiao/share/damiao/package.bash'
+[4.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/eric/2025R2_ws/install/damiao/share/damiao/package.zsh'
+[4.757s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eric/2025R2_ws/install/damiao/share/colcon-core/packages/damiao)
+[4.758s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.758s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.758s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.759s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.780s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.780s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.780s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.806s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.807s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eric/2025R2_ws/install/local_setup.ps1'
+[4.809s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eric/2025R2_ws/install/_local_setup_util_ps1.py'
+[4.811s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eric/2025R2_ws/install/setup.ps1'
+[4.813s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eric/2025R2_ws/install/local_setup.sh'
+[4.815s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eric/2025R2_ws/install/_local_setup_util_sh.py'
+[4.816s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eric/2025R2_ws/install/setup.sh'
+[4.818s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eric/2025R2_ws/install/local_setup.bash'
+[4.820s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eric/2025R2_ws/install/setup.bash'
+[4.822s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eric/2025R2_ws/install/local_setup.zsh'
+[4.824s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eric/2025R2_ws/install/setup.zsh'

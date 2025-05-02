@@ -1,0 +1,3 @@
+[console_scripts]
+ps4_publisher = ps4.ps4_publisher:main
+ps4_subscriber = ps4.ps4_subscriber:main

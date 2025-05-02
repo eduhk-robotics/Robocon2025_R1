@@ -1,0 +1,2 @@
+[console_scripts]
+damiao_node = damiao.damiao_node:main

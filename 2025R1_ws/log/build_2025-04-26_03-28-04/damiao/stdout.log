@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/damiao/damiao.egg-info
+writing ../../build/damiao/damiao.egg-info/PKG-INFO
+writing dependency_links to ../../build/damiao/damiao.egg-info/dependency_links.txt
+writing entry points to ../../build/damiao/damiao.egg-info/entry_points.txt
+writing requirements to ../../build/damiao/damiao.egg-info/requires.txt
+writing top-level names to ../../build/damiao/damiao.egg-info/top_level.txt
+writing manifest file '../../build/damiao/damiao.egg-info/SOURCES.txt'
+reading manifest file '../../build/damiao/damiao.egg-info/SOURCES.txt'
+writing manifest file '../../build/damiao/damiao.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/eric/2025R2_ws/build/damiao/build
+creating /home/eric/2025R2_ws/build/damiao/build/lib
+creating /home/eric/2025R2_ws/build/damiao/build/lib/damiao
+copying damiao/__init__.py -> /home/eric/2025R2_ws/build/damiao/build/lib/damiao
+copying damiao/damiao_node.py -> /home/eric/2025R2_ws/build/damiao/build/lib/damiao
+running install
+running install_lib
+creating /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao
+copying /home/eric/2025R2_ws/build/damiao/build/lib/damiao/__init__.py -> /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao
+copying /home/eric/2025R2_ws/build/damiao/build/lib/damiao/damiao_node.py -> /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao
+byte-compiling /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao/damiao_node.py to damiao_node.cpython-312.pyc
+running install_data
+creating /home/eric/2025R2_ws/install/damiao/share/ament_index
+creating /home/eric/2025R2_ws/install/damiao/share/ament_index/resource_index
+creating /home/eric/2025R2_ws/install/damiao/share/ament_index/resource_index/packages
+copying resource/damiao -> /home/eric/2025R2_ws/install/damiao/share/ament_index/resource_index/packages
+copying package.xml -> /home/eric/2025R2_ws/install/damiao/share/damiao
+running install_egg_info
+Copying ../../build/damiao/damiao.egg-info to /home/eric/2025R2_ws/install/damiao/lib/python3.12/site-packages/damiao-0.0.0-py3.12.egg-info
+running install_scripts
+Installing damiao_node script to /home/eric/2025R2_ws/install/damiao/lib/damiao
+writing list of installed files to '/home/eric/2025R2_ws/build/damiao/install.log'

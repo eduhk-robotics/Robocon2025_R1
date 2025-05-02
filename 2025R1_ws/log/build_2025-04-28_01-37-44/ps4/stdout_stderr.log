@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing ps4.egg-info/PKG-INFO
+writing dependency_links to ps4.egg-info/dependency_links.txt
+writing entry points to ps4.egg-info/entry_points.txt
+writing requirements to ps4.egg-info/requires.txt
+writing top-level names to ps4.egg-info/top_level.txt
+reading manifest file 'ps4.egg-info/SOURCES.txt'
+writing manifest file 'ps4.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/eric/Robocon2025_R2/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4.egg-link (link to .)
+Installing ps4_publisher script to /home/eric/Robocon2025_R2/2025R2_ws/install/ps4/lib/ps4
+Installing ps4_subscriber script to /home/eric/Robocon2025_R2/2025R2_ws/install/ps4/lib/ps4
+
+Installed /home/eric/Robocon2025_R2/2025R2_ws/build/ps4
+running symlink_data
+symbolically linking /home/eric/Robocon2025_R2/2025R2_ws/build/ps4/resource/ps4 -> /home/eric/Robocon2025_R2/2025R2_ws/install/ps4/share/ament_index/resource_index/packages
+error: [Errno 17] File exists: '/home/eric/Robocon2025_R2/2025R2_ws/build/ps4/resource/ps4' -> '/home/eric/Robocon2025_R2/2025R2_ws/install/ps4/share/ament_index/resource_index/packages/ps4'

@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/ps4/ps4.egg-info
+writing ../../build/ps4/ps4.egg-info/PKG-INFO
+writing dependency_links to ../../build/ps4/ps4.egg-info/dependency_links.txt
+writing entry points to ../../build/ps4/ps4.egg-info/entry_points.txt
+writing requirements to ../../build/ps4/ps4.egg-info/requires.txt
+writing top-level names to ../../build/ps4/ps4.egg-info/top_level.txt
+writing manifest file '../../build/ps4/ps4.egg-info/SOURCES.txt'
+reading manifest file '../../build/ps4/ps4.egg-info/SOURCES.txt'
+writing manifest file '../../build/ps4/ps4.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/eric/2025R2_ws/build/ps4/build
+creating /home/eric/2025R2_ws/build/ps4/build/lib
+creating /home/eric/2025R2_ws/build/ps4/build/lib/ps4
+copying ps4/ps4_subscriber.py -> /home/eric/2025R2_ws/build/ps4/build/lib/ps4
+copying ps4/__init__.py -> /home/eric/2025R2_ws/build/ps4/build/lib/ps4
+copying ps4/ps4_publisher.py -> /home/eric/2025R2_ws/build/ps4/build/lib/ps4
+running install
+running install_lib
+creating /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4
+copying /home/eric/2025R2_ws/build/ps4/build/lib/ps4/ps4_subscriber.py -> /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4
+copying /home/eric/2025R2_ws/build/ps4/build/lib/ps4/__init__.py -> /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4
+copying /home/eric/2025R2_ws/build/ps4/build/lib/ps4/ps4_publisher.py -> /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4
+byte-compiling /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4/ps4_subscriber.py to ps4_subscriber.cpython-312.pyc
+byte-compiling /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4/ps4_publisher.py to ps4_publisher.cpython-312.pyc
+running install_data
+creating /home/eric/2025R2_ws/install/ps4/share/ament_index
+creating /home/eric/2025R2_ws/install/ps4/share/ament_index/resource_index
+creating /home/eric/2025R2_ws/install/ps4/share/ament_index/resource_index/packages
+copying resource/ps4 -> /home/eric/2025R2_ws/install/ps4/share/ament_index/resource_index/packages
+copying package.xml -> /home/eric/2025R2_ws/install/ps4/share/ps4
+running install_egg_info
+Copying ../../build/ps4/ps4.egg-info to /home/eric/2025R2_ws/install/ps4/lib/python3.12/site-packages/ps4-0.0.0-py3.12.egg-info
+running install_scripts
+Installing ps4_publisher script to /home/eric/2025R2_ws/install/ps4/lib/ps4
+Installing ps4_subscriber script to /home/eric/2025R2_ws/install/ps4/lib/ps4
+writing list of installed files to '/home/eric/2025R2_ws/build/ps4/install.log'
