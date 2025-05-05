@@ -1,0 +1,20 @@
+[2.774s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build --no-deps symlink_data
+[3.551s] running develop
+[3.846s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[3.846s]   self.local_index = Environment(self.shadow_path + sys.path)
+[3.915s] running egg_info
+[3.944s] writing ps4.egg-info/PKG-INFO
+[3.945s] writing dependency_links to ps4.egg-info/dependency_links.txt
+[3.947s] writing entry points to ps4.egg-info/entry_points.txt
+[3.949s] writing requirements to ps4.egg-info/requires.txt
+[3.952s] writing top-level names to ps4.egg-info/top_level.txt
+[4.032s] reading manifest file 'ps4.egg-info/SOURCES.txt'
+[4.033s] writing manifest file 'ps4.egg-info/SOURCES.txt'
+[4.069s] running build_ext
+[4.069s] Creating /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages/ps4.egg-link (link to .)
+[4.071s] Installing ps4_publisher script to /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/ps4
+[4.072s] Installing ps4_subscriber script to /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/ps4
+[4.073s] 
+[4.073s] Installed /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4
+[4.073s] running symlink_data
+[4.308s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build --no-deps symlink_data

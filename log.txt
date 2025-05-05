@@ -80,3 +80,27 @@ ros2 topic pub /damiao_control std_msgs/msg/Float32MultiArray '{data: [3, 2, 45.
 
 ros2 topic echo damiao_status 
 
+
+Traceback (most recent call last):
+  File "/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation/navigation_node", line 33, in <module>
+    sys.exit(load_entry_point('navigation', 'console_scripts', 'navigation_node')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/navigation/navigation_node.py", line 61, in main
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 244, in spin
+    executor.spin_once()
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 839, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 834, in _spin_once_impl
+    raise handler.exception()
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/task.py", line 269, in __call__
+    self._handler.send(None)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 518, in handler
+    await call_coroutine()
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 406, in _execute
+    await await_or_execute(sub.callback, *msg_tuple)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 111, in await_or_execute
+    return callback(*args)
+           ^^^^^^^^^^^^^^^
+  File "/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/navigation/navigation_node.py", line 21, in listener_callback
+IndexError: array index out of range
+

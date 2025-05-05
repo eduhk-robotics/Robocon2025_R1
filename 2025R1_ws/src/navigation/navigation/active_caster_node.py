@@ -1,33 +1,21 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-ROS2 node OmniServoFollower
-Subscribes to 'driving' topic for joystick angle (0-360 deg).
-Publishes position commands to 'damiao' for four servos (IDs 1-4).
-Keeps software-record of each servo's current angle for encoderless control.
-"""
-
+import math
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray
 
-class OmniServoFollower(Node):
-    def __init__(self):
-        super().__init__('omni_servo_follower')
-        # Maximum speed in degrees per second
-        self.max_speed_dps = 360.0
-        # Servo IDs
-        self.servo_ids = [1, 2, 3, 4]
-        # Software-recorded current angles
-        self.current_angles = {sid: 0.0 for sid in self.servo_ids}
+ENCODER_RATIO = 19.20321
+GEAR_RATIO = 35.0 / 61.0
+TWO_PI = 2.0 * math.pi
 
-        # Publisher to 'damiao_control'
-        self.publisher_ = self.create_publisher(
-            Float32MultiArray,
-            'damiao_control',
-            10
-        )
-        # Subscriber to 'driving'
+# 360 deg -> one full turn in encoder radians
+PERIOD_RAD = TWO_PI * (ENCODER_RATIO / GEAR_RATIO)  # ~210 rad
+
+class OmniWheelPositionMapper(Node):
+    def __init__(self):
+        super().__init__('omni_wheel_position_mapper')
+
+        # Subscribe to desired heading (degrees)
         self.create_subscription(
             Float32MultiArray,
             'driving',
@@ -35,55 +23,57 @@ class OmniServoFollower(Node):
             10
         )
 
-        self.get_logger().info('OmniServoFollower started, all angles = 0.0 deg')
+        # Publisher to steering servos
+        self.pos_pub = self.create_publisher(
+            Float32MultiArray,
+            'damiao_control',
+            10
+        )
+
+        # Last commanded position (shared by all motors, init 0)
+        self.last_pos_rad = 0.0
 
     def driving_callback(self, msg: Float32MultiArray):
-        # Read target angle
-        try:
-            target_angle = float(msg.data[0]) % 360.0
-        except (IndexError, ValueError):
-            self.get_logger().error('Invalid driving msg: data[0] not a float angle')
-            return
+        """
+        Convert heading (deg) to nearest encoder position (rad).
+        """
+        direction_deg = msg.data[0]
 
-        self.get_logger().info(f"Received target angle: {target_angle:.2f} deg")
+        # Basic mapping (no period adjustment yet)
+        wheel_rev   = direction_deg / 360.0
+        motor_rev   = wheel_rev / GEAR_RATIO
+        encoder_rev = motor_rev * ENCODER_RATIO
+        target_rad  = encoder_rev * TWO_PI
 
-        # For each servo, compute shortest delta and publish
-        for sid in self.servo_ids:
-            prev = self.current_angles[sid]
-            delta = target_angle - prev
-            if delta > 180.0:
-                delta -= 360.0
-            elif delta < -180.0:
-                delta += 360.0
+        # Choose the nearest equivalent angle to minimize travel
+        delta = target_rad - self.last_pos_rad
+        if delta >  PERIOD_RAD / 2.0:
+            target_rad -= PERIOD_RAD
+        elif delta < -PERIOD_RAD / 2.0:
+            target_rad += PERIOD_RAD
 
-            new_angle = prev + delta
-
-            cmd = Float32MultiArray()
-            cmd.data = [
-                float(sid),        # servo ID
-                2.0,               # mode 2 = position
-                new_angle,         # target angle
-                self.max_speed_dps # max speed
+        # Publish to all four motors
+        for motor_id in range(1, 5):
+            out = Float32MultiArray()
+            out.data = [
+                float(motor_id),  # motor ID 1-4
+                2.0,              # mode: position + speed
+                40.0,             # speed rad/s (adjust as needed)
+                target_rad        # target position in rad
             ]
-            self.publisher_.publish(cmd)
-            self.get_logger().info(
-                f"Servo {sid}: from {prev:.2f} deg -> {new_angle:.2f} deg (delta {delta:.2f} deg)"
-            )
+            self.pos_pub.publish(out)
 
-            # Update stored angle
-            self.current_angles[sid] = new_angle
-
-    def destroy_node(self):
-        super().destroy_node()
-        self.get_logger().info('Node shutting down')
+        # Store last commanded position
+        self.last_pos_rad = target_rad
+        self.get_logger().info(
+            f"Cmd {direction_deg:.1f} deg -> {target_rad:.2f} rad"
+        )
 
 def main(args=None):
     rclpy.init(args=args)
-    node = OmniServoFollower()
+    node = OmniWheelPositionMapper()
     try:
         rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
     finally:
         node.destroy_node()
         rclpy.shutdown()

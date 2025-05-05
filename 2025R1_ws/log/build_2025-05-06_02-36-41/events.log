@@ -1,0 +1,17 @@
+[0.000000] (-) TimerEvent: {}
+[0.000376] (damiao) JobQueued: {'identifier': 'damiao', 'dependencies': OrderedDict()}
+[0.000430] (navigation) JobQueued: {'identifier': 'navigation', 'dependencies': OrderedDict()}
+[0.000455] (ps4) JobQueued: {'identifier': 'ps4', 'dependencies': OrderedDict()}
+[0.001243] (damiao) JobStarted: {'identifier': 'damiao'}
+[0.034127] (navigation) JobStarted: {'identifier': 'navigation'}
+[0.050646] (ps4) JobStarted: {'identifier': 'ps4'}
+[0.099693] (-) TimerEvent: {}
+[0.200056] (-) TimerEvent: {}
+[0.231534] (damiao) JobEnded: {'identifier': 'damiao', 'rc': 0}
+[0.300159] (-) TimerEvent: {}
+[0.400451] (-) TimerEvent: {}
+[0.500755] (-) TimerEvent: {}
+[0.601066] (-) TimerEvent: {}
+[0.688772] (ps4) JobEnded: {'identifier': 'ps4', 'rc': 'SIGINT'}
+[0.689606] (navigation) JobEnded: {'identifier': 'navigation', 'rc': 'SIGINT'}
+[0.700447] (-) EventReactorShutdown: {}
