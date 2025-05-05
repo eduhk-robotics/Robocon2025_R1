@@ -1,0 +1,5 @@
+  File "/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation/read_degree_node.py", line 3
+    """
+    ^^^
+SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xb6 in position 32: invalid start byte
+

@@ -1,0 +1,53 @@
+[1.434s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/navigation build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/install.log --single-version-externally-managed install_data
+[1.900s] running egg_info
+[1.900s] creating build/navigation/navigation.egg-info
+[1.929s] writing build/navigation/navigation.egg-info/PKG-INFO
+[1.930s] writing dependency_links to build/navigation/navigation.egg-info/dependency_links.txt
+[1.930s] writing entry points to build/navigation/navigation.egg-info/entry_points.txt
+[1.930s] writing requirements to build/navigation/navigation.egg-info/requires.txt
+[1.930s] writing top-level names to build/navigation/navigation.egg-info/top_level.txt
+[1.930s] writing manifest file 'build/navigation/navigation.egg-info/SOURCES.txt'
+[2.003s] reading manifest file 'build/navigation/navigation.egg-info/SOURCES.txt'
+[2.004s] writing manifest file 'build/navigation/navigation.egg-info/SOURCES.txt'
+[2.004s] running build
+[2.005s] running build_py
+[2.005s] creating /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build
+[2.005s] creating /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib
+[2.005s] creating /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation
+[2.005s] copying navigation/read_degree_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation
+[2.005s] copying navigation/navigation_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation
+[2.005s] copying navigation/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation
+[2.006s] copying navigation/active_caster_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation
+[2.006s] copying navigation/omni_wheel_speed_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation
+[2.006s] running install
+[2.016s] running install_lib
+[2.046s] creating /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation
+[2.046s] copying /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation/read_degree_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation
+[2.046s] copying /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation/navigation_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation
+[2.046s] copying /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation
+[2.046s] copying /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation/active_caster_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation
+[2.046s] copying /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation/omni_wheel_speed_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation
+[2.047s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation/read_degree_node.py to read_degree_node.cpython-312.pyc
+[2.048s]   File "/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation/read_degree_node.py", line 3
+[2.048s]     """
+[2.048s]     ^^^
+[2.048s] SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xb6 in position 32: invalid start byte
+[2.048s] 
+[2.048s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation/navigation_node.py to navigation_node.cpython-312.pyc
+[2.049s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation/__init__.py to __init__.cpython-312.pyc
+[2.049s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation/active_caster_node.py to active_caster_node.cpython-312.pyc
+[2.050s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation/omni_wheel_speed_node.py to omni_wheel_speed_node.cpython-312.pyc
+[2.051s] running install_data
+[2.051s] creating /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/share/ament_index
+[2.052s] creating /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/share/ament_index/resource_index
+[2.052s] creating /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/share/ament_index/resource_index/packages
+[2.052s] copying resource/navigation -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/share/ament_index/resource_index/packages
+[2.052s] copying package.xml -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/share/navigation
+[2.052s] running install_egg_info
+[2.096s] Copying build/navigation/navigation.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info
+[2.097s] running install_scripts
+[2.321s] Installing active_caster_node script to /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/navigation
+[2.321s] Installing navigation_node script to /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/navigation
+[2.322s] Installing read_degree_node script to /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/navigation
+[2.322s] writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/install.log'
+[2.425s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/navigation build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/install.log --single-version-externally-managed install_data

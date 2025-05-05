@@ -1,0 +1,4 @@
+[console_scripts]
+active_caster_node = navigation.active_caster_node:main
+navigation_node = navigation.navigation_node:main
+read_degree_node = navigation.read_degree_node:main

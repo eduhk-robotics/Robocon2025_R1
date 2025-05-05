@@ -1,0 +1,82 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation/read_degree_node", line 33, in <module>
+    sys.exit(load_entry_point('navigation', 'console_scripts', 'read_degree_node')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/navigation/read_degree_node.py", line 56, in main
+    node = ReadMotorStateNode()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/navigation/read_degree_node.py", line 26, in __init__
+    ser = serial.Serial('/dev/ttyUSB0', 921600, timeout=0.5)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+[ros2run]: Process exited with failure 1
+
+
+
+INFO] [1746431296.643643942] [read_degree_node]: Motor 3 -> angle=0.03 deg, rotations=0, continuous=0.03 deg | vel=0.23, tau=-0.01
+
+
+[INFO] [1746432396.682171402] [read_degree_node]: Motor 2 -> angle=-0.00 deg, rotations=0, continuous=-0.00 deg | vel=-0.01, tau=0.00
+[INFO] [1746432396.685761460] [read_degree_node]: Motor 3 -> angle=0.03 deg, rotations=0, continuous=0.03 deg | vel=0.17, tau=0.29
+[INFO] [1746432396.688208166] [read_degree_node]: Motor 4 -> angle=2.01 deg, rotations=0, continuous=2.01 deg | vel=0.17, tau=0.75
+[INFO] [1746432396.689214908] [read_degree_node]: Published motor_states array with continuous angles
+[INFO] [1746432396.726550976] [read_degree_node]: Motor 1 -> angle=0.00 deg, rotations=0, continuous=0.00 deg | vel=0.00, tau=0.00
+[INFO] [1746432396.729056886] [read_degree_node]: Motor 2 -> angle=-0.00 deg, rotations=0, continuous=-0.00 deg | vel=-0.01, tau=0.00
+[INFO] [1746432396.730821258] [read_degree_node]: Motor 3 -> angle=0.03 deg, rotations=0, continuous=0.03 deg | vel=0.17, tau=0.29
+[INFO] [1746432396.733591612] [read_degree_node]: Motor 4 -> angle=2.01 deg, rotations=0, continuous=2.01 deg | vel=0.17, tau=0.75
+[INFO] [1746432396.734926169] [read_degree_node]: Published motor_states array with continuous angles
+[INFO] [1746432396.776606815] [read_degree_node]: Motor 1 -> angle=0.00 deg, rotations=0, continuous=0.00 deg | vel=0.00, tau=0.00
+[INFO] [1746432396.779230151] [read_degree_node]: Motor 2 -> angle=-0.00 deg, rotations=0, continuous=-0.00 deg | vel=-0.01, tau=0.00
+[INFO] [1746432396.782287431] [read_degree_node]: Motor 3 -> angle=0.01 deg, rotations=0, continuous=0.01 deg | vel=0.17, tau=0.24
+[INFO] [1746432396.784419173] [read_degree_node]: Motor 4 -> angle=2.23 deg, rotations=0, continuous=2.23 deg | vel=0.15, tau=0.57
+[INFO] [1746432396.785718026] [read_degree_node]: Published motor_states array with continuous angles
+[INFO] [1746432396.826542302] [read_degree_node]: Motor 1 -> angle=0.00 deg, rotations=0, continuous=0.00 deg | vel=0.00, tau=0.00
+[INFO] [1746432396.828400989] [read_degree_node]: Motor 2 -> angle=-0.00 deg, rotations=0, continuous=-0.00 deg | vel=-0.01, tau=0.00
+[INFO] [1746432396.830492898] [read_degree_node]: Motor 3 -> angle=0.01 deg, rotations=0, continuous=0.01 deg | vel=0.17, tau=0.24
+[INFO] [1746432396.832322214] [read_degree_node]: Motor 4 -> angle=2.23 deg, rotations=0, continuous=2.23 deg | vel=0.15, tau=0.57
+[INFO] [1746432396.833355956] [read_degree_node]: Published motor_states array with continuous angles
+[INFO] [1746432396.877299678] [read_degree_node]: Motor 1 -> angle=0.00 deg, rotations=0, continuous=0.00 deg | vel=0.00, tau=0.00
+[INFO] [1746432396.882015904] [read_degree_node]: Motor 2 -> angle=-0.00 deg, rotations=0, continuous=-0.00 deg | vel=-0.01, tau=0.00
+[INFO] [1746432396.885546407] [read_degree_node]: Motor 3 -> angle=0.02 deg, rotations=0, continuous=0.02 deg | vel=0.15, tau=-0.09
+[INFO] [1746432396.887796835] [read_degree_node]: Motor 4 -> angle=-0.00 deg, rotations=0, continuous=-0.00 deg | vel=0.15, tau=0.69
+[INFO] [1746432396.888813003] [read_degree_node]: Published motor_states array with continuous angles
+[INFO] [1746432396.926334923] [read_degree_node]: Motor 1 -> angle=0.00 deg, rotations=0, continuous=0.00 deg | vel=0.00, tau=0.00
+[INFO] [1746432396.928194573] [read_degree_node]: Motor 2 -> angle=-0.00 deg, rotations=0, continuous=-0.00 deg | vel=-0.01, tau=0.00
+[INFO] [1746432396.929123963] [read_degree_node]: Motor 3 -> angle=0.02 deg, rotations=0, continuous=0.02 deg | vel=0.15, tau=-0.09
+[INFO] [1746432396.930233297] [read_degree_node]: Motor 4 -> angle=-0.00 deg, rotations=0, continuous=-0.00 deg | vel=0.15, tau=0.69
+[INFO] [1746432396.931108094] [read_degree_node]: Published motor_states array with continuous angles
+[INFO] [1746432396.977427893] [read_degree_node]: Motor 1 -> angle=0.00 deg, rotations=0, continuous=0.00 deg | vel=0.00, tau=0.00
+[INFO] [1746432396.982477082] [read_degree_node]: Motor 2 -> angle=-0.00 deg, rotations=0, continuous=-0.00 deg | vel=-0.01, tau=0.00
+[INFO] [1746432396.986648086] [read_degree_node]: Motor 3 -> angle=0.02 deg, rotations=0, continuous=0.02 deg | vel=0.15, tau=0.39
+[INFO] [1746432396.988581050] [read_degree_node]: Motor 4 -> angle=-0.00 deg, rotations=0, continuous=-0.00 deg | vel=0.15, tau=0.95
+[INFO] [1746432396.989618070] [read_degree_node]: Published motor_states array with continuous angles
+[INFO] [1746432397.026622879] [read_degree_node]: Motor 1 -> angle=0.00 deg, rotations=0, continuous=0.00 deg | vel=0.00, tau=0.00
+[INFO] [1746432397.030182215] [read_degree_node]: Motor 2 -> angle=-0.00 deg, rotations=0, continuous=-0.00 deg | vel=-0.01, tau=0.00
+[INFO] [1746432397.032717440] [read_degree_node]: Motor 3 -> angle=0.02 deg, rotations=0, continuous=0.02 deg | vel=0.15, tau=0.39
+[INFO] [1746432397.035484812] [read_degree_node]: Motor 4 -> angle=-0.00 deg, rotations=0, continuous=-0.00 deg | vel=0.15, tau=0.95
+[INFO] [1746432397.037428332] [read_degree_node]: Published motor_states array with continuous angles
+[INFO] [1746432397.078104552] [read_degree_node]: Motor 1 -> angle=0.00 deg, rotations=0, continuous=0.00 deg | vel=0.00, tau=0.00
+[INFO] [1746432397.079944424] [read_degree_node]: Motor 2 -> angle=0.00 deg, rotations=0, continuous=0.00 deg | vel=-0.01, tau=0.00
+[INFO] [1746432397.081361536] [read_degree_node]: Motor 3 -> angle=0.02 deg, rotations=0, continuous=0.02 deg | vel=0.15, tau=-0.17
+[INFO] [1746432397.083432779] [read_degree_node]: Motor 4 -> angle=-0.00 deg, rotations=0, continuous=-0.00 deg | vel=0.15, tau=0.68
+[INFO] [1746432397.085151577] [read_degree_node]: Publ
+[WARN] [1746433929.702632520] [can_servo_controller]: CAN bus not initialized, skipping send
+
+
+ros2 topic pub /damiao_control std_msgs/msg/Float32MultiArray '{data: [3, 2, 45.0, -0.0]}'
+
+
+ros2 topic echo damiao_status 
+

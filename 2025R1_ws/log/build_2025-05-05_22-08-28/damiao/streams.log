@@ -1,0 +1,40 @@
+[1.716s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build
+[2.186s] running develop
+[2.442s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[2.442s]   self.local_index = Environment(self.shadow_path + sys.path)
+[2.494s] Removing /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao.egg-link (link to .)
+[2.578s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build
+[2.580s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/damiao': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/damiao build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/install.log --single-version-externally-managed install_data --force
+[2.967s] running egg_info
+[2.996s] writing ../../build/damiao/damiao.egg-info/PKG-INFO
+[2.996s] writing dependency_links to ../../build/damiao/damiao.egg-info/dependency_links.txt
+[2.997s] writing entry points to ../../build/damiao/damiao.egg-info/entry_points.txt
+[2.998s] writing requirements to ../../build/damiao/damiao.egg-info/requires.txt
+[2.999s] writing top-level names to ../../build/damiao/damiao.egg-info/top_level.txt
+[3.057s] reading manifest file '../../build/damiao/damiao.egg-info/SOURCES.txt'
+[3.058s] writing manifest file '../../build/damiao/damiao.egg-info/SOURCES.txt'
+[3.058s] running build
+[3.058s] running build_py
+[3.060s] copying damiao/damiao_read_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao
+[3.060s] copying damiao/DM_CAN.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao
+[3.061s] running install
+[3.071s] running install_lib
+[3.099s] creating /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao
+[3.099s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao/damiao_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao
+[3.100s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao/damiao_read_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao
+[3.100s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao
+[3.100s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao/DM_CAN.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao
+[3.101s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao/damiao_node.py to damiao_node.cpython-312.pyc
+[3.116s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao/damiao_read_node.py to damiao_read_node.cpython-312.pyc
+[3.117s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao/__init__.py to __init__.cpython-312.pyc
+[3.117s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao/DM_CAN.py to DM_CAN.cpython-312.pyc
+[3.121s] running install_data
+[3.121s] copying resource/damiao -> /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/ament_index/resource_index/packages
+[3.126s] copying package.xml -> /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/damiao
+[3.131s] running install_egg_info
+[3.201s] Copying ../../build/damiao/damiao.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao-0.0.0-py3.12.egg-info
+[3.207s] running install_scripts
+[3.551s] Installing damiao_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/damiao
+[3.551s] Installing damiao_read_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/damiao
+[3.552s] writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/install.log'
+[3.652s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/damiao' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/damiao build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/install.log --single-version-externally-managed install_data --force

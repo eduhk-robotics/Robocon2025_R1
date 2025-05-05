@@ -1,0 +1,31 @@
+[1.416s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/navigation build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/install.log --single-version-externally-managed install_data
+[1.873s] running egg_info
+[1.907s] writing build/navigation/navigation.egg-info/PKG-INFO
+[1.907s] writing dependency_links to build/navigation/navigation.egg-info/dependency_links.txt
+[1.908s] writing entry points to build/navigation/navigation.egg-info/entry_points.txt
+[1.909s] writing requirements to build/navigation/navigation.egg-info/requires.txt
+[1.910s] writing top-level names to build/navigation/navigation.egg-info/top_level.txt
+[1.976s] reading manifest file 'build/navigation/navigation.egg-info/SOURCES.txt'
+[1.978s] writing manifest file 'build/navigation/navigation.egg-info/SOURCES.txt'
+[1.980s] running build
+[1.980s] running build_py
+[1.981s] copying navigation/read_degree_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation
+[1.982s] running install
+[1.993s] running install_lib
+[2.022s] copying /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation/read_degree_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation
+[2.023s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation/read_degree_node.py to read_degree_node.cpython-312.pyc
+[2.024s]   File "/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation/read_degree_node.py", line 3
+[2.024s]     """
+[2.024s]     ^^^
+[2.024s] SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xb6 in position 32: invalid start byte
+[2.024s] 
+[2.024s] running install_data
+[2.024s] running install_egg_info
+[2.055s] removing '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info' (and everything under it)
+[2.055s] Copying build/navigation/navigation.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info
+[2.057s] running install_scripts
+[2.287s] Installing active_caster_node script to /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/navigation
+[2.287s] Installing navigation_node script to /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/navigation
+[2.288s] Installing read_degree_node script to /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/navigation
+[2.289s] writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/install.log'
+[2.394s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/navigation build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/install.log --single-version-externally-managed install_data

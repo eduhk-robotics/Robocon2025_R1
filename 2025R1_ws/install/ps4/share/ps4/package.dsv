@@ -1,0 +1,9 @@
+source;share/ps4/hook/pythonpath.ps1
+source;share/ps4/hook/pythonpath.dsv
+source;share/ps4/hook/pythonpath.sh
+source;share/ps4/hook/ament_prefix_path.ps1
+source;share/ps4/hook/ament_prefix_path.dsv
+source;share/ps4/hook/ament_prefix_path.sh
+source;../../build/ps4/share/ps4/hook/pythonpath_develop.ps1
+source;../../build/ps4/share/ps4/hook/pythonpath_develop.dsv
+source;../../build/ps4/share/ps4/hook/pythonpath_develop.sh

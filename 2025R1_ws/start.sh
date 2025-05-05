@@ -29,12 +29,12 @@ echo "Starting damiao_node..."
 gnome-terminal -- bash -c "ros2 run damiao damiao_node; exec bash"
 
 # Start omni_wheel_speed_node
-echo "Starting omni_wheel_speed_node..."
-gnome-terminal -- bash -c "ros2 run navigation omni_wheel_speed_node; exec bash"
+echo "Starting active_caster_node..."
+gnome-terminal -- bash -c "ros2 run navigation navigation_node; exec bash"
 
 # Start navigation_node
 echo "Starting navigation_node..."
-gnome-terminal -- bash -c "ros2 run navigation navigation_node; exec bash"
+gnome-terminal -- bash -c "ros2 run navigation active_caster_node; exec bash"
 
 # Start ps4_publisher
 echo "Starting ps4_publisher..."

@@ -33,7 +33,7 @@ class OmniWheelSpeedNode(Node):
             message = Float32MultiArray()
             message.data = [
                 float(motor_id),  # Motor ID (1,2,3,4...)
-                1.0,              # Mode (always 1 for speed mode)
+                2.0,              # Mode (always 1 for speed mode)
                 float(speed),     # Speed (degrees per second)
                 0.0               # Position (not used for mode 1)
             ]

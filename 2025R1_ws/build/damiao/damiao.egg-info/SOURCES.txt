@@ -8,7 +8,9 @@ setup.py
 ../../build/damiao/damiao.egg-info/requires.txt
 ../../build/damiao/damiao.egg-info/top_level.txt
 ../../build/damiao/damiao.egg-info/zip-safe
+damiao/DM_CAN.py
 damiao/__init__.py
+damiao/damiao_node (Copy).py
 damiao/damiao_node.py
 damiao.egg-info/PKG-INFO
 damiao.egg-info/SOURCES.txt

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: navigation
+Version: 0.0.0
+Summary: ROS2 package for robot navigation using PS4 controller
+Maintainer: Your Name
+Maintainer-email: your.email@example.com
+License: TODO: License declaration

@@ -24,7 +24,8 @@ setup(
     entry_points={
         'console_scripts': [
             'navigation_node = navigation.navigation_node:main',
-            'omni_wheel_speed_node = navigation.omni_wheel_speed_node:main',
+            'active_caster_node = navigation.active_caster_node:main',
+            'omni_wheel_speed_node = navigation.omni_wheel_speed_node:main'
         ],
     },
 )

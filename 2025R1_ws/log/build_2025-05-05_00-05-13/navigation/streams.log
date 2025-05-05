@@ -1,0 +1,20 @@
+[2.129s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build --no-deps symlink_data
+[2.660s] running develop
+[2.902s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[2.902s]   self.local_index = Environment(self.shadow_path + sys.path)
+[2.953s] running egg_info
+[2.981s] writing navigation.egg-info/PKG-INFO
+[2.981s] writing dependency_links to navigation.egg-info/dependency_links.txt
+[2.982s] writing entry points to navigation.egg-info/entry_points.txt
+[2.983s] writing requirements to navigation.egg-info/requires.txt
+[2.983s] writing top-level names to navigation.egg-info/top_level.txt
+[3.054s] reading manifest file 'navigation.egg-info/SOURCES.txt'
+[3.055s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[3.108s] running build_ext
+[3.108s] Creating /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation.egg-link (link to .)
+[3.110s] Installing active_caster_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation
+[3.111s] Installing navigation_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation
+[3.113s] 
+[3.113s] Installed /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation
+[3.114s] running symlink_data
+[3.246s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build --no-deps symlink_data

@@ -1,0 +1,29 @@
+running egg_info
+writing build/navigation/navigation.egg-info/PKG-INFO
+writing dependency_links to build/navigation/navigation.egg-info/dependency_links.txt
+writing entry points to build/navigation/navigation.egg-info/entry_points.txt
+writing requirements to build/navigation/navigation.egg-info/requires.txt
+writing top-level names to build/navigation/navigation.egg-info/top_level.txt
+reading manifest file 'build/navigation/navigation.egg-info/SOURCES.txt'
+writing manifest file 'build/navigation/navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+copying navigation/read_degree_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation
+running install
+running install_lib
+copying /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/build/lib/navigation/read_degree_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation
+byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation/read_degree_node.py to read_degree_node.cpython-312.pyc
+  File "/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation/read_degree_node.py", line 3
+    """
+    ^^^
+SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xb6 in position 32: invalid start byte
+
+running install_data
+running install_egg_info
+removing '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info' (and everything under it)
+Copying build/navigation/navigation.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info
+running install_scripts
+Installing active_caster_node script to /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/navigation
+Installing navigation_node script to /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/navigation
+Installing read_degree_node script to /home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/install/navigation/lib/navigation
+writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation/build/navigation/install.log'

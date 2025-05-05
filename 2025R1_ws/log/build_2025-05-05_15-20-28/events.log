@@ -1,0 +1,104 @@
+[0.000000] (-) TimerEvent: {}
+[0.000236] (damiao) JobQueued: {'identifier': 'damiao', 'dependencies': OrderedDict()}
+[0.000284] (navigation) JobQueued: {'identifier': 'navigation', 'dependencies': OrderedDict()}
+[0.000309] (ps4) JobQueued: {'identifier': 'ps4', 'dependencies': OrderedDict()}
+[0.000741] (damiao) JobStarted: {'identifier': 'damiao'}
+[0.009746] (navigation) JobStarted: {'identifier': 'navigation'}
+[0.016153] (ps4) JobStarted: {'identifier': 'ps4'}
+[0.099698] (-) TimerEvent: {}
+[0.200018] (-) TimerEvent: {}
+[0.300322] (-) TimerEvent: {}
+[0.400624] (-) TimerEvent: {}
+[0.500935] (-) TimerEvent: {}
+[0.601247] (-) TimerEvent: {}
+[0.701592] (-) TimerEvent: {}
+[0.801953] (-) TimerEvent: {}
+[0.902273] (-) TimerEvent: {}
+[1.002583] (-) TimerEvent: {}
+[1.102910] (-) TimerEvent: {}
+[1.204598] (-) TimerEvent: {}
+[1.304938] (-) TimerEvent: {}
+[1.405255] (-) TimerEvent: {}
+[1.505594] (-) TimerEvent: {}
+[1.607788] (-) TimerEvent: {}
+[1.709589] (-) TimerEvent: {}
+[1.809896] (-) TimerEvent: {}
+[1.910217] (-) TimerEvent: {}
+[2.010645] (-) TimerEvent: {}
+[2.111136] (-) TimerEvent: {}
+[2.147190] (navigation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build', '--no-deps', 'symlink_data'], 'cwd': '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robotics', 'SSH_CLIENT': '172.17.30.116 58907 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/robotics', 'OLDPWD': '/home/robotics/Robocon2025_R1', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv)', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'robotics', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '5', 'PATH': '/home/robotics/Robocon2025_R1/venv/bin:/home/robotics/Robocon2025_R2/venv/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': 'localhost:11.0', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': 'venv', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/robotics/Robocon2025_R2/venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.17.30.116 58907 172.19.253.153 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/venv/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.177369] (ps4) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build', '--no-deps', 'symlink_data'], 'cwd': '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robotics', 'SSH_CLIENT': '172.17.30.116 58907 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/robotics', 'OLDPWD': '/home/robotics/Robocon2025_R1', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv)', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'robotics', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '5', 'PATH': '/home/robotics/Robocon2025_R1/venv/bin:/home/robotics/Robocon2025_R2/venv/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': 'localhost:11.0', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': 'venv', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/robotics/Robocon2025_R2/venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.17.30.116 58907 172.19.253.153 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/venv/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.190772] (damiao) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build', '--no-deps', 'symlink_data'], 'cwd': '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robotics', 'SSH_CLIENT': '172.17.30.116 58907 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/robotics', 'OLDPWD': '/home/robotics/Robocon2025_R1', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv)', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'robotics', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '5', 'PATH': '/home/robotics/Robocon2025_R1/venv/bin:/home/robotics/Robocon2025_R2/venv/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': 'localhost:11.0', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': 'venv', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/robotics/Robocon2025_R2/venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.17.30.116 58907 172.19.253.153 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/venv/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.211258] (-) TimerEvent: {}
+[2.311880] (-) TimerEvent: {}
+[2.414592] (-) TimerEvent: {}
+[2.514914] (-) TimerEvent: {}
+[2.615253] (-) TimerEvent: {}
+[2.713539] (navigation) StdoutLine: {'line': b'running develop\n'}
+[2.715328] (-) TimerEvent: {}
+[2.725982] (ps4) StdoutLine: {'line': b'running develop\n'}
+[2.737906] (damiao) StdoutLine: {'line': b'running develop\n'}
+[2.815442] (-) TimerEvent: {}
+[2.915778] (-) TimerEvent: {}
+[2.957231] (navigation) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)\n'}
+[2.957539] (navigation) StderrLine: {'line': b'  self.local_index = Environment(self.shadow_path + sys.path)\n'}
+[2.973013] (ps4) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)\n'}
+[2.973457] (ps4) StderrLine: {'line': b'  self.local_index = Environment(self.shadow_path + sys.path)\n'}
+[2.987294] (damiao) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)\n'}
+[2.987580] (damiao) StderrLine: {'line': b'  self.local_index = Environment(self.shadow_path + sys.path)\n'}
+[3.011216] (navigation) StdoutLine: {'line': b'running egg_info\n'}
+[3.015872] (-) TimerEvent: {}
+[3.025428] (ps4) StdoutLine: {'line': b'running egg_info\n'}
+[3.035915] (damiao) StdoutLine: {'line': b'running egg_info\n'}
+[3.037270] (navigation) StdoutLine: {'line': b'writing navigation.egg-info/PKG-INFO\n'}
+[3.037716] (navigation) StdoutLine: {'line': b'writing dependency_links to navigation.egg-info/dependency_links.txt\n'}
+[3.038709] (navigation) StdoutLine: {'line': b'writing entry points to navigation.egg-info/entry_points.txt\n'}
+[3.039310] (navigation) StdoutLine: {'line': b'writing requirements to navigation.egg-info/requires.txt\n'}
+[3.039967] (navigation) StdoutLine: {'line': b'writing top-level names to navigation.egg-info/top_level.txt\n'}
+[3.053931] (ps4) StdoutLine: {'line': b'writing ps4.egg-info/PKG-INFO\n'}
+[3.054167] (ps4) StdoutLine: {'line': b'writing dependency_links to ps4.egg-info/dependency_links.txt\n'}
+[3.056076] (ps4) StdoutLine: {'line': b'writing entry points to ps4.egg-info/entry_points.txt\n'}
+[3.057482] (ps4) StdoutLine: {'line': b'writing requirements to ps4.egg-info/requires.txt\n'}
+[3.057696] (ps4) StdoutLine: {'line': b'writing top-level names to ps4.egg-info/top_level.txt\n'}
+[3.067682] (damiao) StdoutLine: {'line': b'writing damiao.egg-info/PKG-INFO\n'}
+[3.068201] (damiao) StdoutLine: {'line': b'writing dependency_links to damiao.egg-info/dependency_links.txt\n'}
+[3.069252] (damiao) StdoutLine: {'line': b'writing entry points to damiao.egg-info/entry_points.txt\n'}
+[3.070689] (damiao) StdoutLine: {'line': b'writing requirements to damiao.egg-info/requires.txt\n'}
+[3.072126] (damiao) StdoutLine: {'line': b'writing top-level names to damiao.egg-info/top_level.txt\n'}
+[3.103627] (navigation) StdoutLine: {'line': b"reading manifest file 'navigation.egg-info/SOURCES.txt'\n"}
+[3.104767] (navigation) StdoutLine: {'line': b"writing manifest file 'navigation.egg-info/SOURCES.txt'\n"}
+[3.116594] (-) TimerEvent: {}
+[3.120802] (ps4) StdoutLine: {'line': b"reading manifest file 'ps4.egg-info/SOURCES.txt'\n"}
+[3.121893] (ps4) StdoutLine: {'line': b"writing manifest file 'ps4.egg-info/SOURCES.txt'\n"}
+[3.129034] (damiao) StdoutLine: {'line': b"reading manifest file 'damiao.egg-info/SOURCES.txt'\n"}
+[3.130090] (damiao) StdoutLine: {'line': b"writing manifest file 'damiao.egg-info/SOURCES.txt'\n"}
+[3.133036] (navigation) StdoutLine: {'line': b'running build_ext\n'}
+[3.133320] (navigation) StdoutLine: {'line': b'Creating /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation.egg-link (link to .)\n'}
+[3.134319] (navigation) StdoutLine: {'line': b'Installing active_caster_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation\n'}
+[3.134679] (navigation) StdoutLine: {'line': b'Installing navigation_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation\n'}
+[3.134916] (navigation) StdoutLine: {'line': b'Installing read_degree_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation\n'}
+[3.135252] (navigation) StdoutLine: {'line': b'\n'}
+[3.135350] (navigation) StdoutLine: {'line': b'Installed /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation\n'}
+[3.135480] (navigation) StdoutLine: {'line': b'running symlink_data\n'}
+[3.158544] (ps4) StdoutLine: {'line': b'running build_ext\n'}
+[3.159105] (ps4) StdoutLine: {'line': b'Creating /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages/ps4.egg-link (link to .)\n'}
+[3.164737] (ps4) StdoutLine: {'line': b'Installing ps4_publisher script to /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/ps4\n'}
+[3.165108] (ps4) StdoutLine: {'line': b'Installing ps4_subscriber script to /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/ps4\n'}
+[3.165245] (ps4) StdoutLine: {'line': b'\n'}
+[3.165359] (ps4) StdoutLine: {'line': b'Installed /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4\n'}
+[3.165468] (ps4) StdoutLine: {'line': b'running symlink_data\n'}
+[3.179432] (damiao) StdoutLine: {'line': b'running build_ext\n'}
+[3.182797] (damiao) StdoutLine: {'line': b'Creating /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao.egg-link (link to .)\n'}
+[3.187314] (damiao) StdoutLine: {'line': b'Installing damiao_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/damiao\n'}
+[3.191009] (damiao) StdoutLine: {'line': b'\n'}
+[3.191784] (damiao) StdoutLine: {'line': b'Installed /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao\n'}
+[3.192094] (damiao) StdoutLine: {'line': b'running symlink_data\n'}
+[3.216770] (-) TimerEvent: {}
+[3.309026] (navigation) CommandEnded: {'returncode': 0}
+[3.317068] (-) TimerEvent: {}
+[3.333681] (navigation) JobEnded: {'identifier': 'navigation', 'rc': 0}
+[3.336341] (ps4) CommandEnded: {'returncode': 0}
+[3.349644] (ps4) JobEnded: {'identifier': 'ps4', 'rc': 0}
+[3.364610] (damiao) CommandEnded: {'returncode': 0}
+[3.384387] (damiao) JobEnded: {'identifier': 'damiao', 'rc': 0}
+[3.385574] (-) EventReactorShutdown: {}

@@ -9,6 +9,7 @@ setup.py
 ../../build/navigation/navigation.egg-info/top_level.txt
 ../../build/navigation/navigation.egg-info/zip-safe
 navigation/__init__.py
+navigation/active_caster_node.py
 navigation/navigation_node.py
 navigation/omni_wheel_speed_node.py
 navigation.egg-info/PKG-INFO
