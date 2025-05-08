@@ -58,7 +58,7 @@ class OmniWheelPositionMapper(Node):
             out.data = [
                 float(motor_id),  # motor ID 1-4
                 2.0,              # mode: position + speed
-                40.0,             # speed rad/s (adjust as needed)
+                10.0,             # speed rad/s (adjust as needed)
                 target_rad        # target position in rad
             ]
             self.pos_pub.publish(out)

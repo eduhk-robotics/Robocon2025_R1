@@ -1,4 +1,5 @@
 [console_scripts]
 active_caster_node = navigation.active_caster_node:main
 navigation_node = navigation.navigation_node:main
-read_degree_node = navigation.read_degree_node:main
+omni_wheel_speed_node = navigation.omni_wheel_speed_node:main
+wheel = navigation.wheel:main
