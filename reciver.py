@@ -4,11 +4,25 @@ import time
 import threading
 
 class Client:
-    def __init__(self, host='172.19.249.33', port=9090):
-        self.host = host
+    def __init__(self, port=9090):
+        self.host = self.get_local_ip()  # Automatically get the current IPv4 address
         self.port = port
         self.client_socket = None
         self.running = True
+
+    def get_local_ip(self):
+        """Retrieve the current machine's IPv4 address."""
+        try:
+            # Create a temporary socket to determine the local IP
+            temp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            # Attempt to connect to an external address (we don't actually send data here)
+            temp_socket.connect(("8.8.8.8", 80))
+            local_ip = temp_socket.getsockname()[0]
+            temp_socket.close()
+            return local_ip
+        except Exception as e:
+            print(f"Error getting local IP address: {str(e)}")
+            return '127.0.0.1'  # Fallback to localhost if IPv4 cannot be determined
 
     def connect(self):
         """Connect to the DataCollector server"""
@@ -25,7 +39,6 @@ class Client:
         try:
             if not self.client_socket:
                 self.connect()
-
             self.client_socket.sendall(request.encode('utf-8'))
             
             # Receive data
