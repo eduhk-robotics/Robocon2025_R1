@@ -1,0 +1,9 @@
+source;share/data_monitor/hook/pythonpath.ps1
+source;share/data_monitor/hook/pythonpath.dsv
+source;share/data_monitor/hook/pythonpath.sh
+source;share/data_monitor/hook/ament_prefix_path.ps1
+source;share/data_monitor/hook/ament_prefix_path.dsv
+source;share/data_monitor/hook/ament_prefix_path.sh
+source;../../build/data_monitor/share/data_monitor/hook/pythonpath_develop.ps1
+source;../../build/data_monitor/share/data_monitor/hook/pythonpath_develop.dsv
+source;../../build/data_monitor/share/data_monitor/hook/pythonpath_develop.sh

@@ -1,0 +1,2 @@
+[console_scripts]
+data_sender = data_monitor.data_sender:main
