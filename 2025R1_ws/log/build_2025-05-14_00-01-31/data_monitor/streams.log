@@ -1,0 +1,38 @@
+[4.434s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build
+[5.578s] running develop
+[6.240s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[6.240s]   self.local_index = Environment(self.shadow_path + sys.path)
+[6.385s] Removing /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data-monitor.egg-link (link to .)
+[6.803s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build
+[6.808s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/data_monitor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/data_monitor build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/install.log --single-version-externally-managed install_data --force
+[7.873s] running egg_info
+[7.952s] writing ../../build/data_monitor/data_monitor.egg-info/PKG-INFO
+[7.953s] writing dependency_links to ../../build/data_monitor/data_monitor.egg-info/dependency_links.txt
+[7.959s] writing entry points to ../../build/data_monitor/data_monitor.egg-info/entry_points.txt
+[7.960s] writing requirements to ../../build/data_monitor/data_monitor.egg-info/requires.txt
+[7.961s] writing top-level names to ../../build/data_monitor/data_monitor.egg-info/top_level.txt
+[8.059s] reading manifest file '../../build/data_monitor/data_monitor.egg-info/SOURCES.txt'
+[8.060s] writing manifest file '../../build/data_monitor/data_monitor.egg-info/SOURCES.txt'
+[8.061s] running build
+[8.062s] running build_py
+[8.063s] creating /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build
+[8.064s] creating /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib
+[8.064s] creating /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib/data_monitor
+[8.066s] copying data_monitor/data_sender.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib/data_monitor
+[8.067s] copying data_monitor/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib/data_monitor
+[8.068s] running install
+[8.087s] running install_lib
+[8.153s] creating /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor
+[8.153s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib/data_monitor/data_sender.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor
+[8.157s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib/data_monitor/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor
+[8.157s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor/data_sender.py to data_sender.cpython-312.pyc
+[8.162s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor/__init__.py to __init__.cpython-312.pyc
+[8.163s] running install_data
+[8.163s] copying resource/data_monitor -> /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/ament_index/resource_index/packages
+[8.164s] copying package.xml -> /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor
+[8.165s] running install_egg_info
+[8.234s] Copying ../../build/data_monitor/data_monitor.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor-0.0.0-py3.12.egg-info
+[8.236s] running install_scripts
+[8.716s] Installing data_sender script to /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/data_monitor
+[8.722s] writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/install.log'
+[9.072s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/data_monitor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/data_monitor build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/install.log --single-version-externally-managed install_data --force

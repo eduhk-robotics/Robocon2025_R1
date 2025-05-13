@@ -1,0 +1,39 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+  self.local_index = Environment(self.shadow_path + sys.path)
+Removing /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao.egg-link (link to .)
+running egg_info
+writing ../../build/damiao/damiao.egg-info/PKG-INFO
+writing dependency_links to ../../build/damiao/damiao.egg-info/dependency_links.txt
+writing entry points to ../../build/damiao/damiao.egg-info/entry_points.txt
+writing requirements to ../../build/damiao/damiao.egg-info/requires.txt
+writing top-level names to ../../build/damiao/damiao.egg-info/top_level.txt
+reading manifest file '../../build/damiao/damiao.egg-info/SOURCES.txt'
+writing manifest file '../../build/damiao/damiao.egg-info/SOURCES.txt'
+running build
+running build_py
+copying damiao/damiao_node (Copy).py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao
+copying damiao/damiao_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao
+copying damiao/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao
+copying damiao/DM_CAN.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao
+running install
+running install_lib
+creating /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao
+copying /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao/damiao_node (Copy).py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao
+copying /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao/damiao_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao
+copying /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao/damiao_read_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao
+copying /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao
+copying /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build/lib/damiao/DM_CAN.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao
+byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao/damiao_node (Copy).py to damiao_node (Copy).cpython-312.pyc
+byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao/damiao_node.py to damiao_node.cpython-312.pyc
+byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao/damiao_read_node.py to damiao_read_node.cpython-312.pyc
+byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao/DM_CAN.py to DM_CAN.cpython-312.pyc
+running install_data
+copying resource/damiao -> /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/ament_index/resource_index/packages
+copying package.xml -> /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/damiao
+running install_egg_info
+Copying ../../build/damiao/damiao.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao-0.0.0-py3.12.egg-info
+running install_scripts
+Installing damiao_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/damiao
+writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/install.log'

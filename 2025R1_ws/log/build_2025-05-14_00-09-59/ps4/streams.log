@@ -1,0 +1,22 @@
+[4.503s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build --no-deps symlink_data --force
+[5.719s] running develop
+[6.285s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[6.285s]   self.local_index = Environment(self.shadow_path + sys.path)
+[6.385s] running egg_info
+[6.426s] writing ps4.egg-info/PKG-INFO
+[6.426s] writing dependency_links to ps4.egg-info/dependency_links.txt
+[6.429s] writing entry points to ps4.egg-info/entry_points.txt
+[6.434s] writing requirements to ps4.egg-info/requires.txt
+[6.436s] writing top-level names to ps4.egg-info/top_level.txt
+[6.625s] reading manifest file 'ps4.egg-info/SOURCES.txt'
+[6.630s] writing manifest file 'ps4.egg-info/SOURCES.txt'
+[6.739s] running build_ext
+[6.739s] Creating /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages/ps4.egg-link (link to .)
+[6.744s] Installing ps4_publisher script to /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/ps4
+[6.744s] Installing ps4_subscriber script to /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/ps4
+[6.745s] 
+[6.745s] Installed /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4
+[6.745s] running symlink_data
+[6.745s] symbolically linking /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/resource/ps4 -> /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ament_index/resource_index/packages
+[6.745s] symbolically linking /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/package.xml -> /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ps4
+[7.052s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build --no-deps symlink_data --force

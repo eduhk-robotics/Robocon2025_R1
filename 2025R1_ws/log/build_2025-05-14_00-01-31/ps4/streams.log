@@ -1,0 +1,36 @@
+[4.709s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build
+[5.979s] running develop
+[6.787s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[6.787s]   self.local_index = Environment(self.shadow_path + sys.path)
+[6.905s] Removing /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages/ps4.egg-link (link to .)
+[7.191s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build
+[7.194s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/ps4': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ps4 build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/install.log --single-version-externally-managed install_data --force
+[8.122s] running egg_info
+[8.173s] writing ../../build/ps4/ps4.egg-info/PKG-INFO
+[8.174s] writing dependency_links to ../../build/ps4/ps4.egg-info/dependency_links.txt
+[8.178s] writing entry points to ../../build/ps4/ps4.egg-info/entry_points.txt
+[8.181s] writing requirements to ../../build/ps4/ps4.egg-info/requires.txt
+[8.185s] writing top-level names to ../../build/ps4/ps4.egg-info/top_level.txt
+[8.308s] reading manifest file '../../build/ps4/ps4.egg-info/SOURCES.txt'
+[8.310s] writing manifest file '../../build/ps4/ps4.egg-info/SOURCES.txt'
+[8.314s] running build
+[8.314s] running build_py
+[8.314s] running install
+[8.328s] running install_lib
+[8.401s] creating /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages/ps4
+[8.407s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build/lib/ps4/ps4_subscriber.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages/ps4
+[8.410s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build/lib/ps4/ps4_publisher.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages/ps4
+[8.412s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build/lib/ps4/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages/ps4
+[8.415s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages/ps4/ps4_subscriber.py to ps4_subscriber.cpython-312.pyc
+[8.416s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages/ps4/ps4_publisher.py to ps4_publisher.cpython-312.pyc
+[8.420s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages/ps4/__init__.py to __init__.cpython-312.pyc
+[8.422s] running install_data
+[8.422s] copying resource/ps4 -> /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ament_index/resource_index/packages
+[8.422s] copying package.xml -> /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ps4
+[8.424s] running install_egg_info
+[8.502s] Copying ../../build/ps4/ps4.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages/ps4-0.0.0-py3.12.egg-info
+[8.504s] running install_scripts
+[9.205s] Installing ps4_publisher script to /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/ps4
+[9.205s] Installing ps4_subscriber script to /home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/ps4
+[9.207s] writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/install.log'
+[9.361s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/ps4' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ps4 build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/install.log --single-version-externally-managed install_data --force

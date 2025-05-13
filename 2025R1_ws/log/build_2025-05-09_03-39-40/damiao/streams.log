@@ -1,0 +1,19 @@
+[5.884s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build --no-deps symlink_data
+[6.973s] running develop
+[7.385s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[7.386s]   self.local_index = Environment(self.shadow_path + sys.path)
+[7.517s] running egg_info
+[7.548s] writing damiao.egg-info/PKG-INFO
+[7.548s] writing dependency_links to damiao.egg-info/dependency_links.txt
+[7.548s] writing entry points to damiao.egg-info/entry_points.txt
+[7.549s] writing requirements to damiao.egg-info/requires.txt
+[7.549s] writing top-level names to damiao.egg-info/top_level.txt
+[7.685s] reading manifest file 'damiao.egg-info/SOURCES.txt'
+[7.689s] writing manifest file 'damiao.egg-info/SOURCES.txt'
+[7.781s] running build_ext
+[7.783s] Creating /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages/damiao.egg-link (link to .)
+[7.784s] Installing damiao_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/damiao
+[7.788s] 
+[7.789s] Installed /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao
+[7.789s] running symlink_data
+[8.042s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build --no-deps symlink_data

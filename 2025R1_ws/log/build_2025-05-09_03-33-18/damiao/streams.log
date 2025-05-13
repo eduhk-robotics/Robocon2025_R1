@@ -1,0 +1,39 @@
+[3.943s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build --no-deps symlink_data
+[5.054s] Traceback (most recent call last):
+[5.058s]   File "/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/setup.py", line 5, in <module>
+[5.060s]     setup(
+[5.060s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 107, in setup
+[5.061s]     return distutils.core.setup(**attrs)
+[5.061s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[5.061s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 172, in setup
+[5.068s]     ok = dist.parse_command_line()
+[5.071s]          ^^^^^^^^^^^^^^^^^^^^^^^^^
+[5.074s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 475, in parse_command_line
+[5.080s]     args = self._parse_command_opts(parser, args)
+[5.080s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[5.080s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 1133, in _parse_command_opts
+[5.082s]     nargs = _Distribution._parse_command_opts(self, parser, args)
+[5.084s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[5.085s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 534, in _parse_command_opts
+[5.085s]     cmd_class = self.get_command_class(command)
+[5.086s]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[5.086s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 980, in get_command_class
+[5.086s]     self.cmdclass[command] = cmdclass = ep.load()
+[5.087s]                                         ^^^^^^^^^
+[5.087s]   File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 205, in load
+[5.087s]     module = import_module(match.group('module'))
+[5.088s]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[5.089s]   File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+[5.090s]     return _bootstrap._gcd_import(name[level:], package, level)
+[5.090s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[5.090s]   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+[5.091s]   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+[5.091s]   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+[5.091s]   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+[5.091s]   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+[5.092s]   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+[5.092s]   File "/usr/lib/python3/dist-packages/setuptools/command/develop.py", line 8, in <module>
+[5.093s]     from setuptools.command.easy_install import easy_install
+[5.093s]   File "/usr/lib/python3/dist-packages/setuptools/command/easy_install.py", line 2185, in <module>
+[5.107s]     class ScriptWriter:
+[5.107s] KeyboardInterrupt
