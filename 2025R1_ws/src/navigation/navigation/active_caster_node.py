@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import math
 import rclpy
 from rclpy.node import Node
@@ -27,6 +26,13 @@ class OmniWheelPositionMapper(Node):
         self.pos_pub = self.create_publisher(
             Float32MultiArray,
             'damiao_control',
+            10
+        )
+
+        # Publisher to VESC controllers
+        self.vesc_pub = self.create_publisher(
+            Float32MultiArray,
+            'vesc_control',
             10
         )
 
@@ -62,6 +68,13 @@ class OmniWheelPositionMapper(Node):
                 target_rad        # target position in rad
             ]
             self.pos_pub.publish(out)
+
+        # Publish a VESC control message (e.g. target speed/rpm)
+        vesc_msg = Float32MultiArray()
+        # here you can set the fields you need, for example:
+        # vesc_msg.data = [float(target_rad), desired_speed_rpm, ...]
+        vesc_msg.data = [target_rad]  
+        self.vesc_pub.publish(vesc_msg)
 
         # Store last commanded position
         self.last_pos_rad = target_rad

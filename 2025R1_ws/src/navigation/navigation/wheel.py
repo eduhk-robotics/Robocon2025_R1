@@ -23,28 +23,28 @@ class MotorControllerNode(Node):
         self.get_logger().info('MotorControllerNode starting')
         self.desired_rpm = 0
 
-        # 1) 先订阅 ps4（你的话题名）
+        # 1) ????? ps4????????????
         self.create_subscription(
             Joy,
-            'ps4',               # ← 确保这里和发布端一致
+            'ps4',               # ?? ????????????????
             self.joy_callback,
             10
         )
 
-        # 2) 再去找 VESC
+        # 2) ????? VESC
         self.port_map = self.find_vescs()
         if not self.port_map:
             self.get_logger().error(f'No VESCs with CAN IDs {DESIRED_IDS} found')
             return
 
-        # 3) 打开串口
+        # 3) ?????
         self.serial_map = {}
         for dev in self.port_map:
             ser = serial.Serial(dev, BAUDRATE, timeout=TIMEOUT)
             time.sleep(0.1)
             self.serial_map[dev] = ser
 
-        # 4) 启动心跳
+        # 4) ????????
         self.create_timer(HEARTBEAT_DT, self.heartbeat)
 
     def scan_ids_on_port(self, dev):
@@ -79,10 +79,10 @@ class MotorControllerNode(Node):
         return res
 
     def joy_callback(self, msg: Joy):
-        # 打印所有轴，方便确认索引
+        # ????????????????????
         self.get_logger().info(f'[ps4] axes={msg.axes}')
 
-        # 这里用索引4（第5个值）作为控制量
+        # ??????????4????5??????????????
         axis_val = msg.axes[4]
         self.desired_rpm = int(axis_val * MAX_RPM)
 
@@ -95,14 +95,14 @@ class MotorControllerNode(Node):
                 ser.write(pyvesc.encode(cmd))
 
     def destroy_node(self):
-        # 停止电机
+        # ?????
         for dev, ids in self.port_map.items():
             ser = self.serial_map[dev]
             for can_id in ids:
                 cmd = SetRPM(0)
                 cmd.can_id = can_id
                 ser.write(pyvesc.encode(cmd))
-        # 关闭串口
+        # ??????
         for ser in self.serial_map.values():
             ser.close()
         super().destroy_node()
