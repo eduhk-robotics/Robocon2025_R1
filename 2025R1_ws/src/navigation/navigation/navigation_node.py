@@ -17,12 +17,12 @@ class NavigationNode(Node):
         return value if abs(value) >= self.deadzone else 0.0
 
     def listener_callback(self, msg):
-        # ´¦ÀíÒ¡¸ËÊäÈë
+        # ï¿½ï¿½ï¿½ï¿½Ò¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         left_x  = self.apply_deadzone(msg.axes[0])
         left_y  = self.apply_deadzone(msg.axes[1])
         right_x = self.apply_deadzone(msg.axes[3])
 
-        # ·½Ïò½Ç¼ÆËã
+        # ï¿½ï¿½ï¿½ï¿½Ç¼ï¿½ï¿½ï¿½
         direction = math.degrees(math.atan2(left_y, left_x))
         if direction < 0.0:
             direction += 360.0
@@ -30,15 +30,15 @@ class NavigationNode(Node):
         if direction == 90.0 and left_x == 0.0 and left_y == 0.0:
             direction = 0.0
 
-        # Æ½ÒÆËÙ¶È
+        # Æ½ï¿½ï¿½ï¿½Ù¶ï¿½
         plane_speed = math.hypot(left_x, left_y) * 8192.0
         plane_speed = min(plane_speed, 8192.0)
 
-        # Ðý×ªËÙ¶È
+        # ï¿½ï¿½×ªï¿½Ù¶ï¿½
         rotation_speed = -right_x * 8192.0
         rotation_speed = max(min(rotation_speed, 8192.0), -8192.0)
 
-        # ×é×°ÏûÏ¢
+        # ï¿½ï¿½×°ï¿½ï¿½Ï¢
         driving_msg = Float32MultiArray()
         driving_msg.data = [
             float(direction),
@@ -46,7 +46,7 @@ class NavigationNode(Node):
             float(rotation_speed),
         ]
 
-        # ½öÔÚÓÐÒÆ¶¯»òÐý×ªÊ±·¢²¼
+        # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½×ªÊ±ï¿½ï¿½ï¿½ï¿½
         if plane_speed > 0.0 or abs(right_x) > 0.0:
             self.get_logger().info(
                 f"Publishing driving: dir={direction:.1f} deg, "
