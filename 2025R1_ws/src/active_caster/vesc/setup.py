@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'vesc = vesc.active_wheel:main',
+            'active_wheel = vesc.active_wheel:main',
         ],
     },
 )
