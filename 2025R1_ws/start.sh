@@ -28,14 +28,17 @@ source install/setup.bash
 echo "Starting damiao_node..."
 gnome-terminal -- bash -c "ros2 run damiao damiao_node; exec bash"
 
-# Start omni_wheel_speed_node
-echo "Starting active_caster_node..."
+# Start active_caster_navigation_node
+echo "Starting active_caster_navigation_node..."
 gnome-terminal -- bash -c "ros2 run navigation navigation_node; exec bash"
 
-# Start navigation_node
-echo "Starting navigation_node..."
-gnome-terminal -- bash -c "ros2 run navigation active_caster_node; exec bash"
+# Start active_caster_ctrl_node
+echo "Starting active_caster_ctrl_node..."
+gnome-terminal -- bash -c "ros2 run navigation active_caster_ctrl_node; exec bash"
 
+# Start vesc_active_wheel_node
+echo "Starting vesc_node..."
+gnome-terminal -- bash -c "ros2 run vesc active_wheel; exec bash"
 # Start ps4_publisher
 echo "Starting ps4_publisher..."
 gnome-terminal -- bash -c "ros2 run ps4 ps4_publisher; exec bash"
