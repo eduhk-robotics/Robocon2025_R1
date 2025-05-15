@@ -13,13 +13,14 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='steveen',
+    maintainer='steven',
     maintainer_email='yanczhang8@gmail.com',
-    description='TODO: Package description',
+    description='VESC control for active wheel',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'vesc = vesc.active_wheel:main',
         ],
     },
 )

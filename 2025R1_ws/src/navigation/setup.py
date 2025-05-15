@@ -23,17 +23,16 @@ setup(
         (os.path.join('share', package_name), glob('launch/*.py')),
     ],
     zip_safe=True,
-    maintainer='Your Name',
-    maintainer_email='your.email@example.com',
-    description='ROS2 package for robot navigation using PS4 controller',
+    maintainer='Steven_Zhang',
+    maintainer_email='s1153766@eduhk.hk',
+    description='ROS2 package for robot navigation, including active caster control.',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'navigation_node = navigation.navigation_node:main',
-            'active_caster_node = navigation.active_caster_node:main',
-            'omni_wheel_speed_node = navigation.omni_wheel_speed_node:main',
-            'wheel = navigation.wheel:main',
+            'active_caster_ctrl_node = navigation.active_caster_ctrl_node:main',
+            'omni_wheel_speed_node = navigation.omni_wheel_speed_node:main'
         ],
     },
 )
