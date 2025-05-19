@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'damiao_node = active_caster.damiao_node:main',
+            'vesc_node = active_caster.vesc_node:main',
         ],
     },
 )
