@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 VESC Node for Omni-Wheel Motor Control
 Subscribes to 'vesc_control' (Float32): desired RPM for VESCs
