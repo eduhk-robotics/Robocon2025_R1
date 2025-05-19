@@ -1,0 +1,292 @@
+[0.171s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.171s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff8ba09a00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8bbbe0f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8bbbe0f0>>, mixin_verb=('build',))
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.232s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/robotics/Robocon2025_R1/2025R1_ws'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extension 'ignore_ament_install'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/damiao) by extension 'ros'
+[0.279s] DEBUG:colcon.colcon_core.package_identification:Package 'src/damiao' with type 'ros.ament_python' and name 'damiao'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extensions ['colcon_meta']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extension 'colcon_meta'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extensions ['ros']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extension 'ros'
+[0.281s] DEBUG:colcon.colcon_core.package_identification:Package 'src/data_monitor' with type 'ros.ament_python' and name 'data_monitor'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ros']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ros'
+[0.283s] DEBUG:colcon.colcon_core.package_identification:Package 'src/navigation' with type 'ros.ament_python' and name 'navigation'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extension 'ignore_ament_install'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extensions ['colcon_pkg']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extension 'colcon_pkg'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extensions ['colcon_meta']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/ps4) by extension 'ros'
+[0.285s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ps4' with type 'ros.ament_python' and name 'ps4'
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.315s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'cmake_args' from command line to 'None'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'cmake_target' from command line to 'None'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'cmake_clean_cache' from command line to 'False'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'cmake_clean_first' from command line to 'False'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'cmake_force_configure' from command line to 'False'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'ament_cmake_args' from command line to 'None'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'catkin_cmake_args' from command line to 'None'
+[0.376s] Level 5:colcon.colcon_core.verb:set package 'damiao' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.376s] DEBUG:colcon.colcon_core.verb:Building package 'damiao' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao', 'merge_install': False, 'path': '/home/robotics/Robocon2025_R1/2025R1_ws/src/damiao', 'symlink_install': True, 'test_result_base': None}
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'cmake_target' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'cmake_clean_first' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'cmake_force_configure' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'ament_cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.377s] DEBUG:colcon.colcon_core.verb:Building package 'data_monitor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor', 'merge_install': False, 'path': '/home/robotics/Robocon2025_R1/2025R1_ws/src/data_monitor', 'symlink_install': True, 'test_result_base': None}
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_target' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.377s] DEBUG:colcon.colcon_core.verb:Building package 'navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation', 'merge_install': False, 'path': '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation', 'symlink_install': True, 'test_result_base': None}
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'cmake_target' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'cmake_clean_cache' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'cmake_clean_first' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'cmake_force_configure' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'ament_cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'catkin_cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'ps4' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.378s] DEBUG:colcon.colcon_core.verb:Building package 'ps4' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4', 'merge_install': False, 'path': '/home/robotics/Robocon2025_R1/2025R1_ws/src/ps4', 'symlink_install': True, 'test_result_base': None}
+[0.378s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.379s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.381s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/damiao' with build type 'ament_python'
+[0.382s] Level 1:colcon.colcon_core.shell:create_environment_hook('damiao', 'ament_prefix_path')
+[0.392s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/damiao/hook/ament_prefix_path.ps1'
+[0.399s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/damiao/hook/ament_prefix_path.dsv'
+[0.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/damiao/hook/ament_prefix_path.sh'
+[0.409s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.410s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.421s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/data_monitor' with build type 'ament_python'
+[0.421s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_monitor', 'ament_prefix_path')
+[0.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/hook/ament_prefix_path.ps1'
+[0.424s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/hook/ament_prefix_path.dsv'
+[0.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/hook/ament_prefix_path.sh'
+[0.426s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.426s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.430s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation' with build type 'ament_python'
+[0.430s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'ament_prefix_path')
+[0.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/hook/ament_prefix_path.ps1'
+[0.433s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/hook/ament_prefix_path.dsv'
+[0.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/hook/ament_prefix_path.sh'
+[0.436s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.436s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.447s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/ps4' with build type 'ament_python'
+[0.448s] Level 1:colcon.colcon_core.shell:create_environment_hook('ps4', 'ament_prefix_path')
+[0.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ps4/hook/ament_prefix_path.ps1'
+[0.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ps4/hook/ament_prefix_path.dsv'
+[0.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ps4/hook/ament_prefix_path.sh'
+[0.460s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.460s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.869s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/damiao'
+[0.869s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.869s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.245s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/data_monitor'
+[1.246s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.246s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.624s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation'
+[1.624s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.624s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.991s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/ps4'
+[1.993s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.994s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.296s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build --no-deps symlink_data
+[3.335s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build --no-deps symlink_data
+[3.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build --no-deps symlink_data
+[3.437s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build --no-deps symlink_data
+[4.687s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_monitor', 'pythonpath_develop')
+[4.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/share/data_monitor/hook/pythonpath_develop.ps1'
+[4.688s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build --no-deps symlink_data
+[4.694s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/share/data_monitor/hook/pythonpath_develop.dsv'
+[4.695s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/share/data_monitor/hook/pythonpath_develop.sh'
+[4.700s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor' for CMake module files
+[4.701s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor' for CMake config files
+[4.704s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib'
+[4.704s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/bin'
+[4.704s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/pkgconfig/data_monitor.pc'
+[4.705s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages'
+[4.705s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_monitor', 'pythonpath')
+[4.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/hook/pythonpath.ps1'
+[4.707s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/hook/pythonpath.dsv'
+[4.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/hook/pythonpath.sh'
+[4.715s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/bin'
+[4.716s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_monitor)
+[4.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/package.ps1'
+[4.722s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/package.dsv'
+[4.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/package.sh'
+[4.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/package.bash'
+[4.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/package.zsh'
+[4.740s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/colcon-core/packages/data_monitor)
+[4.758s] Level 1:colcon.colcon_core.shell:create_environment_hook('ps4', 'pythonpath_develop')
+[4.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/share/ps4/hook/pythonpath_develop.ps1'
+[4.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/build --no-deps symlink_data
+[4.761s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/share/ps4/hook/pythonpath_develop.dsv'
+[4.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/ps4/share/ps4/hook/pythonpath_develop.sh'
+[4.764s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4' for CMake module files
+[4.766s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4' for CMake config files
+[4.769s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib'
+[4.771s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/bin'
+[4.771s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/pkgconfig/ps4.pc'
+[4.773s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages'
+[4.775s] Level 1:colcon.colcon_core.shell:create_environment_hook('ps4', 'pythonpath')
+[4.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ps4/hook/pythonpath.ps1'
+[4.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ps4/hook/pythonpath.dsv'
+[4.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ps4/hook/pythonpath.sh'
+[4.785s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/bin'
+[4.786s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ps4)
+[4.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ps4/package.ps1'
+[4.791s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ps4/package.dsv'
+[4.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ps4/package.sh'
+[4.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ps4/package.bash'
+[4.798s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/ps4/package.zsh'
+[4.799s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/share/colcon-core/packages/ps4)
+[4.896s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'pythonpath_develop')
+[4.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/share/navigation/hook/pythonpath_develop.ps1'
+[4.897s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build --no-deps symlink_data
+[4.917s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/share/navigation/hook/pythonpath_develop.dsv'
+[4.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/share/navigation/hook/pythonpath_develop.sh'
+[4.924s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation' for CMake module files
+[4.925s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation' for CMake config files
+[4.931s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib'
+[4.932s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/bin'
+[4.932s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/pkgconfig/navigation.pc'
+[4.932s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages'
+[4.932s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'pythonpath')
+[4.933s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/hook/pythonpath.ps1'
+[4.934s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/hook/pythonpath.dsv'
+[4.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/hook/pythonpath.sh'
+[4.936s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/bin'
+[4.936s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation)
+[4.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/package.ps1'
+[4.938s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/package.dsv'
+[4.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/package.sh'
+[4.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/package.bash'
+[4.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/package.zsh'
+[4.941s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/colcon-core/packages/navigation)
+[4.943s] Level 1:colcon.colcon_core.shell:create_environment_hook('damiao', 'pythonpath_develop')
+[4.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/share/damiao/hook/pythonpath_develop.ps1'
+[4.944s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/build --no-deps symlink_data
+[4.946s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/share/damiao/hook/pythonpath_develop.dsv'
+[4.946s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao/share/damiao/hook/pythonpath_develop.sh'
+[4.947s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao' for CMake module files
+[4.948s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao' for CMake config files
+[4.950s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib'
+[4.950s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/bin'
+[4.950s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/pkgconfig/damiao.pc'
+[4.951s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages'
+[4.951s] Level 1:colcon.colcon_core.shell:create_environment_hook('damiao', 'pythonpath')
+[4.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/damiao/hook/pythonpath.ps1'
+[4.952s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/damiao/hook/pythonpath.dsv'
+[4.953s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/damiao/hook/pythonpath.sh'
+[4.957s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/bin'
+[4.958s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(damiao)
+[4.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/damiao/package.ps1'
+[4.963s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/damiao/package.dsv'
+[4.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/damiao/package.sh'
+[4.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/damiao/package.bash'
+[4.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/damiao/package.zsh'
+[4.971s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/share/colcon-core/packages/damiao)
+[4.973s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.974s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.974s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.975s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.998s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.999s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.999s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.024s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.025s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotics/Robocon2025_R1/2025R1_ws/install/local_setup.ps1'
+[5.026s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robotics/Robocon2025_R1/2025R1_ws/install/_local_setup_util_ps1.py'
+[5.028s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotics/Robocon2025_R1/2025R1_ws/install/setup.ps1'
+[5.029s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotics/Robocon2025_R1/2025R1_ws/install/local_setup.sh'
+[5.030s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robotics/Robocon2025_R1/2025R1_ws/install/_local_setup_util_sh.py'
+[5.032s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotics/Robocon2025_R1/2025R1_ws/install/setup.sh'
+[5.037s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotics/Robocon2025_R1/2025R1_ws/install/local_setup.bash'
+[5.042s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotics/Robocon2025_R1/2025R1_ws/install/setup.bash'
+[5.047s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotics/Robocon2025_R1/2025R1_ws/install/local_setup.zsh'
+[5.049s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotics/Robocon2025_R1/2025R1_ws/install/setup.zsh'

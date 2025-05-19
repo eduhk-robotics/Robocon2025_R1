@@ -1,0 +1,19 @@
+[3.207s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build --no-deps symlink_data
+[3.791s] running develop
+[4.043s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[4.043s]   self.local_index = Environment(self.shadow_path + sys.path)
+[4.092s] running egg_info
+[4.123s] writing data_monitor.egg-info/PKG-INFO
+[4.123s] writing dependency_links to data_monitor.egg-info/dependency_links.txt
+[4.126s] writing entry points to data_monitor.egg-info/entry_points.txt
+[4.128s] writing requirements to data_monitor.egg-info/requires.txt
+[4.130s] writing top-level names to data_monitor.egg-info/top_level.txt
+[4.194s] reading manifest file 'data_monitor.egg-info/SOURCES.txt'
+[4.198s] writing manifest file 'data_monitor.egg-info/SOURCES.txt'
+[4.231s] running build_ext
+[4.232s] Creating /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data-monitor.egg-link (link to .)
+[4.235s] Installing data_sender script to /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/data_monitor
+[4.235s] 
+[4.235s] Installed /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor
+[4.235s] running symlink_data
+[4.432s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build --no-deps symlink_data

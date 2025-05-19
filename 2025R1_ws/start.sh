@@ -42,6 +42,6 @@ echo "Starting ps4_publisher..."
 gnome-terminal -- bash -c "ros2 run ps4 ps4_publisher; exec bash"
 
 #Start graphic node
-rqt
+#rqt
 
 echo "✅ All nodes launched successfully."

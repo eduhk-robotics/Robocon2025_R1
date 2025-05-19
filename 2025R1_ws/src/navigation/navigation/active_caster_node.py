@@ -119,13 +119,13 @@ class OmniWheelMotorController(Node):
         # Publish steering command to all 4 wheels
         for motor_id in range(1, 5):
             out = Float32MultiArray()
-            out.data = [float(motor_id), 2.0, 40.0, target_rad]
+            out.data = [float(motor_id), 2.0, 20.0, target_rad]
             self.pos_pub.publish(out)
 
         # Update last steering pos
         self.last_pos_rad = target_rad
-        self.get_logger().info(f"Steering {direction_deg:.1f}¡ã -> {target_rad:.2f} rad")
-
+        self.get_logger().info(f"Steering {direction_deg:.1f}Â° -> {target_rad:.2f} rad")
+        
         # 2) Speed: normalize raw_speed to [-MAX_RPM, MAX_RPM]
         norm = max(min(raw_speed / 8000.0, 1.0), -1.0)
         self.desired_rpm = int(norm * MAX_RPM)

@@ -4,6 +4,7 @@ from std_msgs.msg import Float32MultiArray
 from damiao.DM_CAN import *  # Updated import statement (relative to the package structure) import *  # Import your motor control library (everything from DM_can.py)
 import serial
 import os
+import time
 
 # USB-CDC Device ID (replace with the correct ID for your device)
 DEVICE_ID = "usb-HDSC_CDC_Device_00000000050C-if00"
