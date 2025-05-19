@@ -26,7 +26,7 @@ source install/setup.bash
 
 # Start damiao_node
 echo "Starting damiao_node..."
-gnome-terminal -- bash -c "ros2 run damiao damiao_node; exec bash"
+gnome-terminal -- bash -c "ros2 run active_caster damiao_node; exec bash"
 
 # Start omni_wheel_speed_node
 echo "Starting active_caster_node..."
