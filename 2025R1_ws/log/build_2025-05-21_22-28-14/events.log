@@ -1,0 +1,80 @@
+[0.000000] (-) TimerEvent: {}
+[0.000813] (active_caster) JobQueued: {'identifier': 'active_caster', 'dependencies': OrderedDict()}
+[0.001877] (data_monitor) JobQueued: {'identifier': 'data_monitor', 'dependencies': OrderedDict()}
+[0.002030] (joystick_msgs) JobQueued: {'identifier': 'joystick_msgs', 'dependencies': OrderedDict()}
+[0.002099] (navigation) JobQueued: {'identifier': 'navigation', 'dependencies': OrderedDict()}
+[0.002148] (ps4) JobQueued: {'identifier': 'ps4', 'dependencies': OrderedDict()}
+[0.002204] (joystick_driver) JobQueued: {'identifier': 'joystick_driver', 'dependencies': OrderedDict({'joystick_msgs': '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs'})}
+[0.002317] (joystick_msgs) JobStarted: {'identifier': 'joystick_msgs'}
+[0.022047] (active_caster) JobStarted: {'identifier': 'active_caster'}
+[0.029407] (data_monitor) JobStarted: {'identifier': 'data_monitor'}
+[0.052651] (navigation) JobStarted: {'identifier': 'navigation'}
+[0.067263] (joystick_msgs) JobProgress: {'identifier': 'joystick_msgs', 'progress': 'cmake'}
+[0.069803] (joystick_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_msgs', '-DCMAKE_INSTALL_PREFIX=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs'], 'cwd': '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robotics', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'HOME': '/home/robotics', 'OLDPWD': '/home/robotics/Robocon2025_R1', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2157', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'robotics', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'robotics', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/CHASEN:@/tmp/.ICE-unix/2119,unix/CHASEN:/tmp/.ICE-unix/2119', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2c659a8f_e8ce_4dd1_8e90_5682f602bd0b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.MQYW62', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.170', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600'}), 'shell': False}
+[0.099780] (-) TimerEvent: {}
+[0.200402] (-) TimerEvent: {}
+[0.301005] (-) TimerEvent: {}
+[0.401533] (-) TimerEvent: {}
+[0.501919] (-) TimerEvent: {}
+[0.602391] (-) TimerEvent: {}
+[0.702725] (-) TimerEvent: {}
+[0.803044] (-) TimerEvent: {}
+[0.903651] (-) TimerEvent: {}
+[0.997246] (joystick_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.998730] (joystick_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.003769] (-) TimerEvent: {}
+[1.018611] (joystick_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.103903] (-) TimerEvent: {}
+[1.204317] (-) TimerEvent: {}
+[1.281570] (joystick_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.296176] (joystick_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.297563] (joystick_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.298686] (joystick_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.304407] (-) TimerEvent: {}
+[1.331861] (joystick_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.405471] (-) TimerEvent: {}
+[1.505973] (-) TimerEvent: {}
+[1.607525] (-) TimerEvent: {}
+[1.653660] (joystick_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.688768] (joystick_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.689356] (joystick_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.690578] (joystick_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.708039] (joystick_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[1.708387] (-) TimerEvent: {}
+[1.709717] (joystick_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[1.710032] (joystick_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[1.710178] (joystick_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[1.710282] (joystick_msgs) StderrLine: {'line': b'\n'}
+[1.710391] (joystick_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[1.710509] (joystick_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[1.710601] (joystick_msgs) StderrLine: {'line': b'\n'}
+[1.710692] (joystick_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[1.710786] (joystick_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[1.710878] (joystick_msgs) StderrLine: {'line': b'\n'}
+[1.710970] (joystick_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[1.711056] (joystick_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[1.711180] (joystick_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[1.711282] (joystick_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[1.717195] (joystick_msgs) StderrLine: {'line': b'\n'}
+[1.717718] (joystick_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[1.717870] (joystick_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.731623] (joystick_msgs) CommandEnded: {'returncode': 1}
+[1.801996] (joystick_msgs) JobEnded: {'identifier': 'joystick_msgs', 'rc': 1}
+[1.809574] (-) TimerEvent: {}
+[1.913735] (-) TimerEvent: {}
+[2.015418] (-) TimerEvent: {}
+[2.115895] (-) TimerEvent: {}
+[2.217440] (-) TimerEvent: {}
+[2.317762] (-) TimerEvent: {}
+[2.418093] (-) TimerEvent: {}
+[2.518427] (-) TimerEvent: {}
+[2.618845] (-) TimerEvent: {}
+[2.720537] (-) TimerEvent: {}
+[2.820604] (navigation) JobEnded: {'identifier': 'navigation', 'rc': 'SIGINT'}
+[2.825921] (-) TimerEvent: {}
+[2.863504] (active_caster) JobEnded: {'identifier': 'active_caster', 'rc': 'SIGINT'}
+[2.926363] (-) TimerEvent: {}
+[2.969953] (data_monitor) JobEnded: {'identifier': 'data_monitor', 'rc': 'SIGINT'}
+[2.981316] (ps4) JobSkipped: {'identifier': 'ps4'}
+[2.981459] (joystick_driver) JobSkipped: {'identifier': 'joystick_driver'}
+[2.981486] (-) EventReactorShutdown: {}

@@ -11,7 +11,9 @@ setup.py
 navigation/__init__.py
 navigation/active_caster_node.py
 navigation/navigation_node.py
+navigation/navigation_node_R2.py
 navigation/omni_wheel_speed_node.py
+navigation/wheel.py
 navigation.egg-info/PKG-INFO
 navigation.egg-info/SOURCES.txt
 navigation.egg-info/dependency_links.txt

@@ -1,6 +1,13 @@
 package.xml
 setup.cfg
 setup.py
+../../build/data_monitor/data_monitor.egg-info/PKG-INFO
+../../build/data_monitor/data_monitor.egg-info/SOURCES.txt
+../../build/data_monitor/data_monitor.egg-info/dependency_links.txt
+../../build/data_monitor/data_monitor.egg-info/entry_points.txt
+../../build/data_monitor/data_monitor.egg-info/requires.txt
+../../build/data_monitor/data_monitor.egg-info/top_level.txt
+../../build/data_monitor/data_monitor.egg-info/zip-safe
 data_monitor/__init__.py
 data_monitor/data_sender.py
 data_monitor.egg-info/PKG-INFO

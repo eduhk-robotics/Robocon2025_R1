@@ -1,0 +1,20 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+  self.local_index = Environment(self.shadow_path + sys.path)
+running egg_info
+writing active_caster.egg-info/PKG-INFO
+writing dependency_links to active_caster.egg-info/dependency_links.txt
+writing entry points to active_caster.egg-info/entry_points.txt
+writing requirements to active_caster.egg-info/requires.txt
+writing top-level names to active_caster.egg-info/top_level.txt
+reading manifest file 'active_caster.egg-info/SOURCES.txt'
+writing manifest file 'active_caster.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active-caster.egg-link (link to .)
+Installing damiao_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/active_caster
+Installing vesc_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/active_caster
+
+Installed /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster
+running symlink_data
+symbolically linking /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/resource/active_caster -> /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/ament_index/resource_index/packages
+symbolically linking /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/package.xml -> /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster

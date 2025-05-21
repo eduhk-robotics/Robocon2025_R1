@@ -1,0 +1,52 @@
+[0.000000] (-) TimerEvent: {}
+[0.000519] (active_caster) JobQueued: {'identifier': 'active_caster', 'dependencies': OrderedDict()}
+[0.000664] (data_monitor) JobQueued: {'identifier': 'data_monitor', 'dependencies': OrderedDict()}
+[0.001174] (joystick_msgs) JobQueued: {'identifier': 'joystick_msgs', 'dependencies': OrderedDict()}
+[0.001942] (navigation) JobQueued: {'identifier': 'navigation', 'dependencies': OrderedDict()}
+[0.003951] (ps4) JobQueued: {'identifier': 'ps4', 'dependencies': OrderedDict()}
+[0.004447] (joystick_driver) JobQueued: {'identifier': 'joystick_driver', 'dependencies': OrderedDict({'joystick_msgs': '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs'})}
+[0.004717] (joystick_msgs) JobStarted: {'identifier': 'joystick_msgs'}
+[0.048396] (active_caster) JobStarted: {'identifier': 'active_caster'}
+[0.099979] (-) TimerEvent: {}
+[0.201746] (-) TimerEvent: {}
+[0.302142] (-) TimerEvent: {}
+[0.402564] (-) TimerEvent: {}
+[0.428584] (data_monitor) JobStarted: {'identifier': 'data_monitor'}
+[0.502695] (-) TimerEvent: {}
+[0.526660] (navigation) JobStarted: {'identifier': 'navigation'}
+[0.556633] (joystick_msgs) JobProgress: {'identifier': 'joystick_msgs', 'progress': 'cmake'}
+[0.566805] (joystick_msgs) JobProgress: {'identifier': 'joystick_msgs', 'progress': 'build'}
+[0.568158] (joystick_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs', '--', '-j4', '-l4'], 'cwd': '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robotics', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/robotics', 'OLDPWD': '/home/robotics/Robocon2025_R1/2025R1_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '(venv)', 'SYSTEMD_EXEC_PID': '2157', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/robotics/Robocon2025_R1/2025R1_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'robotics', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'robotics', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/robotics/Robocon2025_R1/venv/bin:/home/robotics/Robocon2025_R1/venv/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/CHASEN:@/tmp/.ICE-unix/2119,unix/CHASEN:/tmp/.ICE-unix/2119', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2c659a8f_e8ce_4dd1_8e90_5682f602bd0b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VIRTUAL_ENV_PROMPT': '(venv)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.MQYW62', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.170', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/robotics/Robocon2025_R1/venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robotics/Robocon2025_R1/venv/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/2025R1_ws/build/damiao:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster:/opt/ros/jazzy'}), 'shell': False}
+[0.602796] (-) TimerEvent: {}
+[0.703150] (-) TimerEvent: {}
+[0.803529] (-) TimerEvent: {}
+[0.903871] (-) TimerEvent: {}
+[1.004229] (-) TimerEvent: {}
+[1.104675] (-) TimerEvent: {}
+[1.205063] (-) TimerEvent: {}
+[1.305497] (-) TimerEvent: {}
+[1.405901] (-) TimerEvent: {}
+[1.509510] (-) TimerEvent: {}
+[1.609880] (-) TimerEvent: {}
+[1.710244] (-) TimerEvent: {}
+[1.810585] (-) TimerEvent: {}
+[1.896593] (joystick_msgs) StdoutLine: {'line': b'[  2%] Built target joystick_msgs__rosidl_generator_type_description\n'}
+[1.897527] (joystick_msgs) StderrLine: {'line': b"failed to create symbolic link '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs/ament_cmake_python/joystick_msgs/joystick_msgs' because existing path cannot be removed: Is a directory\n"}
+[1.897965] (joystick_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_joystick_msgs.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_joystick_msgs] Error 1\n'}
+[1.898120] (joystick_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:452: CMakeFiles/ament_cmake_python_symlink_joystick_msgs.dir/all] Error 2\n'}
+[1.898449] (joystick_msgs) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[1.898731] (joystick_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.899330] (joystick_msgs) CommandEnded: {'returncode': 2}
+[1.910658] (-) TimerEvent: {}
+[1.967917] (joystick_msgs) JobEnded: {'identifier': 'joystick_msgs', 'rc': 2}
+[2.011107] (-) TimerEvent: {}
+[2.112377] (-) TimerEvent: {}
+[2.212724] (-) TimerEvent: {}
+[2.313055] (-) TimerEvent: {}
+[2.413441] (-) TimerEvent: {}
+[2.440048] (active_caster) JobEnded: {'identifier': 'active_caster', 'rc': 'SIGINT'}
+[2.442426] (data_monitor) JobEnded: {'identifier': 'data_monitor', 'rc': 'SIGINT'}
+[2.445128] (navigation) JobEnded: {'identifier': 'navigation', 'rc': 'SIGINT'}
+[2.456022] (ps4) JobSkipped: {'identifier': 'ps4'}
+[2.457220] (joystick_driver) JobSkipped: {'identifier': 'joystick_driver'}
+[2.457574] (-) EventReactorShutdown: {}

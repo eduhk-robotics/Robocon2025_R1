@@ -1,0 +1,49 @@
+[3.572s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build
+[4.521s] running develop
+[4.975s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[4.976s]   self.local_index = Environment(self.shadow_path + sys.path)
+[5.112s] Removing /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active-caster.egg-link (link to .)
+[5.364s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build
+[5.364s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/active_caster': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/active_caster build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/install.log --single-version-externally-managed install_data --force
+[6.285s] running egg_info
+[6.327s] writing ../../build/active_caster/active_caster.egg-info/PKG-INFO
+[6.329s] writing dependency_links to ../../build/active_caster/active_caster.egg-info/dependency_links.txt
+[6.330s] writing entry points to ../../build/active_caster/active_caster.egg-info/entry_points.txt
+[6.330s] writing requirements to ../../build/active_caster/active_caster.egg-info/requires.txt
+[6.331s] writing top-level names to ../../build/active_caster/active_caster.egg-info/top_level.txt
+[6.422s] reading manifest file '../../build/active_caster/active_caster.egg-info/SOURCES.txt'
+[6.428s] adding license file 'LICENSE'
+[6.428s] writing manifest file '../../build/active_caster/active_caster.egg-info/SOURCES.txt'
+[6.428s] running build
+[6.428s] running build_py
+[6.428s] creating /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build
+[6.428s] creating /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build/lib
+[6.428s] creating /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build/lib/active_caster
+[6.428s] copying active_caster/vesc_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build/lib/active_caster
+[6.429s] copying active_caster/damiao_node (Copy).py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build/lib/active_caster
+[6.431s] copying active_caster/damiao_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build/lib/active_caster
+[6.431s] copying active_caster/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build/lib/active_caster
+[6.431s] copying active_caster/DM_CAN.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build/lib/active_caster
+[6.432s] running install
+[6.449s] running install_lib
+[6.503s] creating /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active_caster
+[6.503s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build/lib/active_caster/vesc_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active_caster
+[6.503s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build/lib/active_caster/damiao_node (Copy).py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active_caster
+[6.503s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build/lib/active_caster/damiao_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active_caster
+[6.503s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build/lib/active_caster/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active_caster
+[6.503s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build/lib/active_caster/DM_CAN.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active_caster
+[6.504s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active_caster/vesc_node.py to vesc_node.cpython-312.pyc
+[6.506s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active_caster/damiao_node (Copy).py to damiao_node (Copy).cpython-312.pyc
+[6.515s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active_caster/damiao_node.py to damiao_node.cpython-312.pyc
+[6.519s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active_caster/__init__.py to __init__.cpython-312.pyc
+[6.520s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active_caster/DM_CAN.py to DM_CAN.cpython-312.pyc
+[6.534s] running install_data
+[6.538s] copying resource/active_caster -> /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/ament_index/resource_index/packages
+[6.538s] copying package.xml -> /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster
+[6.538s] running install_egg_info
+[6.580s] Copying ../../build/active_caster/active_caster.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active_caster-0.0.0-py3.12.egg-info
+[6.583s] running install_scripts
+[6.915s] Installing damiao_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/active_caster
+[6.917s] Installing vesc_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/active_caster
+[6.921s] writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/install.log'
+[7.115s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/active_caster' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/active_caster build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/install.log --single-version-externally-managed install_data --force

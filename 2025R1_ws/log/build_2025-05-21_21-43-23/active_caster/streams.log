@@ -1,0 +1,20 @@
+[3.034s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build --no-deps symlink_data
+[3.789s] running develop
+[4.101s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[4.101s]   self.local_index = Environment(self.shadow_path + sys.path)
+[4.172s] running egg_info
+[4.199s] writing active_caster.egg-info/PKG-INFO
+[4.201s] writing dependency_links to active_caster.egg-info/dependency_links.txt
+[4.201s] writing entry points to active_caster.egg-info/entry_points.txt
+[4.201s] writing requirements to active_caster.egg-info/requires.txt
+[4.202s] writing top-level names to active_caster.egg-info/top_level.txt
+[4.317s] reading manifest file 'active_caster.egg-info/SOURCES.txt'
+[4.318s] writing manifest file 'active_caster.egg-info/SOURCES.txt'
+[4.409s] running build_ext
+[4.410s] Creating /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages/active-caster.egg-link (link to .)
+[4.422s] Installing damiao_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/active_caster
+[4.427s] Installing vesc_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/active_caster
+[4.428s] 
+[4.428s] Installed /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster
+[4.429s] running symlink_data
+[4.661s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build --no-deps symlink_data

@@ -1,0 +1,29 @@
+[0.044s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_msgs -DCMAKE_INSTALL_PREFIX=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs
+[0.091s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.159s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.351s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.401s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.429s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.571s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.656s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.195s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.389s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.640s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.643s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.486s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[2.511s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.568s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.575s] -- Added test 'lint_cmake' to check CMake code style
+[2.578s] -- Added test 'xmllint' to check XML markup files
+[2.589s] -- Configuring done (2.5s)
+[2.820s] -- Generating done (0.2s)
+[2.900s] -- Build files have been written to: /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs
+[2.922s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_msgs -DCMAKE_INSTALL_PREFIX=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs
+[2.924s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs -- -j4 -l4
+[3.038s] failed to create symbolic link '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs/ament_cmake_python/joystick_msgs/joystick_msgs' because existing path cannot be removed: Is a directory
+[3.039s] [  2%] Built target joystick_msgs__rosidl_generator_type_description
+[3.039s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_joystick_msgs.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_joystick_msgs] Error 1
+[3.040s] gmake[1]: *** [CMakeFiles/Makefile2:452: CMakeFiles/ament_cmake_python_symlink_joystick_msgs.dir/all] Error 2
+[3.040s] gmake[1]: *** Waiting for unfinished jobs....
+[3.040s] gmake: *** [Makefile:146: all] Error 2
+[3.044s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotics/Robocon2025_R1/2025R1_ws/install/ps4:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor:/home/robotics/Robocon2025_R1/2025R1_ws/install/damiao:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs -- -j4 -l4

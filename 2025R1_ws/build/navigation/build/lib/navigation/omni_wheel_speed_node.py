@@ -8,8 +8,8 @@ class OmniWheelSpeedNode(Node):
         super().__init__('omni_wheel_speed_node')
 
         # === Adjustable maximum speeds (in degrees per second) ===
-        self.MAX_PLANE_SPEED_DPS = 360.0 * 20  # Max 20 rotations/sec
-        self.MAX_ROTATION_SPEED_DPS = 360.0 * 10  # Max 10 rotations/sec
+        self.MAX_PLANE_SPEED_DPS = 360.0 * 3  # Max 3 rotations/sec
+        self.MAX_ROTATION_SPEED_DPS = 360.0  # Max 1 rotations/sec
 
         # Subscribe to driving commands
         self.subscription = self.create_subscription(
@@ -33,7 +33,7 @@ class OmniWheelSpeedNode(Node):
             message = Float32MultiArray()
             message.data = [
                 float(motor_id),  # Motor ID (1,2,3,4...)
-                1.0,              # Mode (always 1 for speed mode)
+                2.0,              # Mode (always 1 for speed mode)
                 float(speed),     # Speed (degrees per second)
                 0.0               # Position (not used for mode 1)
             ]
@@ -53,10 +53,10 @@ class OmniWheelSpeedNode(Node):
 
         # Omni wheel inverse kinematics
         motor_speeds = [
-            -vx + vy + rotation_speed,  # Motor 1
-             vx + vy + rotation_speed,  # Motor 2
-             vx - vy + rotation_speed,  # Motor 3
-            -vx - vy + rotation_speed   # Motor 4
+            -vx - vy + rotation_speed,  # Motor 1
+            vx - vy + rotation_speed,  # Motor 2
+            vx + vy + rotation_speed,  # Motor 3
+            -vx + vy + rotation_speed   # Motor 4
         ]
 
         return motor_speeds

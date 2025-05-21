@@ -1,0 +1,218 @@
+[0.074s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_msgs -DCMAKE_INSTALL_PREFIX=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs
+[1.191s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.192s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.192s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.192s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.192s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.192s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.903s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[4.479s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.652s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.659s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[7.199s] -- Found PythonExtra: /usr/bin/python3  
+[8.640s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[8.717s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[8.787s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.792s] -- Added test 'lint_cmake' to check CMake code style
+[8.796s] -- Added test 'xmllint' to check XML markup files
+[8.813s] -- Configuring done (8.7s)
+[8.875s] -- Generating done (0.0s)
+[8.896s] -- Build files have been written to: /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs
+[8.927s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_msgs -DCMAKE_INSTALL_PREFIX=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs
+[8.931s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs -- -j4 -l4
+[9.058s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[9.075s] [  2%] Built target ament_cmake_python_copy_joystick_msgs
+[9.620s] running egg_info
+[9.623s] creating joystick_msgs.egg-info
+[9.674s] writing joystick_msgs.egg-info/PKG-INFO
+[9.674s] writing dependency_links to joystick_msgs.egg-info/dependency_links.txt
+[9.675s] writing top-level names to joystick_msgs.egg-info/top_level.txt
+[9.675s] writing manifest file 'joystick_msgs.egg-info/SOURCES.txt'
+[9.765s] [  2%] Built target joystick_msgs__rosidl_generator_type_description
+[9.799s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[9.852s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[9.857s] reading manifest file 'joystick_msgs.egg-info/SOURCES.txt'
+[9.858s] writing manifest file 'joystick_msgs.egg-info/SOURCES.txt'
+[10.054s] [  8%] Built target ament_cmake_python_build_joystick_msgs_egg
+[10.803s] [  8%] Built target joystick_msgs__cpp
+[10.844s] [ 11%] [32mBuilding C object CMakeFiles/joystick_msgs__rosidl_generator_c.dir/rosidl_generator_c/joystick_msgs/msg/detail/joystick__description.c.o[0m
+[10.848s] [ 14%] [32mBuilding C object CMakeFiles/joystick_msgs__rosidl_generator_c.dir/rosidl_generator_c/joystick_msgs/msg/detail/joystick__type_support.c.o[0m
+[10.858s] [ 17%] [32mBuilding C object CMakeFiles/joystick_msgs__rosidl_generator_c.dir/rosidl_generator_c/joystick_msgs/msg/detail/joystick__functions.c.o[0m
+[11.038s] [ 20%] [32m[1mLinking C shared library libjoystick_msgs__rosidl_generator_c.so[0m
+[11.171s] [ 20%] Built target joystick_msgs__rosidl_generator_c
+[11.207s] [ 23%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[11.219s] [ 26%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[11.219s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[11.224s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[12.285s] [ 35%] [32mBuilding CXX object CMakeFiles/joystick_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/joystick_msgs/msg/joystick__type_support.cpp.o[0m
+[12.531s] [ 38%] [32mBuilding C object CMakeFiles/joystick_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/joystick_msgs/msg/detail/joystick__type_support.c.o[0m
+[12.621s] [ 41%] [32m[1mLinking CXX shared library libjoystick_msgs__rosidl_typesupport_c.so[0m
+[12.624s] [ 44%] [32mBuilding CXX object CMakeFiles/joystick_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/joystick_msgs/msg/detail/joystick__type_support_c.cpp.o[0m
+[12.636s] [ 47%] [32mBuilding CXX object CMakeFiles/joystick_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/joystick_msgs/msg/joystick__type_support.cpp.o[0m
+[12.729s] [ 50%] [32m[1mLinking C shared library libjoystick_msgs__rosidl_typesupport_introspection_c.so[0m
+[12.776s] [ 50%] Built target joystick_msgs__rosidl_typesupport_c
+[12.806s] [ 52%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[12.900s] [ 52%] Built target joystick_msgs__rosidl_typesupport_introspection_c
+[12.939s] [ 55%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[14.227s] [ 58%] [32m[1mLinking CXX shared library libjoystick_msgs__rosidl_typesupport_cpp.so[0m
+[14.237s] [ 61%] [32mBuilding CXX object CMakeFiles/joystick_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/joystick_msgs/msg/detail/dds_fastrtps/joystick__type_support.cpp.o[0m
+[14.431s] [ 61%] Built target joystick_msgs__rosidl_typesupport_cpp
+[14.472s] [ 64%] [32mBuilding CXX object CMakeFiles/joystick_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/joystick_msgs/msg/detail/joystick__type_support.cpp.o[0m
+[14.920s] [ 67%] [32m[1mLinking CXX shared library libjoystick_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[15.099s] [ 67%] Built target joystick_msgs__rosidl_typesupport_fastrtps_c
+[15.371s] [ 70%] [32m[1mLinking CXX shared library libjoystick_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[15.508s] [ 70%] Built target joystick_msgs__rosidl_typesupport_introspection_cpp
+[15.587s] [ 73%] [32m[1mLinking CXX shared library libjoystick_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[15.713s] [ 73%] Built target joystick_msgs__rosidl_typesupport_fastrtps_cpp
+[15.755s] [ 73%] Built target joystick_msgs
+[15.832s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[16.809s] [ 76%] Built target joystick_msgs__py
+[16.855s] [ 79%] [32mBuilding C object CMakeFiles/joystick_msgs__rosidl_generator_py.dir/rosidl_generator_py/joystick_msgs/msg/_joystick_s.c.o[0m
+[17.142s] [ 82%] [32m[1mLinking C shared library libjoystick_msgs__rosidl_generator_py.so[0m
+[17.242s] [ 82%] Built target joystick_msgs__rosidl_generator_py
+[17.308s] [ 85%] [32mBuilding C object CMakeFiles/joystick_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/joystick_msgs/_joystick_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[17.314s] [ 88%] [32mBuilding C object CMakeFiles/joystick_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/joystick_msgs/_joystick_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[17.319s] [ 91%] [32mBuilding C object CMakeFiles/joystick_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/joystick_msgs/_joystick_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[17.563s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/joystick_msgs/joystick_msgs_s__rosidl_typesupport_c.so[0m
+[17.591s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/joystick_msgs/joystick_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[17.597s] [100%] [32m[1mLinking C shared module rosidl_generator_py/joystick_msgs/joystick_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[17.664s] [100%] Built target joystick_msgs_s__rosidl_typesupport_c
+[17.682s] [100%] Built target joystick_msgs_s__rosidl_typesupport_fastrtps_c
+[17.683s] [100%] Built target joystick_msgs_s__rosidl_typesupport_introspection_c
+[17.713s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs -- -j4 -l4
+[17.736s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs
+[17.755s] -- Install configuration: ""
+[17.755s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/ament_index/resource_index/rosidl_interfaces/joystick_msgs
+[17.755s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/msg/Joystick.json
+[17.755s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs
+[17.756s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg
+[17.756s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/rosidl_generator_c__visibility_control.h
+[17.756s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail
+[17.756s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__type_support.h
+[17.756s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__functions.h
+[17.756s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__struct.h
+[17.756s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__type_support.c
+[17.756s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__functions.c
+[17.757s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__description.c
+[17.757s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/joystick.h
+[17.757s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/environment/library_path.sh
+[17.757s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/environment/library_path.dsv
+[17.758s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_generator_c.so
+[17.758s] -- Set non-toolchain portion of runtime path of "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_generator_c.so" to ""
+[17.758s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs
+[17.758s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg
+[17.758s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[17.759s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail
+[17.759s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__rosidl_typesupport_fastrtps_c.h
+[17.759s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_typesupport_fastrtps_c.so
+[17.759s] -- Set non-toolchain portion of runtime path of "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[17.760s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs
+[17.760s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg
+[17.760s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail
+[17.760s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__rosidl_typesupport_introspection_c.h
+[17.760s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__type_support.c
+[17.761s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[17.761s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_typesupport_introspection_c.so
+[17.761s] -- Set non-toolchain portion of runtime path of "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_typesupport_introspection_c.so" to ""
+[17.761s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_typesupport_c.so
+[17.762s] -- Set non-toolchain portion of runtime path of "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_typesupport_c.so" to ""
+[17.762s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs
+[17.762s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg
+[17.762s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/joystick.hpp
+[17.762s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail
+[17.762s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__traits.hpp
+[17.763s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__builder.hpp
+[17.763s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__type_support.hpp
+[17.763s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__struct.hpp
+[17.763s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[17.763s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs
+[17.763s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg
+[17.763s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail
+[17.763s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/dds_fastrtps
+[17.764s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__rosidl_typesupport_fastrtps_cpp.hpp
+[17.764s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[17.764s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_typesupport_fastrtps_cpp.so
+[17.764s] -- Set non-toolchain portion of runtime path of "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[17.764s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs
+[17.767s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg
+[17.768s] -- Up-to-date: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail
+[17.769s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__rosidl_typesupport_introspection_cpp.hpp
+[17.769s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/include/joystick_msgs/joystick_msgs/msg/detail/joystick__type_support.cpp
+[17.770s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_typesupport_introspection_cpp.so
+[17.771s] -- Set non-toolchain portion of runtime path of "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[17.772s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_typesupport_cpp.so
+[17.773s] -- Set non-toolchain portion of runtime path of "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_typesupport_cpp.so" to ""
+[17.776s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/environment/pythonpath.sh
+[17.777s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/environment/pythonpath.dsv
+[17.777s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs-0.0.1-py3.12.egg-info
+[17.777s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs-0.0.1-py3.12.egg-info/dependency_links.txt
+[17.777s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs-0.0.1-py3.12.egg-info/PKG-INFO
+[17.778s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs-0.0.1-py3.12.egg-info/top_level.txt
+[17.778s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs-0.0.1-py3.12.egg-info/SOURCES.txt
+[17.778s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs
+[17.779s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/_joystick_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[17.779s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/_joystick_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[17.779s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/joystick_msgs_s__rosidl_typesupport_c.so
+[17.779s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/__init__.py
+[17.780s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/msg
+[17.780s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/msg/_joystick.py
+[17.780s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/msg/__init__.py
+[17.780s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/msg/_joystick_s.c
+[17.780s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/joystick_msgs_s__rosidl_typesupport_introspection_c.so
+[17.781s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/joystick_msgs_s__rosidl_typesupport_fastrtps_c.so
+[17.781s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/_joystick_msgs_s.ep.rosidl_typesupport_c.c
+[17.891s] Listing '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs'...
+[17.892s] Compiling '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/__init__.py'...
+[17.892s] Listing '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/msg'...
+[17.893s] Compiling '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/msg/__init__.py'...
+[17.893s] Compiling '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/msg/_joystick.py'...
+[17.912s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/joystick_msgs_s__rosidl_typesupport_fastrtps_c.so
+[17.913s] -- Set non-toolchain portion of runtime path of "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/joystick_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[17.913s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/joystick_msgs_s__rosidl_typesupport_introspection_c.so
+[17.914s] -- Set non-toolchain portion of runtime path of "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/joystick_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[17.914s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/joystick_msgs_s__rosidl_typesupport_c.so
+[17.915s] -- Set non-toolchain portion of runtime path of "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages/joystick_msgs/joystick_msgs_s__rosidl_typesupport_c.so" to ""
+[17.915s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_generator_py.so
+[17.916s] -- Set non-toolchain portion of runtime path of "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/libjoystick_msgs__rosidl_generator_py.so" to ""
+[17.916s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/msg/Joystick.idl
+[17.916s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/msg/Joystick.msg
+[17.916s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/ament_index/resource_index/package_run_dependencies/joystick_msgs
+[17.916s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/ament_index/resource_index/parent_prefix_path/joystick_msgs
+[17.916s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/environment/ament_prefix_path.sh
+[17.917s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/environment/ament_prefix_path.dsv
+[17.917s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/environment/path.sh
+[17.917s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/environment/path.dsv
+[17.917s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/local_setup.bash
+[17.917s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/local_setup.sh
+[17.918s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/local_setup.zsh
+[17.918s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/local_setup.dsv
+[17.918s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.dsv
+[17.918s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/ament_index/resource_index/packages/joystick_msgs
+[17.919s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/export_joystick_msgs__rosidl_generator_cExport.cmake
+[17.919s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/export_joystick_msgs__rosidl_generator_cExport-noconfig.cmake
+[17.919s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/export_joystick_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[17.919s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/export_joystick_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[17.920s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/joystick_msgs__rosidl_typesupport_introspection_cExport.cmake
+[17.920s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/joystick_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[17.920s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/joystick_msgs__rosidl_typesupport_cExport.cmake
+[17.920s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/joystick_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[17.920s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/export_joystick_msgs__rosidl_generator_cppExport.cmake
+[17.921s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/export_joystick_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[17.921s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/export_joystick_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[17.921s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/joystick_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[17.921s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/joystick_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[17.922s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/joystick_msgs__rosidl_typesupport_cppExport.cmake
+[17.922s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/joystick_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[17.922s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/export_joystick_msgs__rosidl_generator_pyExport.cmake
+[17.922s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/export_joystick_msgs__rosidl_generator_pyExport-noconfig.cmake
+[17.922s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/rosidl_cmake-extras.cmake
+[17.923s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.923s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[17.923s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[17.923s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[17.923s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.924s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[17.924s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/joystick_msgsConfig.cmake
+[17.924s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/joystick_msgsConfig-version.cmake
+[17.924s] -- Installing: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.xml
+[17.930s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs
