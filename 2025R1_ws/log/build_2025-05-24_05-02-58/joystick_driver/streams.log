@@ -1,0 +1,19 @@
+[2.049s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver': AMENT_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build --no-deps symlink_data
+[2.769s] running develop
+[3.173s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[3.173s]   self.local_index = Environment(self.shadow_path + sys.path)
+[3.235s] running egg_info
+[3.254s] writing joystick_driver.egg-info/PKG-INFO
+[3.255s] writing dependency_links to joystick_driver.egg-info/dependency_links.txt
+[3.255s] writing entry points to joystick_driver.egg-info/entry_points.txt
+[3.255s] writing requirements to joystick_driver.egg-info/requires.txt
+[3.255s] writing top-level names to joystick_driver.egg-info/top_level.txt
+[3.314s] reading manifest file 'joystick_driver.egg-info/SOURCES.txt'
+[3.315s] writing manifest file 'joystick_driver.egg-info/SOURCES.txt'
+[3.349s] running build_ext
+[3.350s] Creating /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages/joystick-driver.egg-link (link to .)
+[3.353s] Installing joystick_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/joystick_driver
+[3.353s] 
+[3.354s] Installed /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver
+[3.354s] running symlink_data
+[3.468s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver' returned '0': AMENT_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build --no-deps symlink_data

@@ -1,0 +1,38 @@
+[1.949s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver': AMENT_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build
+[2.651s] running develop
+[2.976s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[2.977s]   self.local_index = Environment(self.shadow_path + sys.path)
+[3.051s] Removing /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages/joystick-driver.egg-link (link to .)
+[3.192s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver' returned '0': AMENT_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build
+[3.193s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_driver': AMENT_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joystick_driver build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/install.log --single-version-externally-managed install_data --force
+[3.822s] running egg_info
+[3.873s] writing ../../build/joystick_driver/joystick_driver.egg-info/PKG-INFO
+[3.873s] writing dependency_links to ../../build/joystick_driver/joystick_driver.egg-info/dependency_links.txt
+[3.875s] writing entry points to ../../build/joystick_driver/joystick_driver.egg-info/entry_points.txt
+[3.875s] writing requirements to ../../build/joystick_driver/joystick_driver.egg-info/requires.txt
+[3.876s] writing top-level names to ../../build/joystick_driver/joystick_driver.egg-info/top_level.txt
+[3.965s] reading manifest file '../../build/joystick_driver/joystick_driver.egg-info/SOURCES.txt'
+[3.967s] writing manifest file '../../build/joystick_driver/joystick_driver.egg-info/SOURCES.txt'
+[3.967s] running build
+[3.967s] running build_py
+[3.967s] creating /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build
+[3.968s] creating /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build/lib
+[3.968s] creating /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build/lib/joystick_driver
+[3.968s] copying joystick_driver/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build/lib/joystick_driver
+[3.968s] copying joystick_driver/joystick_publisher_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build/lib/joystick_driver
+[3.968s] running install
+[3.978s] running install_lib
+[4.004s] creating /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages/joystick_driver
+[4.004s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build/lib/joystick_driver/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages/joystick_driver
+[4.004s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build/lib/joystick_driver/joystick_publisher_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages/joystick_driver
+[4.005s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages/joystick_driver/__init__.py to __init__.cpython-312.pyc
+[4.005s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages/joystick_driver/joystick_publisher_node.py to joystick_publisher_node.cpython-312.pyc
+[4.008s] running install_data
+[4.008s] copying resource/joystick_driver -> /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/ament_index/resource_index/packages
+[4.008s] copying package.xml -> /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver
+[4.009s] running install_egg_info
+[4.053s] Copying ../../build/joystick_driver/joystick_driver.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages/joystick_driver-0.1.0-py3.12.egg-info
+[4.054s] running install_scripts
+[4.265s] Installing joystick_publisher_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/joystick_driver
+[4.266s] writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/install.log'
+[4.356s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_driver' returned '0': AMENT_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joystick_driver build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/install.log --single-version-externally-managed install_data --force

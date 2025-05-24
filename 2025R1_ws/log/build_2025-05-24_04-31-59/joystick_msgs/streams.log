@@ -1,0 +1,21 @@
+[0.095s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs -- -j4 -l4
+[0.870s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs -- -j4 -l4
+[0.889s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs
+[1.284s] -- Install configuration: ""
+[1.284s] -- Execute custom install script
+[1.285s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/ament_index/resource_index/package_run_dependencies/joystick_msgs
+[1.285s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/ament_index/resource_index/parent_prefix_path/joystick_msgs
+[1.285s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/environment/ament_prefix_path.sh
+[1.285s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/environment/ament_prefix_path.dsv
+[1.285s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/environment/path.sh
+[1.285s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/environment/path.dsv
+[1.285s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/local_setup.bash
+[1.285s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/local_setup.sh
+[1.285s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/local_setup.zsh
+[1.285s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/local_setup.dsv
+[1.285s] -- Symlinking: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.dsv
+[1.286s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/ament_index/resource_index/packages/joystick_msgs
+[1.286s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/joystick_msgsConfig.cmake
+[1.286s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/cmake/joystick_msgsConfig-version.cmake
+[1.286s] -- Up-to-date symlink: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.xml
+[1.292s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs

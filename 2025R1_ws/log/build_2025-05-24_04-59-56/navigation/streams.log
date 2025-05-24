@@ -1,0 +1,24 @@
+[2.459s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/install.log --single-version-externally-managed install_data
+[2.986s] running egg_info
+[3.019s] writing ../../build/navigation/navigation.egg-info/PKG-INFO
+[3.020s] writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+[3.022s] writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+[3.023s] writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+[3.024s] writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+[3.086s] reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[3.087s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[3.090s] running build
+[3.090s] running build_py
+[3.090s] running install
+[3.099s] running install_lib
+[3.131s] running install_data
+[3.131s] running install_egg_info
+[3.163s] removing '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info' (and everything under it)
+[3.163s] Copying ../../build/navigation/navigation.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info
+[3.165s] running install_scripts
+[3.378s] Installing active_caster_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation
+[3.378s] Installing navigation_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation
+[3.379s] Installing omni_wheel_speed_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation
+[3.382s] Installing wheel script to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation
+[3.384s] writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/install.log'
+[3.506s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/install.log --single-version-externally-managed install_data

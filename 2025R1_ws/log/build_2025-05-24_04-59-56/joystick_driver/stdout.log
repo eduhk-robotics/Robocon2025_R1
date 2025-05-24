@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/joystick_driver/joystick_driver.egg-info/PKG-INFO
+writing dependency_links to ../../build/joystick_driver/joystick_driver.egg-info/dependency_links.txt
+writing entry points to ../../build/joystick_driver/joystick_driver.egg-info/entry_points.txt
+writing requirements to ../../build/joystick_driver/joystick_driver.egg-info/requires.txt
+writing top-level names to ../../build/joystick_driver/joystick_driver.egg-info/top_level.txt
+reading manifest file '../../build/joystick_driver/joystick_driver.egg-info/SOURCES.txt'
+writing manifest file '../../build/joystick_driver/joystick_driver.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages/joystick_driver-0.1.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/joystick_driver/joystick_driver.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages/joystick_driver-0.1.0-py3.12.egg-info
+running install_scripts
+Installing joystick_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/joystick_driver
+writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/install.log'

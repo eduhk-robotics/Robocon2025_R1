@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing joystick_driver.egg-info/PKG-INFO
+writing dependency_links to joystick_driver.egg-info/dependency_links.txt
+writing entry points to joystick_driver.egg-info/entry_points.txt
+writing requirements to joystick_driver.egg-info/requires.txt
+writing top-level names to joystick_driver.egg-info/top_level.txt
+reading manifest file 'joystick_driver.egg-info/SOURCES.txt'
+writing manifest file 'joystick_driver.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages/joystick-driver.egg-link (link to .)
+Installing joystick_publisher_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/joystick_driver
+
+Installed /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver
+running symlink_data
+symbolically linking /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/resource/joystick_driver -> /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/ament_index/resource_index/packages
+symbolically linking /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/package.xml -> /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver

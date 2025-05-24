@@ -1,0 +1,42 @@
+[2.541s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build
+[3.090s] running develop
+[3.521s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[3.521s]   self.local_index = Environment(self.shadow_path + sys.path)
+[3.613s] Removing /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation.egg-link (link to .)
+[3.896s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build
+[3.896s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/install.log --single-version-externally-managed install_data --force
+[4.371s] running egg_info
+[4.406s] writing ../../build/navigation/navigation.egg-info/PKG-INFO
+[4.407s] writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+[4.408s] writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+[4.409s] writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+[4.410s] writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+[4.484s] reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[4.485s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[4.487s] running build
+[4.488s] running build_py
+[4.489s] running install
+[4.507s] running install_lib
+[4.545s] creating /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation
+[4.545s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build/lib/navigation/navigation_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation
+[4.545s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build/lib/navigation/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation
+[4.546s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build/lib/navigation/wheel.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation
+[4.546s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build/lib/navigation/active_caster_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation
+[4.546s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build/lib/navigation/omni_wheel_speed_node.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation
+[4.551s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation/navigation_node.py to navigation_node.cpython-312.pyc
+[4.551s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation/__init__.py to __init__.cpython-312.pyc
+[4.551s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation/wheel.py to wheel.cpython-312.pyc
+[4.554s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation/active_caster_node.py to active_caster_node.cpython-312.pyc
+[4.557s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation/omni_wheel_speed_node.py to omni_wheel_speed_node.cpython-312.pyc
+[4.559s] running install_data
+[4.559s] copying resource/navigation -> /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/ament_index/resource_index/packages
+[4.560s] copying package.xml -> /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation
+[4.560s] running install_egg_info
+[4.640s] Copying ../../build/navigation/navigation.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info
+[4.645s] running install_scripts
+[5.000s] Installing active_caster_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation
+[5.000s] Installing navigation_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation
+[5.002s] Installing omni_wheel_speed_node script to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation
+[5.002s] Installing wheel script to /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation
+[5.004s] writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/install.log'
+[5.119s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/install.log --single-version-externally-managed install_data --force

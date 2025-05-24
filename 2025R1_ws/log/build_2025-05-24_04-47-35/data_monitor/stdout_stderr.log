@@ -1,0 +1,34 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+  self.local_index = Environment(self.shadow_path + sys.path)
+Removing /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data-monitor.egg-link (link to .)
+running egg_info
+writing ../../build/data_monitor/data_monitor.egg-info/PKG-INFO
+writing dependency_links to ../../build/data_monitor/data_monitor.egg-info/dependency_links.txt
+writing entry points to ../../build/data_monitor/data_monitor.egg-info/entry_points.txt
+writing requirements to ../../build/data_monitor/data_monitor.egg-info/requires.txt
+writing top-level names to ../../build/data_monitor/data_monitor.egg-info/top_level.txt
+reading manifest file '../../build/data_monitor/data_monitor.egg-info/SOURCES.txt'
+writing manifest file '../../build/data_monitor/data_monitor.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build
+creating /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib
+creating /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib/data_monitor
+copying data_monitor/data_sender.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib/data_monitor
+copying data_monitor/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib/data_monitor
+running install
+running install_lib
+creating /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor
+copying /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib/data_monitor/data_sender.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor
+copying /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib/data_monitor/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor
+byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor/data_sender.py to data_sender.cpython-312.pyc
+byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor/__init__.py to __init__.cpython-312.pyc
+running install_data
+copying resource/data_monitor -> /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/ament_index/resource_index/packages
+copying package.xml -> /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor
+running install_egg_info
+Copying ../../build/data_monitor/data_monitor.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor-0.0.0-py3.12.egg-info
+running install_scripts
+Installing data_sender script to /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/data_monitor
+writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/install.log'

@@ -1,0 +1,392 @@
+[0.147s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.147s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff7e5dd310>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff7e799220>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff7e799220>>, mixin_verb=('build',))
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.203s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/robotics/Robocon2025_R1/2025R1_ws'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/active_caster) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/active_caster) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/active_caster) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/active_caster) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/active_caster) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/active_caster) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/active_caster) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/active_caster) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/active_caster) by extension 'ros'
+[0.246s] DEBUG:colcon.colcon_core.package_identification:Package 'src/active_caster' with type 'ros.ament_python' and name 'active_caster'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_monitor) by extension 'ros'
+[0.248s] DEBUG:colcon.colcon_core.package_identification:Package 'src/data_monitor' with type 'ros.ament_python' and name 'data_monitor'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_driver) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_driver) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_driver) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_driver) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_driver) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_driver) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_driver) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_driver) by extension 'ros'
+[0.249s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_driver' with type 'ros.ament_python' and name 'joystick_driver'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_msgs) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_msgs) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_msgs) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_msgs) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_msgs) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_msgs) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_msgs) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_msgs) by extension 'ros'
+[0.250s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_msgs' with type 'ros.ament_cmake' and name 'joystick_msgs'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ros'
+[0.251s] DEBUG:colcon.colcon_core.package_identification:Package 'src/navigation' with type 'ros.ament_python' and name 'navigation'
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.279s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'active_caster' build argument 'cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'active_caster' build argument 'cmake_target' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'active_caster' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'active_caster' build argument 'cmake_clean_cache' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'active_caster' build argument 'cmake_clean_first' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'active_caster' build argument 'cmake_force_configure' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'active_caster' build argument 'ament_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'active_caster' build argument 'catkin_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'active_caster' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.339s] DEBUG:colcon.colcon_core.verb:Building package 'active_caster' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster', 'merge_install': False, 'path': '/home/robotics/Robocon2025_R1/2025R1_ws/src/active_caster', 'symlink_install': True, 'test_result_base': None}
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'cmake_target' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'cmake_clean_first' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'cmake_force_configure' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'ament_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'data_monitor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.339s] DEBUG:colcon.colcon_core.verb:Building package 'data_monitor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor', 'merge_install': False, 'path': '/home/robotics/Robocon2025_R1/2025R1_ws/src/data_monitor', 'symlink_install': True, 'test_result_base': None}
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'joystick_msgs' build argument 'cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'joystick_msgs' build argument 'cmake_target' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'joystick_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'joystick_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'joystick_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'joystick_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'joystick_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'joystick_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'joystick_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.340s] DEBUG:colcon.colcon_core.verb:Building package 'joystick_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs', 'merge_install': False, 'path': '/home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_target' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.340s] DEBUG:colcon.colcon_core.verb:Building package 'navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation', 'merge_install': False, 'path': '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation', 'symlink_install': True, 'test_result_base': None}
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'joystick_driver' build argument 'cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'joystick_driver' build argument 'cmake_target' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'joystick_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'joystick_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'joystick_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'joystick_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'joystick_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'joystick_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'joystick_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.341s] DEBUG:colcon.colcon_core.verb:Building package 'joystick_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver', 'merge_install': False, 'path': '/home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_driver', 'symlink_install': True, 'test_result_base': None}
+[0.341s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.342s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.343s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_msgs' with build type 'ament_cmake'
+[0.343s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_msgs'
+[0.355s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.356s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.356s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.365s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/active_caster' with build type 'ament_python'
+[0.365s] Level 1:colcon.colcon_core.shell:create_environment_hook('active_caster', 'ament_prefix_path')
+[0.366s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster/hook/ament_prefix_path.ps1'
+[0.368s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster/hook/ament_prefix_path.dsv'
+[0.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster/hook/ament_prefix_path.sh'
+[0.374s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.374s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.384s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/data_monitor' with build type 'ament_python'
+[0.384s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_monitor', 'ament_prefix_path')
+[0.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/hook/ament_prefix_path.ps1'
+[0.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/hook/ament_prefix_path.dsv'
+[0.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/hook/ament_prefix_path.sh'
+[0.388s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.388s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.393s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation' with build type 'ament_python'
+[0.393s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'ament_prefix_path')
+[0.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/hook/ament_prefix_path.ps1'
+[0.395s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/hook/ament_prefix_path.dsv'
+[0.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/hook/ament_prefix_path.sh'
+[0.401s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.401s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake /home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs
+[0.881s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/active_caster'
+[0.881s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.881s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.313s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/data_monitor'
+[1.313s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.313s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.746s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/navigation'
+[1.746s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.746s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.799s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake /home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs
+[2.804s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs -- -j4 -l4
+[3.330s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/ament_index/resource_index/packages/data_monitor
+[3.330s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/package.xml
+[3.331s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/data_monitor/data_sender
+[3.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build --no-deps symlink_data --force
+[3.350s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/ament_index/resource_index/packages/active_caster
+[3.350s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster/package.xml
+[3.351s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/active_caster/damiao_node
+[3.351s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/active_caster/vesc_node
+[3.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build --no-deps symlink_data --force
+[3.371s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/ament_index/resource_index/packages/navigation
+[3.371s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/package.xml
+[3.371s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation
+[3.371s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation/active_caster_node
+[3.372s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation/navigation_node
+[3.372s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation/omni_wheel_speed_node
+[3.372s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/navigation/wheel
+[3.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build --no-deps symlink_data --force
+[4.050s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs -- -j4 -l4
+[4.072s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs
+[4.263s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joystick_msgs)
+[4.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_msgs
+[4.268s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs' for CMake module files
+[4.269s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs' for CMake config files
+[4.270s] Level 1:colcon.colcon_core.shell:create_environment_hook('joystick_msgs', 'cmake_prefix_path')
+[4.270s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/cmake_prefix_path.ps1'
+[4.271s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/cmake_prefix_path.dsv'
+[4.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/cmake_prefix_path.sh'
+[4.275s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib'
+[4.276s] Level 1:colcon.colcon_core.shell:create_environment_hook('joystick_msgs', 'ld_library_path_lib')
+[4.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/ld_library_path_lib.ps1'
+[4.277s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/ld_library_path_lib.dsv'
+[4.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/ld_library_path_lib.sh'
+[4.284s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/bin'
+[4.284s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/pkgconfig/joystick_msgs.pc'
+[4.285s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages'
+[4.285s] Level 1:colcon.colcon_core.shell:create_environment_hook('joystick_msgs', 'pythonpath')
+[4.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/pythonpath.ps1'
+[4.290s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/pythonpath.dsv'
+[4.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/pythonpath.sh'
+[4.294s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/bin'
+[4.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.ps1'
+[4.303s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.dsv'
+[4.304s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.sh'
+[4.312s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.bash'
+[4.314s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.zsh'
+[4.321s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/colcon-core/packages/joystick_msgs)
+[4.324s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joystick_msgs)
+[4.324s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs' for CMake module files
+[4.326s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs' for CMake config files
+[4.330s] Level 1:colcon.colcon_core.shell:create_environment_hook('joystick_msgs', 'cmake_prefix_path')
+[4.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/cmake_prefix_path.ps1'
+[4.331s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/cmake_prefix_path.dsv'
+[4.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/cmake_prefix_path.sh'
+[4.344s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib'
+[4.344s] Level 1:colcon.colcon_core.shell:create_environment_hook('joystick_msgs', 'ld_library_path_lib')
+[4.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/ld_library_path_lib.ps1'
+[4.345s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/ld_library_path_lib.dsv'
+[4.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/ld_library_path_lib.sh'
+[4.350s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/bin'
+[4.350s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/pkgconfig/joystick_msgs.pc'
+[4.351s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages'
+[4.351s] Level 1:colcon.colcon_core.shell:create_environment_hook('joystick_msgs', 'pythonpath')
+[4.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/pythonpath.ps1'
+[4.352s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/pythonpath.dsv'
+[4.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/hook/pythonpath.sh'
+[4.356s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/bin'
+[4.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.ps1'
+[4.358s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.dsv'
+[4.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.sh'
+[4.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.bash'
+[4.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/joystick_msgs/package.zsh'
+[4.368s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/share/colcon-core/packages/joystick_msgs)
+[4.372s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_driver' with build type 'ament_python'
+[4.372s] Level 1:colcon.colcon_core.shell:create_environment_hook('joystick_driver', 'ament_prefix_path')
+[4.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver/hook/ament_prefix_path.ps1'
+[4.374s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver/hook/ament_prefix_path.dsv'
+[4.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver/hook/ament_prefix_path.sh'
+[4.380s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.384s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.947s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robotics/Robocon2025_R1/2025R1_ws/src/joystick_driver'
+[4.948s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.948s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.956s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'pythonpath_develop')
+[4.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/share/navigation/hook/pythonpath_develop.ps1'
+[4.959s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/share/navigation/hook/pythonpath_develop.dsv'
+[4.957s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/build --no-deps symlink_data --force
+[4.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/navigation/share/navigation/hook/pythonpath_develop.sh'
+[4.962s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation' for CMake module files
+[4.963s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation' for CMake config files
+[4.964s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib'
+[4.965s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/bin'
+[4.965s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/pkgconfig/navigation.pc'
+[4.965s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/lib/python3.12/site-packages'
+[4.965s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'pythonpath')
+[4.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/hook/pythonpath.ps1'
+[4.967s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/hook/pythonpath.dsv'
+[4.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/hook/pythonpath.sh'
+[4.972s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/bin'
+[4.972s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation)
+[4.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/package.ps1'
+[4.974s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/package.dsv'
+[4.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/package.sh'
+[4.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/package.bash'
+[4.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/navigation/package.zsh'
+[4.982s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotics/Robocon2025_R1/2025R1_ws/install/navigation/share/colcon-core/packages/navigation)
+[5.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_monitor', 'pythonpath_develop')
+[5.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/share/data_monitor/hook/pythonpath_develop.ps1'
+[5.075s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build --no-deps symlink_data --force
+[5.077s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/share/data_monitor/hook/pythonpath_develop.dsv'
+[5.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/share/data_monitor/hook/pythonpath_develop.sh'
+[5.079s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor' for CMake module files
+[5.080s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor' for CMake config files
+[5.081s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib'
+[5.081s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/bin'
+[5.081s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/pkgconfig/data_monitor.pc'
+[5.082s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages'
+[5.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_monitor', 'pythonpath')
+[5.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/hook/pythonpath.ps1'
+[5.084s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/hook/pythonpath.dsv'
+[5.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/hook/pythonpath.sh'
+[5.089s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/bin'
+[5.089s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_monitor)
+[5.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/package.ps1'
+[5.092s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/package.dsv'
+[5.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/package.sh'
+[5.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/package.bash'
+[5.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor/package.zsh'
+[5.105s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/colcon-core/packages/data_monitor)
+[5.234s] Level 1:colcon.colcon_core.shell:create_environment_hook('active_caster', 'pythonpath_develop')
+[5.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/share/active_caster/hook/pythonpath_develop.ps1'
+[5.235s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/build --no-deps symlink_data --force
+[5.236s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/share/active_caster/hook/pythonpath_develop.dsv'
+[5.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/active_caster/share/active_caster/hook/pythonpath_develop.sh'
+[5.239s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster' for CMake module files
+[5.240s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster' for CMake config files
+[5.241s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib'
+[5.241s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/bin'
+[5.241s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/pkgconfig/active_caster.pc'
+[5.241s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/lib/python3.12/site-packages'
+[5.241s] Level 1:colcon.colcon_core.shell:create_environment_hook('active_caster', 'pythonpath')
+[5.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster/hook/pythonpath.ps1'
+[5.242s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster/hook/pythonpath.dsv'
+[5.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster/hook/pythonpath.sh'
+[5.244s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/bin'
+[5.244s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(active_caster)
+[5.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster/package.ps1'
+[5.246s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster/package.dsv'
+[5.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster/package.sh'
+[5.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster/package.bash'
+[5.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/active_caster/package.zsh'
+[5.254s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotics/Robocon2025_R1/2025R1_ws/install/active_caster/share/colcon-core/packages/active_caster)
+[6.150s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/ament_index/resource_index/packages/joystick_driver
+[6.150s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver/package.xml
+[6.150s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver/launch
+[6.150s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/joystick_driver/joystick_node
+[6.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver': AMENT_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build --no-deps symlink_data --force
+[7.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('joystick_driver', 'pythonpath_develop')
+[7.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/share/joystick_driver/hook/pythonpath_develop.ps1'
+[7.238s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver' returned '0': AMENT_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages:/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_msgs/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/build --no-deps symlink_data --force
+[7.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/share/joystick_driver/hook/pythonpath_develop.dsv'
+[7.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/build/joystick_driver/share/joystick_driver/hook/pythonpath_develop.sh'
+[7.240s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver' for CMake module files
+[7.241s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver' for CMake config files
+[7.242s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib'
+[7.242s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/bin'
+[7.242s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/pkgconfig/joystick_driver.pc'
+[7.242s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages'
+[7.242s] Level 1:colcon.colcon_core.shell:create_environment_hook('joystick_driver', 'pythonpath')
+[7.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver/hook/pythonpath.ps1'
+[7.243s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver/hook/pythonpath.dsv'
+[7.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver/hook/pythonpath.sh'
+[7.245s] Level 1:colcon.colcon_core.environment:checking '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/bin'
+[7.245s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joystick_driver)
+[7.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver/package.ps1'
+[7.246s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver/package.dsv'
+[7.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver/package.sh'
+[7.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver/package.bash'
+[7.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/joystick_driver/package.zsh'
+[7.250s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/share/colcon-core/packages/joystick_driver)
+[7.253s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.253s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.253s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.253s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.277s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.277s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.277s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.317s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.318s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotics/Robocon2025_R1/2025R1_ws/install/local_setup.ps1'
+[7.320s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robotics/Robocon2025_R1/2025R1_ws/install/_local_setup_util_ps1.py'
+[7.322s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotics/Robocon2025_R1/2025R1_ws/install/setup.ps1'
+[7.324s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotics/Robocon2025_R1/2025R1_ws/install/local_setup.sh'
+[7.327s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robotics/Robocon2025_R1/2025R1_ws/install/_local_setup_util_sh.py'
+[7.329s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotics/Robocon2025_R1/2025R1_ws/install/setup.sh'
+[7.335s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotics/Robocon2025_R1/2025R1_ws/install/local_setup.bash'
+[7.336s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotics/Robocon2025_R1/2025R1_ws/install/setup.bash'
+[7.338s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotics/Robocon2025_R1/2025R1_ws/install/local_setup.zsh'
+[7.340s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotics/Robocon2025_R1/2025R1_ws/install/setup.zsh'

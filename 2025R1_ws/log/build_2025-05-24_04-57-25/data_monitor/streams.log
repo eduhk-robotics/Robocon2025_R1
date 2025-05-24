@@ -1,0 +1,33 @@
+[2.573s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build
+[3.142s] running develop
+[3.578s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[3.578s]   self.local_index = Environment(self.shadow_path + sys.path)
+[3.725s] Removing /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data-monitor.egg-link (link to .)
+[3.922s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build
+[3.926s] Invoking command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/data_monitor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/data_monitor build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/install.log --single-version-externally-managed install_data --force
+[4.433s] running egg_info
+[4.471s] writing ../../build/data_monitor/data_monitor.egg-info/PKG-INFO
+[4.471s] writing dependency_links to ../../build/data_monitor/data_monitor.egg-info/dependency_links.txt
+[4.472s] writing entry points to ../../build/data_monitor/data_monitor.egg-info/entry_points.txt
+[4.473s] writing requirements to ../../build/data_monitor/data_monitor.egg-info/requires.txt
+[4.474s] writing top-level names to ../../build/data_monitor/data_monitor.egg-info/top_level.txt
+[4.559s] reading manifest file '../../build/data_monitor/data_monitor.egg-info/SOURCES.txt'
+[4.560s] writing manifest file '../../build/data_monitor/data_monitor.egg-info/SOURCES.txt'
+[4.560s] running build
+[4.560s] running build_py
+[4.561s] running install
+[4.577s] running install_lib
+[4.625s] creating /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor
+[4.626s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib/data_monitor/data_sender.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor
+[4.626s] copying /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build/lib/data_monitor/__init__.py -> /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor
+[4.639s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor/data_sender.py to data_sender.cpython-312.pyc
+[4.639s] byte-compiling /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor/__init__.py to __init__.cpython-312.pyc
+[4.639s] running install_data
+[4.639s] copying resource/data_monitor -> /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/ament_index/resource_index/packages
+[4.639s] copying package.xml -> /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/share/data_monitor
+[4.639s] running install_egg_info
+[4.680s] Copying ../../build/data_monitor/data_monitor.egg-info to /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages/data_monitor-0.0.0-py3.12.egg-info
+[4.681s] running install_scripts
+[4.986s] Installing data_sender script to /home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/data_monitor
+[4.987s] writing list of installed files to '/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/install.log'
+[5.128s] Invoked command in '/home/robotics/Robocon2025_R1/2025R1_ws/src/data_monitor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Robocon2025_R1/2025R1_ws/install/data_monitor/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/data_monitor build --build-base /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/build install --record /home/robotics/Robocon2025_R1/2025R1_ws/build/data_monitor/install.log --single-version-externally-managed install_data --force
