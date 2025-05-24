@@ -1,9 +1,14 @@
 **/*.pyc
+**/__pycache__/
+*.o
+*.a
+*.so
 
-.vscode/
+
+**/.vscode/
 .idea
 .DS_Store
-/__pycache__/
 
-**/build
-**/install
+**/build/
+**/install/
+**/log/
