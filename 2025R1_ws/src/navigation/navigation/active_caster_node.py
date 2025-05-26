@@ -85,10 +85,14 @@ class OmniWheelMotorController(Node):
         self.last_pos_rad = target_rad
         self.get_logger().info(f"Steering {direction_deg:.1f}° -> {target_rad:.2f} rad")
 
-        # 2) Speed: normalize raw_speed (0..8192) to [0, MAX_RPM]
-        norm = max(min(raw_speed / 8192.0, 1.0), 0.0)
-        desired_rpm = int(norm * MAX_RPM)
-        self.get_logger().info(f"Speed raw={raw_speed:.1f} -> RPM={desired_rpm}")
+        # 2) Speed: normalize raw_speed (0..8192) to [0, MAX_RPM] using reflected sigmoid
+        # Map raw_speed (0 to 8192) to sigmoid input range [-6, 6]
+        sigmoid_input = (raw_speed / 8192.0) * 12.0 - 6.0
+        # Reflected sigmoid: 1 - 1/(1 + e^(-x)) = e^(-x)/(1 + e^(-x))
+        exp_neg_x = math.exp(-sigmoid_input)
+        reflected_sigmoid = exp_neg_x / (1.0 + exp_neg_x)
+        desired_rpm = int(reflected_sigmoid * MAX_RPM)  # Scale to [0, MAX_RPM]
+        self.get_logger().info(f"Speed raw={raw_speed:.1f} -> sigmoid_input={sigmoid_input:.2f} -> reflected_sigmoid={reflected_sigmoid:.3f} -> RPM={desired_rpm}")
 
         # Publish RPM command
         self.publish_rpm(desired_rpm)

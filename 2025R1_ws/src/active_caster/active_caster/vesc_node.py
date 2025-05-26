@@ -87,15 +87,27 @@ class VescNode(Node):
         self.get_logger().info(f"Received RPM command: {self.desired_rpm}")
 
     def heartbeat(self):
-        # Periodically send RPM commands
         for dev, ids in self.port_map.items():
             ser = self.serial_map.get(dev)
-            if not ser:
-                continue
+            if not ser or not ser.is_open:
+                try:
+                    # 尝试重新打开串口
+                    ser = serial.Serial(dev, BAUDRATE, timeout=TIMEOUT)
+                    self.serial_map[dev] = ser
+                    self.get_logger().warn(f"Reconnected to {dev}")
+                except Exception as e:
+                    self.get_logger().error(f"Failed to reconnect {dev}: {e}")
+                    continue
+        
+        try:
             for can_id in ids:
                 cmd = SetRPM(self.desired_rpm)
                 cmd.can_id = can_id
                 ser.write(pyvesc.encode(cmd))
+                ser.flush()  # 强制刷新缓冲区
+        except (OSError, serial.SerialException) as e:
+            self.get_logger().error(f"Write failed on {dev}: {e}")
+            ser.close()
 
     def destroy_node(self):
         # Stop motors on shutdown
