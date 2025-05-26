@@ -86,6 +86,7 @@ class VescNode(Node):
         self.desired_rpm = int(norm * MAX_RPM)
         self.get_logger().info(f"Received RPM command: {self.desired_rpm}")
 
+    # 修改 heartbeat 函数，添加异常处理和重连机制
     def heartbeat(self):
         for dev, ids in self.port_map.items():
             ser = self.serial_map.get(dev)
