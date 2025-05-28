@@ -1,3 +1,4 @@
+# -*- coding: ascii -*-
 """
 VESC Node for Omni-Wheel Motor Control
 Subscribes to 'vesc_control' (Float32): desired RPM for VESCs
@@ -18,8 +19,8 @@ from std_msgs.msg import Float32
 BAUDRATE = 115200
 TIMEOUT = 0.1
 HEARTBEAT_DT = 0.05    # seconds between RPM commands
-MAX_RPM = 6000         # VESC max motor RPM
-DESIRED_IDS = {1, 3, 4}  # CAN IDs of VESCs
+MAX_RPM = 9000         # VESC max motor RPM
+DESIRED_IDS = {1,2,3,4}  # CAN IDs of VESCs
 
 class VescNode(Node):
     def __init__(self):
@@ -90,7 +91,7 @@ class VescNode(Node):
         for dev, ids in self.port_map.items():
             ser = self.serial_map.get(dev)
             if not ser or not ser.is_open:
-                self.get_logger().warn(f"串口 {dev} 未打开")
+                self.get_logger().warn(f"\u4e32\u53e3 {dev} \u672a\u6253\u5f00")
                 continue
             try:
                 for can_id in ids:
@@ -98,7 +99,7 @@ class VescNode(Node):
                     cmd.can_id = can_id
                     ser.write(pyvesc.encode(cmd))
             except (OSError, serial.SerialException) as e:
-                self.get_logger().error(f"写入 {dev} 失败: {e}")
+                self.get_logger().error(f"\u5199\u5165 {dev} \u5931\u8d25: {e}")
 
     def destroy_node(self):
         # Stop motors on shutdown
