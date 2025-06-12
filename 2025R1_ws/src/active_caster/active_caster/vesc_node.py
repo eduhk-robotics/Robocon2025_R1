@@ -19,7 +19,7 @@ from std_msgs.msg import Float32
 BAUDRATE = 115200
 TIMEOUT = 0.1
 HEARTBEAT_DT = 0.05    # seconds between RPM commands
-MAX_RPM = 9000         # VESC max motor RPM
+MAX_RPM = 10000         # VESC max motor RPM
 DESIRED_IDS = {1,2,3,4}  # CAN IDs of VESCs
 
 class VescNode(Node):

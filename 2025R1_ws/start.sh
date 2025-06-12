@@ -7,7 +7,6 @@ set -e
 # Go to your workspace root
 cd ~/Robocon2025_R1/2025R1_ws
 
-
 export PYTHONPATH=/home/robotics/Robocon2025_R1/venv/lib/python3.12/site-packages:$PYTHONPATH
 export PATH=/home/robotics/Robocon2025_R1/venv/bin:$PATH
 
@@ -21,6 +20,22 @@ colcon build --symlink-install
 # Source the local workspace
 source install/setup.bash
 
+# Check and configure CAN interface (can0) only if it's not already up
+echo "Checking CAN interface can0..."
+if ip link show can0 | grep -q "state UP"; then
+    echo "CAN interface can0 is already up."
+else
+    echo "Configuring CAN interface can0..."
+    sudo ip link set can0 down || true  # Bring it down if it’s in an unknown state
+    sudo ip link set can0 up type can bitrate 500000
+    if [ $? -eq 0 ]; then
+        echo "CAN interface can0 successfully configured."
+    else
+        echo "Failed to configure CAN interface can0."
+        exit 1
+    fi
+fi
+
 # Launch nodes manually
 
 # Start damiao_node
@@ -30,6 +45,10 @@ gnome-terminal -- bash -c "ros2 run active_caster damiao_node; exec bash"
 # Start vesc_node
 echo "Starting vesc_node..."
 gnome-terminal -- bash -c "ros2 run active_caster vesc_node; exec bash"
+
+# Start vesc_canbus_speed_node
+echo "Starting vesc_canbus_speed_node..."
+gnome-terminal -- bash -c "ros2 run active_caster vesc_canbus_speed_control_node; exec bash"
 
 # Start navigation_node
 echo "Starting navigation_node..."

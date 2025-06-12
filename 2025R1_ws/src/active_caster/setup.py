@@ -10,6 +10,7 @@ setup(
         'setuptools',
         'pyserial>=3.0,<4.0',
         'pyvesc>=1.0.5',
+        'numpy'
     ],
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -26,6 +27,8 @@ setup(
         'console_scripts': [
             'damiao_node = active_caster.damiao_node:main',
             'vesc_node = active_caster.vesc_node:main',
+            'vesc_canbus_speed_control_node = active_caster.vesc_canbus_speed_control_node:main',
+
         ],
     },
 )

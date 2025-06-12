@@ -5,8 +5,8 @@ int32 lx
 int32 ly
 int32 rx
 int32 ry
-int32 cx  # D-pad X (often treated as axis by evdev)
-int32 cy  # D-pad Y (often treated as axis by evdev)
+int32 cx  # D-pad X (often treated as axis by evdev, left is mins)
+int32 cy  # D-pad Y (often treated as axis by evdev, up is mins)
 int32 lt  # Left trigger
 int32 rt  # Right trigger
 
