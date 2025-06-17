@@ -12,12 +12,13 @@ setup(
         ('share/' + package_name, ['package.xml']),
     ],
     install_requires=['setuptools'],
+    extras_require={'test': ['pytest']},
     zip_safe=True,
     maintainer='robotics',
     maintainer_email='robotics@eduhk.hk',
     description='TODO: Package description',
     license='TODO: License declaration',
-    tests_require=['pytest'],
+#    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'data_sender = data_monitor.data_sender:main',

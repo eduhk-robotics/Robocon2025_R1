@@ -12,6 +12,7 @@ setup(
         'pyvesc>=1.0.5',
         'numpy'
     ],
+    extras_require={'test': ['pytest']},
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),

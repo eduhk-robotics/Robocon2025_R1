@@ -10,6 +10,7 @@
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
   <depend>pyvesc</depend>
+  <depend>pyserial</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

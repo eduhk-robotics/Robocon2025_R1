@@ -10,7 +10,9 @@
   <buildtool_depend>ament_python</buildtool_depend>
 
   <depend>rclpy</depend>
-  <depend>joystick_msgs</depend> <!-- Dependency on your custom message package -->
+  <depend>joystick_msgs</depend>
+  <depend>evdev</depend>
+  <!-- Dependency on your custom message package -->
 
   <!-- python3-evdev is a system dependency, not a ROS one.
        You can't list it as a <depend> here for rosdep to install directly

@@ -7,22 +7,22 @@ set -e
 # Go to your workspace root
 cd ~/Robocon2025_R1/2025R1_ws
 
-export PYTHONPATH=/home/robotics/Robocon2025_R1/venv/lib/python3.12/site-packages:$PYTHONPATH
-export PATH=/home/robotics/Robocon2025_R1/venv/bin:$PATH
+#export PYTHONPATH=/home/robotics/Robocon2025_R1/venv/lib/python3.12/site-packages:$PYTHONPATH
+#export PATH=/home/robotics/Robocon2025_R1/venv/bin:$PATH
 
 # Source ROS 2 environment
 source /opt/ros/jazzy/setup.bash
 
 # Build the workspace
-echo "Building workspace in /home/Robocon2025_R1/2025R1_ws..."
-colcon build --symlink-install
+#echo "Building workspace in /home/Robocon2025_R1/2025R1_ws..."
+#colcon build --symlink-install
 
 # Source the local workspace
 source install/setup.bash
 
 # Check and configure CAN interface (can0) only if it's not already up
 echo "Checking CAN interface can0..."
-if ip link show can0 | grep -q "state UP"; then
+if ip link show can3 | grep -q "state UP"; then
     echo "CAN interface can0 is already up."
 else
     echo "Configuring CAN interface can0..."
@@ -61,6 +61,12 @@ gnome-terminal -- bash -c "ros2 run navigation active_caster_node; exec bash"
 # Start joystick_node
 echo "Starting joystick_node..."
 gnome-terminal -- bash -c "ros2 run joystick_driver joystick_node; exec bash"
+
+# Start shooter_node
+echo "Starting shooter_node..."
+gnome-terminal -- bash -c "ros2 run shooter shooter_control_node; exec bash"
+gnome-terminal -- bash -c "ros2 run shooter shooter_vesc_node; exec bash"
+
 
 # Start ps4_publisher
 #echo "Starting ps4_publisher..."

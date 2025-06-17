@@ -16,12 +16,13 @@ setup(
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*')))
     ],
     install_requires=['setuptools'],
+    extras_require={'test': ['pytest']},
     zip_safe=True,
     maintainer='Your Name',
     maintainer_email='your_email@example.com',
     description='ROS 2 package to publish joystick inputs using evdev.',
     license='Apache License 2.0', # Or your preferred license
-    tests_require=['pytest'],
+    # tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'joystick_node = joystick_driver.joystick_publisher_node:main',

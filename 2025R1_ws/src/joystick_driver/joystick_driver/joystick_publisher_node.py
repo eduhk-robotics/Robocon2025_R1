@@ -10,12 +10,12 @@ class JoystickPublisher(Node):
     def __init__(self):
         super().__init__('joystick_publisher_node')
 
-        # Declare parameter for device path
-        self.declare_parameter('device_path', '/dev/input/8bitdo_joystick')
-        self.device_path = self.get_parameter('device_path').get_parameter_value().string_value
+        # Declare parameter for device name (instead of path)
+        self.declare_parameter('device_name', '8BitDo Pro 2 Wired Controller')
+        self.device_name = self.get_parameter('device_name').get_parameter_value().string_value
 
         self.publisher_ = self.create_publisher(Joystick, 'joystick_input', 10)
-        self.get_logger().info(f"Attempting to connect to joystick at: {self.device_path}")
+        self.get_logger().info(f"Attempting to connect to joystick: {self.device_name}")
 
         # Initialize button and axis state dictionaries
         self.button_states_bool = {
@@ -51,16 +51,20 @@ class JoystickPublisher(Node):
         self.publish_timer = self.create_timer(0.05, self._publish_current_state)
 
     def _try_connect(self):
-        """Attempt to connect to the joystick device, return True if successful."""
+        """Attempt to connect to the joystick device by name, return True if successful."""
         try:
-            self.gamepad = InputDevice(self.device_path)
-            self.get_logger().info(f"Connected to device: {self.gamepad.name}")
-            return True
-        except FileNotFoundError:
-            self.get_logger().warn(f"Device not found at {self.device_path}. Retrying...")
+            devices = [InputDevice(path) for path in list_devices()]
+            for dev in devices:
+                if self.device_name in dev.name:  # Match device by name
+                    self.device_path = dev.path
+                    self.gamepad = InputDevice(self.device_path)
+                    self.get_logger().info(f"Connected to device: {self.gamepad.name} at {self.device_path}")
+                    return True
+            self.get_logger().warn(f"No matching device found for '{self.device_name}'. Retrying...")
+            self._print_available_devices()
             return False
         except PermissionError:
-            self.get_logger().error(f"Permission denied for {self.device_path}. Check user permissions (e.g., add your user to 'input' group).")
+            self.get_logger().error(f"Permission denied for input devices. Check user permissions (e.g., add your user to 'input' group).")
             return False
         except Exception as e:
             self.get_logger().error(f"Failed to connect to joystick: {e}")

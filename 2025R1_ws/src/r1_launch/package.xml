@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>r1_launch</name>
+  <version>0.1.0</version>
+  <description>Launch files for R1 robot</description>
+  
+  <maintainer email="s1153766@s.eduhk.hk">Steven Zhang</maintainer>
+  <license>Apache-2.0</license>
+  
+  <!-- Build dependencies -->
+  <buildtool_depend>ament_python</buildtool_depend>
+  
+  <!-- Runtime dependencies -->
+  <depend>rclpy</depend>
+  <depend>launch_ros</depend>
+  
+  <!-- Project-specific dependencies -->
+  <depend>shooter</depend>
+  <depend>navigation</depend>
+  <depend>joystick_driver</depend>
+  
+  <!-- Test dependencies (optional) -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  
+  <!-- Export -->
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
