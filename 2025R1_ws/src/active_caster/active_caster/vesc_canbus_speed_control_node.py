@@ -1,96 +1,87 @@
+#!/usr/bin/env python3
 """
-VESC Node for Omni-Wheel Motor Control using CANable
-Subscribes to 'vesc_control' (Float32): desired RPM for VESCs
-Sends RPM commands via CAN bus using cansend.
+VESC CAN control using ASCII-only encoding.
+Subscribes to /vesc_control (Float32MultiArray):
+  data[0..3] = speeds for CAN IDs 1,2,3,4 (float in [0,383])
+Publishes CAN frames via cansend on interface can0.
 """
-import subprocess
-import time
+
 import os
+import subprocess
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float32
+from std_msgs.msg import Float32MultiArray
 
-# Motor speed constants
-HEARTBEAT_DT = 0.05    # seconds between RPM commands
-MAX_RPM = 10000         # VESC max motor RPM
-DESIRED_IDS = {1, 2, 3, 4}  # CAN IDs of VESCs
-CAN_CHANNEL = 'can0'   # CAN interface name
+CAN_CHANNEL = 'can0'
+MAX_RPM = 10000
+MIN_INPUT = 1.0
+MAX_INPUT = 383.0
+
+def map_speed_to_rpm(raw_speed: float) -> int:
+    if raw_speed <= 0.0:
+        return 0
+    norm = (raw_speed - MIN_INPUT) / (MAX_INPUT - MIN_INPUT)
+    rpm = int(norm * (MAX_RPM - 1) + 1)
+    return max(0, min(rpm, MAX_RPM))
+
+def set_vesc_speed(can_id: int, rpm: int) -> None:
+    """
+    Send a CAN frame to a VESC at the given CAN ID with the given RPM.
+    Uses 29-bit extended frame (0x300 | can_id) and 4-byte big-endian RPM.
+    """
+    arb_id = f"{0x300 | can_id:08X}"
+    data_field = f"{rpm & 0xFFFFFFFF:08X}"
+    cmd = f"cansend {CAN_CHANNEL} {arb_id}#{data_field}"
+    try:
+        subprocess.run(cmd, shell=True, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"[ERROR] failed to send CAN frame: {e}")
 
 class VescCanNode(Node):
     def __init__(self):
         super().__init__('vesc_can_node')
         self.get_logger().info('VescCanNode starting')
-
-        # Desired RPM set by incoming command
-        self.desired_rpm = 0
-
-        # Subscribe to RPM commands
         self.create_subscription(
-            Float32,
+            Float32MultiArray,
             'vesc_control',
-            self.rpm_callback,
+            self.control_callback,
             10
         )
+        if os.system(f"which cansend > /dev/null") != 0:
+            self.get_logger().error("cansend not found; install can-utils")
+        self.timer = self.create_timer(0.05, self.heartbeat)
+        # last_command: {can_id: rpm}
+        self.last_command = {}
 
-        # Check CAN interface
-        if not self.check_can_interface():
-            self.get_logger().error(f'CAN interface {CAN_CHANNEL} not available')
+    def control_callback(self, msg: Float32MultiArray):
+        """
+        Callback for /vesc_control messages.
+        Expects msg.data length >= 4, data[0..3] ��Ӧ CAN ID 1..4 ���ٶ����롣
+        """
+        if len(msg.data) < 4:
+            self.get_logger().error("vesc_control data must have 4 elements")
             return
 
-        # Check cansend availability
-        if os.system("which cansend > /dev/null") != 0:
-            self.get_logger().error("cansend not found. Install can-utils: 'sudo apt install can-utils'")
-            return
-
-        # Start heartbeat timer to send RPM
-        self.create_timer(HEARTBEAT_DT, self.heartbeat)
-
-    def check_can_interface(self):
-        """?? CAN ??????"""
-        try:
-            result = subprocess.run(f"ip link show {CAN_CHANNEL}", shell=True, capture_output=True, text=True, check=True)
-            if "UP" not in result.stdout:
-                self.get_logger().error(f"CAN interface {CAN_CHANNEL} is not up. Run 'sudo ip link set {CAN_CHANNEL} up type can bitrate 500000'")
-                return False
-            return True
-        except subprocess.CalledProcessError as e:
-            self.get_logger().error(f"CAN interface {CAN_CHANNEL} not found or inaccessible: {e}")
-            return False
-
-    def send_can_frame(self, can_id, rpm):
-        """?? cansend ???? CAN ?"""
-        arb_id = f"{0x300 | can_id:08X}"  # ???? ID,? 00000302
-        rpm_data = f"{int(rpm):08X}"      # ?? eRPM ??,? 00001388
-        command = f"cansend {CAN_CHANNEL} {arb_id}#{rpm_data}"
-        try:
-            subprocess.run(command, shell=True, check=True)
-            self.get_logger().info(f"Sent: {command}")
-        except subprocess.CalledProcessError as e:
-            self.get_logger().error(f"Failed to send CAN frame: {e}")
-
-    def rpm_callback(self, msg: Float32):
-        """?????? RPM ??"""
-        raw_rpm = float(msg.data)
-        norm = max(min(raw_rpm / MAX_RPM, 1.0), -1.0)
-        self.desired_rpm = int(norm * MAX_RPM)
-        self.get_logger().info(f"Received RPM command: {self.desired_rpm}")
+        for i in range(4):
+            can_id = i + 1
+            raw_speed = float(msg.data[i])
+            rpm = map_speed_to_rpm(raw_speed)
+            self.last_command[can_id] = rpm
+            self.get_logger().info(f"Queued ID={can_id} raw_speed={raw_speed:.1f} => RPM={rpm}")
 
     def heartbeat(self):
-        """???? RPM ????? VESC"""
-        for can_id in DESIRED_IDS:
-            try:
-                self.send_can_frame(can_id, self.desired_rpm)
-            except Exception as e:
-                self.get_logger().error(f"Error sending to VESC ID {can_id}: {e}")
+        """
+        Periodically send last commanded RPM to each VESC.
+        """
+        for can_id, rpm in self.last_command.items():
+            set_vesc_speed(can_id, rpm)
 
     def destroy_node(self):
-        """????????????"""
-        self.get_logger().info("Stopping all VESC motors")
-        for can_id in DESIRED_IDS:
-            try:
-                self.send_can_frame(can_id, 0)
-            except Exception as e:
-                self.get_logger().error(f"Failed to send stop command to VESC ID {can_id}: {e}")
+        """
+        Stop all VESCs on shutdown by sending RPM=0.
+        """
+        for can_id in list(self.last_command.keys()):
+            set_vesc_speed(can_id, 0)
         super().destroy_node()
 
 def main(args=None):
@@ -99,9 +90,7 @@ def main(args=None):
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        node.get_logger().info("Node interrupted by user")
-    except Exception as e:
-        node.get_logger().error(f"Node error: {e}")
+        node.get_logger().info("Interrupted by user")
     finally:
         node.destroy_node()
         rclpy.shutdown()

@@ -46,11 +46,34 @@ def generate_launch_description():
         name='vesc_canbus_speed_interface',
         output='screen',
     )
-
+    
+    shooter_control_node = Node(
+        package='shooter',
+        executable='shooter_control_node',
+        name='shooter_controller',
+        output='screen',
+    )
+    
+    shooter_damiao_node = Node(
+        package='shooter',
+        executable='shooter_damiao_node',
+        name='shooter_damiao_interface',
+        output='screen',
+    )
+    shooter_vesc_node = Node(
+        package='shooter',
+        executable='shooter_vesc_node',
+        name='shooter_vesc_interface',
+        output='screen',
+    )
+    
     return LaunchDescription([
         navigation_node,
         active_caster_node,
         joystick_node,
         vesc_node,
         vesc_canbus_speed_control_node,
+        shooter_control_node,
+        shooter_damiao_node,
+        shooter_vesc_node,
     ])

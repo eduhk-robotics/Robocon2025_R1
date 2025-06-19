@@ -67,8 +67,9 @@ class MotorControllerNode(Node):
         # Add and configure all motors
         for motor in self.motors:
             self.motor_control.addMotor(motor)
-            self.motor_control.enable(motor)  # Enable the motor
+
             self.motor_control.set_zero_position(motor)  # Set the zero position
+            self.motor_control.enable(motor)  # Enable the motor
 
         self.get_logger().info("Motor controller node initialized: Publishing on 'damiao_status' and listening on 'damiao_control'.")
 
@@ -145,4 +146,5 @@ def main(args=None):
 
 if __name__ == "__main__":
     main()
-    
+
+

@@ -10,34 +10,47 @@ class JoystickPublisher(Node):
     def __init__(self):
         super().__init__('joystick_publisher_node')
 
-        # Declare parameter for device name (instead of path)
-        self.declare_parameter('device_name', '8BitDo Pro 2 Wired Controller')
-        self.device_name = self.get_parameter('device_name').get_parameter_value().string_value
+        # Declare parameter for device path
+        self.declare_parameter('device_path', '/dev/input/8bitdo_joystick_purple')
+        self.device_path = self.get_parameter('device_path').get_parameter_value().string_value
 
         self.publisher_ = self.create_publisher(Joystick, 'joystick_input', 10)
-        self.get_logger().info(f"Attempting to connect to joystick: {self.device_name}")
+        self.get_logger().info(f"Attempting to connect to joystick at: {self.device_path}")
 
         # Initialize button and axis state dictionaries
         self.button_states_bool = {
             "a": False, "b": False, "x": False, "y": False,
-            "lb": False, "rb": False, "l3": False, "r3": False,
-            "minus": False, "plus": False,
-        }
-        self.axis_states = {
-            "lx": 0, "ly": 0, "rx": 0, "ry": 0,
-            "cx": 0, "cy": 0, "lt": 0, "rt": 0,
+            "l1": False, "r1": False, "l3": False, "r3": False, 
+            "select": False, "start": False,
         }
 
-        # EV_KEY codes → button name
-        self.button_mapping = {
-            304: "a", 305: "b", 307: "x", 308: "y",
-            310: "lb", 311: "rb", 317: "l3", 318: "r3",
-            314: "minus", 315: "plus",
+        self.axis_states = {
+            "lx": 0, "ly": 0, "rx": 0, "ry": 0,
+            "dx": 0, "dy": 0, "l2": 0, "r2": 0,
         }
-        # EV_ABS codes → axis name
+
+        # EV_KEY codes ? button name
+        self.button_mapping = {
+            ecodes.BTN_SOUTH: "a",    # Or 304
+            ecodes.BTN_EAST: "b",     # Or 305
+            ecodes.BTN_WEST: "x",     # Or 307 (some use BTN_NORTH for X)
+            ecodes.BTN_NORTH: "y",    # Or 308 (some use BTN_WEST for Y)
+            ecodes.BTN_TL: "l1",      # Or 310
+            ecodes.BTN_TR: "r1",      # Or 311
+            ecodes.BTN_THUMBL: "l3",  # Or 317
+            ecodes.BTN_THUMBR: "r3",  # Or 318
+            ecodes.BTN_SELECT: "select",# Or 314
+            ecodes.BTN_START: "start",  # Or 315
+        }
         self.axis_mapping = {
-            0: "lx", 1: "ly", 3: "rx", 4: "ry",
-            16: "cx", 17: "cy", 2: "lt", 5: "rt",
+            ecodes.ABS_X: "lx",       # Or 0
+            ecodes.ABS_Y: "ly",       # Or 1
+            ecodes.ABS_RX: "rx",      # Or 3
+            ecodes.ABS_RY: "ry",      # Or 4
+            ecodes.ABS_HAT0X: "dx",   # Or 16
+            ecodes.ABS_HAT0Y: "dy",   # Or 17
+            ecodes.ABS_Z: "l2",       # Or 2 (Often left trigger)
+            ecodes.ABS_RZ: "r2",      # Or 5 (Often right trigger)
         }
 
         # Flag to control read loop
@@ -51,20 +64,16 @@ class JoystickPublisher(Node):
         self.publish_timer = self.create_timer(0.05, self._publish_current_state)
 
     def _try_connect(self):
-        """Attempt to connect to the joystick device by name, return True if successful."""
+        """Attempt to connect to the joystick device, return True if successful."""
         try:
-            devices = [InputDevice(path) for path in list_devices()]
-            for dev in devices:
-                if self.device_name in dev.name:  # Match device by name
-                    self.device_path = dev.path
-                    self.gamepad = InputDevice(self.device_path)
-                    self.get_logger().info(f"Connected to device: {self.gamepad.name} at {self.device_path}")
-                    return True
-            self.get_logger().warn(f"No matching device found for '{self.device_name}'. Retrying...")
-            self._print_available_devices()
+            self.gamepad = InputDevice(self.device_path)
+            self.get_logger().info(f"Connected to device: {self.gamepad.name}")
+            return True
+        except FileNotFoundError:
+            self.get_logger().warn(f"Device not found at {self.device_path}. Retrying...")
             return False
         except PermissionError:
-            self.get_logger().error(f"Permission denied for input devices. Check user permissions (e.g., add your user to 'input' group).")
+            self.get_logger().error(f"Permission denied for {self.device_path}. Check user permissions (e.g., add your user to 'input' group).")
             return False
         except Exception as e:
             self.get_logger().error(f"Failed to connect to joystick: {e}")
@@ -124,25 +133,26 @@ class JoystickPublisher(Node):
 
         # Axes
         msg.lx = self.axis_states['lx']
-        msg.ly = self.axis_states['ly']
+        msg.ly = self.axis_states['ly'] # evdev Y often inverted; negate if needed: -self.axis_states['ly']
         msg.rx = self.axis_states['rx']
-        msg.ry = self.axis_states['ry']
-        msg.cx = self.axis_states['cx']
-        msg.cy = self.axis_states['cy']
-        msg.lt = self.axis_states['lt']
-        msg.rt = self.axis_states['rt']
+        msg.ry = self.axis_states['ry'] # evdev Y often inverted; negate if needed: -self.axis_states['ry']
+        msg.dx = self.axis_states['dx']
+        msg.dy = self.axis_states['dy'] # evdev D-pad Y often inverted; negate if needed
+        msg.l2 = self.axis_states['l2']
+        msg.r2 = self.axis_states['r2']
+
 
         # Buttons
         msg.a = self.button_states_bool['a']
         msg.b = self.button_states_bool['b']
         msg.x = self.button_states_bool['x']
         msg.y = self.button_states_bool['y']
-        msg.lb = self.button_states_bool['lb']
-        msg.rb = self.button_states_bool['rb']
+        msg.l1 = self.button_states_bool['l1']
+        msg.r1 = self.button_states_bool['r1']
         msg.l3 = self.button_states_bool['l3']
         msg.r3 = self.button_states_bool['r3']
-        msg.minus = self.button_states_bool['minus']
-        msg.plus = self.button_states_bool['plus']
+        msg.select = self.button_states_bool['select']
+        msg.start = self.button_states_bool['start']
 
         self.publisher_.publish(msg)
 

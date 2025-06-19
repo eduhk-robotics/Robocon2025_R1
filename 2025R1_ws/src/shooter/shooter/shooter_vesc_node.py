@@ -7,7 +7,7 @@ from std_msgs.msg import Float32
 
 # Motor speed constants
 HEARTBEAT_DT = 0.05    # seconds between RPM commands
-MAX_RPM = 10000         # VESC max motor RPM
+MAX_RPM = 80000         # VESC max motor RPM
 DESIRED_IDS = {10, 11, 12}  # CAN IDs of VESCs
 CAN_CHANNEL = 'can0'   # CAN interface name
 

@@ -1,0 +1,31 @@
+✅ All nodes launched successfully.
+1750314379.572572 [5] joystick_n: config: //CycloneDDS/Domain/General: 'NetworkInterfaceAddress': deprecated element (file:///home/robotics/cyclonedds.xml line 5)
+[INFO] [1750314379.909742937] [joystick_publisher_node]: Attempting to connect to joystick at: /dev/input/event13
+[INFO] [1750314379.914265625] [joystick_publisher_node]: Connected to device: 8BitDo Pro 2 Wired Controller
+Traceback (most recent call last):
+  File "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/joystick_driver/joystick_node", line 33, in <module>
+    sys.exit(load_entry_point('joystick-driver==0.1.0', 'console_scripts', 'joystick_node')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages/joystick_driver/joystick_publisher_node.py", line 176, in main
+    rclpy.spin(joystick_publisher)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 244, in spin
+    executor.spin_once()
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 839, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 834, in _spin_once_impl
+    raise handler.exception()
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/task.py", line 269, in __call__
+    self._handler.send(None)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 518, in handler
+    await call_coroutine()
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 382, in _execute
+    await await_or_execute(tmr.callback)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 111, in await_or_execute
+    return callback(*args)
+           ^^^^^^^^^^^^^^^
+  File "/home/robotics/Robocon2025_R1/2025R1_ws/install/joystick_driver/lib/python3.12/site-packages/joystick_driver/joystick_publisher_node.py", line 142, in _publish_current_state
+    msg.dx = self.axis_states['dx']
+    ^^^^^^
+AttributeError: 'Joystick' object has no attribute 'dx'
+[ros2run]: Process exited with failure 1
+

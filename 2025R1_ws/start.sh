@@ -22,7 +22,7 @@ source install/setup.bash
 
 # Check and configure CAN interface (can0) only if it's not already up
 echo "Checking CAN interface can0..."
-if ip link show can3 | grep -q "state UP"; then
+if ip link show can0 | grep -q "state UP"; then
     echo "CAN interface can0 is already up."
 else
     echo "Configuring CAN interface can0..."

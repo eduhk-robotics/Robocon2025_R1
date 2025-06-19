@@ -7,23 +7,21 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# Important: Add this dependency for message generation
+# Add this line to find the message generation tools
 find_package(rosidl_default_generators REQUIRED)
 
-# This is the crucial part for generating messages
+# Add this block to generate messages from .msg files
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Joystick.msg"
-  # If you had services, you would list them here:
+  # If you had services or actions, you would list them here too
   # "srv/MyService.srv"
-  # If you had actions, you would list them here:
   # "action/MyAction.action"
 )
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
-  set(ament_lint_auto_lint_types test)
+  set(ament_lint_auto_lint_types "copyright;xmllint;flake8;cpplint;ament_cmake;")
   ament_lint_auto_find_test_dependencies()
 endif()
 
 ament_package()
-

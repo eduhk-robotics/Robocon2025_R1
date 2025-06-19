@@ -44,15 +44,15 @@ class NavigationNode(Node):
             raw_lx = msg.lx
             raw_ly = msg.ly
             raw_rx = msg.rx
-            dpad_x = msg.cx
-            dpad_y = msg.cy
+            dpad_x = msg.dx
+            dpad_y = msg.dy
         except AttributeError as e:
             self.get_logger().error(f"Invalid Joystick message: {e}")
             raw_lx = raw_ly = raw_rx = dpad_x = dpad_y = 0
 
         # Warn if D-pad inputs are invalid
         if dpad_x not in [-1, 0, 1] or dpad_y not in [-1, 0, 1]:
-            self.get_logger().warn(f"Invalid D-pad input: cx={dpad_x}, cy={dpad_y}")
+            self.get_logger().warn(f"Invalid D-pad input: dx={dpad_x}, dy={dpad_y}")
 
         # Map joystick inputs for left stick (primary control)
         left_x = self.apply_deadzone(self.map_value(raw_lx))
@@ -116,7 +116,7 @@ class NavigationNode(Node):
         # Debug logging
         self.get_logger().info(
             f"Control: {control_source}, "
-            f"Raw: lx={raw_lx}, ly={raw_ly}, rx={raw_rx}, cx={dpad_x}, cy={dpad_y}, "
+            f"Raw: lx={raw_lx}, ly={raw_ly}, rx={raw_rx}, dx={dpad_x}, dy={dpad_y}, "
             f"Processed: lx={left_x:.2f}, ly={left_y:.2f}, rx={right_x:.2f}, "
             f"Driving: dir={direction:.1f} deg, lin={plane_speed:.1f}, rot={rotation_speed:.1f}"
         )
