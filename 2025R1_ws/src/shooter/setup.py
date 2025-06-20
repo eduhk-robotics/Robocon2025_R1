@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'shooter_vesc_node = shooter.shooter_vesc_node:main',
             'shooter_control_node = shooter.shooter_control_node:main',
+            'shooter_damiao_node = shooter.shooter_damiao_node:main',
         ],
     },
 )

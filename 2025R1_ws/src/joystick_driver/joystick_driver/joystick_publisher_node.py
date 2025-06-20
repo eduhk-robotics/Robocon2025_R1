@@ -33,8 +33,8 @@ class JoystickPublisher(Node):
         self.button_mapping = {
             ecodes.BTN_SOUTH: "a",    # Or 304
             ecodes.BTN_EAST: "b",     # Or 305
-            ecodes.BTN_WEST: "x",     # Or 307 (some use BTN_NORTH for X)
-            ecodes.BTN_NORTH: "y",    # Or 308 (some use BTN_WEST for Y)
+            ecodes.BTN_WEST: "y",     # Or 307 (some use BTN_NORTH for Y)
+            ecodes.BTN_NORTH: "x",    # Or 308 (some use BTN_WEST for X)
             ecodes.BTN_TL: "l1",      # Or 310
             ecodes.BTN_TR: "r1",      # Or 311
             ecodes.BTN_THUMBL: "l3",  # Or 317

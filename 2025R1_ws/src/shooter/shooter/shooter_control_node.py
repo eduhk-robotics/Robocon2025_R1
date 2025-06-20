@@ -79,16 +79,16 @@ class ShooterControlNode(Node):
         right_angle = self.default_angle  # Motor 12 (right)
         motor_speed = self.default_speed
         
-        # Handle A button press (UP: left +, right -)
-        if a_button and not self.last_a_state:
-            self.get_logger().info("A button: UP (left +5 rad, right -5 rad) @ 0.16 rad/s")
+        # Handle Y button press (UP: left +, right -)
+        if y_button and not self.last_y_state:
+            self.get_logger().info("Y button: UP (left +5 rad, right -5 rad) @ 0.16 rad/s")
             left_angle = self.up_angle    # +5 rad for left
             right_angle = -self.up_angle  # -5 rad for right
             motor_speed = self.move_speed
             
-        # Handle Y button press (DOWN: left -, right +)
-        elif y_button and not self.last_y_state:
-            self.get_logger().info("Y button: DOWN (left -5 rad, right +5 rad) @ 0.16 rad/s")
+        # Handle A button press (DOWN: left -, right +)
+        elif a_button and not self.last_a_state:
+            self.get_logger().info("A button: DOWN (left -5 rad, right +5 rad) @ 0.16 rad/s")
             left_angle = self.down_angle    # -5 rad for left
             right_angle = -self.down_angle  # +5 rad for right
             motor_speed = self.move_speed

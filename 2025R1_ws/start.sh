@@ -43,8 +43,8 @@ echo "Starting damiao_node..."
 gnome-terminal -- bash -c "ros2 run active_caster damiao_node; exec bash"
 
 # Start vesc_node
-echo "Starting vesc_node..."
-gnome-terminal -- bash -c "ros2 run active_caster vesc_node; exec bash"
+#echo "Starting vesc_node..."
+#gnome-terminal -- bash -c "ros2 run active_caster vesc_node; exec bash"
 
 # Start vesc_canbus_speed_node
 echo "Starting vesc_canbus_speed_node..."
@@ -66,10 +66,11 @@ gnome-terminal -- bash -c "ros2 run joystick_driver joystick_node; exec bash"
 echo "Starting shooter_node..."
 gnome-terminal -- bash -c "ros2 run shooter shooter_control_node; exec bash"
 gnome-terminal -- bash -c "ros2 run shooter shooter_vesc_node; exec bash"
+#gnome-terminal -- bash -c "ros2 run shooter shooter_damiao_node; exec bash"
 
 
-# Start ps4_publisher
-#echo "Starting ps4_publisher..."
-#gnome-terminal -- bash -c "ros2 run ps4 ps4_publisher; exec bash"
+# Start bounce
+gnome-terminal -- bash -c "ros2 run bounce bounce_control_node; exec bash"
+gnome-terminal -- bash -c "ros2 run bounce bounce_steps_node; exec bash"
 
 echo "✅ All nodes launched successfully."

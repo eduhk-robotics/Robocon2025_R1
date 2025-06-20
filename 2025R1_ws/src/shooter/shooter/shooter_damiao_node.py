@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray
-from DM_can import Motor, MotorControl, DM_Motor_Type
+from shooter.DM_can import Motor, MotorControl, DM_Motor_Type, Control_Type
 import serial
 import os
 import time
@@ -9,20 +9,16 @@ import time
 # USB-CDC device ID
 DEVICE_ID = "usb-HDSC_CDC_Device_00000000050C-if00"
 
-def find_device_port(device_id):
-    """
-    Find the serial port for the given device ID in /dev/serial/by-id.
-    Returns the port path if found, None otherwise.
-    """
-    by_id_dir = "/dev/serial/by-id/"
+def find_device_port(by_path_id):
+    by_path_dir = "/dev/serial/by-path/"
     try:
-        for entry in os.listdir(by_id_dir):
-            if device_id in entry:
-                return os.path.realpath(os.path.join(by_id_dir, entry))
+        for entry in os.listdir(by_path_dir):
+            if by_path_id in entry:
+                return os.path.realpath(os.path.join(by_path_dir, entry))
     except FileNotFoundError:
         pass
     return None
-
+    
 class ShooterDamiaoNode(Node):
     def __init__(self):
         super().__init__("shooter_damiao_node")
@@ -58,8 +54,21 @@ class ShooterDamiaoNode(Node):
         # Configure motors
         for motor in self.motors:
             self.motor_control.addMotor(motor)
-            self.motor_control.enable(motor)  # Enable motor
-            self.motor_control.set_zero_position(motor)  # Set zero position
+            
+            # Set control mode to POS_VEL
+            success = self.motor_control.switchControlMode(motor, Control_Type.POS_VEL)
+            if success:
+                self.get_logger().info(f"Motor {motor.SlaveID} set to POS_VEL mode")
+            else:
+                self.get_logger().error(f"Failed to set motor {motor.SlaveID} to POS_VEL mode")
+
+            # Enable motor
+            self.motor_control.enable(motor)
+            self.get_logger().info(f"Motor {motor.SlaveID} enabled")
+            
+            # Set zero position
+            self.motor_control.set_zero_position(motor)
+            self.get_logger().info(f"Motor {motor.SlaveID} zero position set")
 
         # Status publisher
         self.status_publisher = self.create_publisher(Float32MultiArray, "shooter_damiao_status", 10)
