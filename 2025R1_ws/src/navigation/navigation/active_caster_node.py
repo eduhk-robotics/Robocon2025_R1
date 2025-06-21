@@ -6,20 +6,24 @@ Swerve-drive kinematics with simultaneous translation and rotation.
 Publishes:
     - damiao_control (Float32MultiArray) - steering angle commands
     - vesc_control   (Float32MultiArray) - per-wheel RPM commands
+    - ai_order       (Float32MultiArray) - AI order flag (r1 button)
 Subscribes:
-    - driving (Float32MultiArray) - [heading_deg, speed_raw, rotation_raw]
+    - driving        (Float32MultiArray) - [heading_deg, speed_raw, rotation_raw]
+    - joystick_input (Joystick)           - joystick 按键和摇杆输入
+    - /basket_detector/status (String)    - 篮筐位置状态：TURN_LEFT, GO_STRAIGHT, TURN_RIGHT
 """
 
 import math
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float32MultiArray
+from std_msgs.msg import Float32MultiArray, String
+from joystick_msgs.msg import Joystick
 
 # Encoder / gear constants
 ENCODER_RATIO = 19.20321         # encoder counts per motor revolution
 GEAR_RATIO    = 61.0 / 35.0      # wheel_rev = motor_rev / GEAR_RATIO
 TWO_PI        = 2.0 * math.pi
-# encoder_rad per wheel revolution = TWO_PI * ENCODER_RATIO * GEAR_RATIO
+# encoder_rad per wheel revolution
 PERIOD_RAD    = TWO_PI * ENCODER_RATIO * GEAR_RATIO
 
 # Geometry and speed limits
@@ -44,7 +48,7 @@ MAX_LINEAR_MPS  = 2.0
 MAX_ANGULAR_RPS = math.pi
 MAX_RPM         = 9000
 
-# Sentinel: if speed_raw equals this, we trigger “stop” behavior
+# Sentinel: if speed_raw equals this, we trigger "stop" behavior
 SENTINEL_SPEED = 114514520.0
 
 class ActiveCasterNode(Node):
@@ -52,23 +56,28 @@ class ActiveCasterNode(Node):
         super().__init__('active_caster_node')
         self.get_logger().info('ActiveCasterNode starting')
 
-        # Steering state
-        self.last_pos_rad     = [0.0] * 4
+        # 记录篮筐状态
+        self.basket_status = None  # "TURN_LEFT", "GO_STRAIGHT", "TURN_RIGHT"
 
-        # RPM ramp state
+        # Steering & RPM ramp state
+        self.last_pos_rad     = [0.0] * 4
         self.current_rpm      = [0.0] * 4
         self.target_rpm       = [0.0] * 4
         self.ramp_initial_rpm = [0.0] * 4
         self.ramp_start_time  = None
-        self.ramp_duration    = 0.5  # seconds
+        self.ramp_duration    = 0.5  # seconds (加速/减速时间延长为1s)
 
-        # Publishers & subscriber
+        # Publishers & subscribers
         self.pos_pub = self.create_publisher(Float32MultiArray, 'damiao_control', 10)
         self.rpm_pub = self.create_publisher(Float32MultiArray, 'vesc_control', 10)
-        self.create_subscription(Float32MultiArray, 'driving', self.driving_callback, 10)
+        self.ai_pub  = self.create_publisher(Float32MultiArray, 'ai_order', 10)
 
-        # Timer for RPM interpolation
-        self.create_timer(0.02, self.timer_callback)  # 50 Hz
+        self.create_subscription(Float32MultiArray, 'driving', self.driving_callback, 10)
+        self.create_subscription(Joystick, 'joystick_input', self.joystick_callback, 10)
+        self.create_subscription(String, '/basket_detector/status', self.basket_callback, 10)
+
+        # Timer for RPM interpolation (50 Hz)
+        self.create_timer(0.02, self.timer_callback)
 
     @staticmethod
     def angle_to_encoder_rad(angle_deg):
@@ -83,28 +92,27 @@ class ActiveCasterNode(Node):
         msg.data = [float(servo_id), 2.0, 20.0, target_rad]
         self.pos_pub.publish(msg)
 
-    def driving_callback(self, msg):
+    def basket_callback(self, msg: String):
+        if msg.data in ('TURN_LEFT', 'GO_STRAIGHT', 'TURN_RIGHT'):
+            self.basket_status = msg.data
+
+    def driving_callback(self, msg: Float32MultiArray):
         heading_deg  = float(msg.data[0])
         speed_raw    = float(msg.data[1])
         rotation_raw = float(msg.data[2])
 
         # —— 哨兵检测 ——
         if speed_raw == SENTINEL_SPEED:
-            # 1) 保持上一次舵机朝向
             for idx, last_rad in enumerate(self.last_pos_rad):
                 servo_id = SERVO_ID_MAP[idx]
                 self.publish_steering(servo_id, last_rad)
-            # 2) 全轮零转速
-            stop_msg = Float32MultiArray()
-            stop_msg.data = [0.0, 0.0, 0.0, 0.0]
+            stop_msg = Float32MultiArray(); stop_msg.data = [0.0, 0.0, 0.0, 0.0]
             self.rpm_pub.publish(stop_msg)
 
-            # —— 重置内部 RPM 状态，保持下一次 driving 到来前持续零速 ——
             self.current_rpm      = [0.0] * 4
             self.target_rpm       = [0.0] * 4
             self.ramp_initial_rpm = [0.0] * 4
             self.ramp_start_time  = None
-
             return
 
         # 常规驱动计算
@@ -166,24 +174,56 @@ class ActiveCasterNode(Node):
             self.target_rpm       = list(new_rpm_targets)
             self.ramp_start_time  = self.get_clock().now()
 
+    def joystick_callback(self, msg: Joystick):
+        # 发布 R1 标志
+        val = 1.0 if msg.r1 else 0.0
+        out = Float32MultiArray(); out.data = [val]
+        self.ai_pub.publish(out)
+
+        if msg.r1:
+            # 如果正在调整，第二次按下 R1 则停止过程
+            if self.ramp_start_time is not None:
+                # 保持当前舵机角度
+                for idx, last_rad in enumerate(self.last_pos_rad):
+                    servo_id = SERVO_ID_MAP[idx]
+                    self.publish_steering(servo_id, last_rad)
+                # 发布停止 RPM
+                stop_msg = Float32MultiArray(); stop_msg.data = [0.0, 0.0, 0.0, 0.0]
+                self.rpm_pub.publish(stop_msg)
+                # 重置 ramp 状态
+                self.current_rpm      = [0.0] * 4
+                self.target_rpm       = [0.0] * 4
+                self.ramp_initial_rpm = [0.0] * 4
+                self.ramp_start_time  = None
+                return
+            # 首次按下 R1，正常注入自转指令
+            if self.basket_status is not None:
+                auto = Float32MultiArray()
+                if self.basket_status == 'TURN_LEFT':
+                    rotation = -8192.0
+                elif self.basket_status == 'TURN_RIGHT':
+                    rotation = 8192.0
+                else:
+                    rotation = 0.0
+                auto.data = [0.0, 0.0, rotation]
+                self.driving_callback(auto)
+
     def timer_callback(self):
-        # 无需额外判断，ramp_start_time 为 None 时会发布 current_rpm（已在哨兵时设为全零）
         if self.ramp_start_time is None:
-            msg = Float32MultiArray()
-            msg.data = self.current_rpm
+            msg = Float32MultiArray(); msg.data = self.current_rpm
             self.rpm_pub.publish(msg)
             return
 
         elapsed = (self.get_clock().now() - self.ramp_start_time).nanoseconds * 1e-9
         t       = min(max(elapsed / self.ramp_duration, 0.0), 1.0)
-        s       = 3*t*t - 2*t*t*t  # smoothstep
+        # quintic smoothstep for extra smooth accel/decel
+        s       = t**3 * (t*(6*t - 15) + 10)
         self.current_rpm = [
             r0 + s*(r1 - r0)
             for r0, r1 in zip(self.ramp_initial_rpm, self.target_rpm)
         ]
 
-        msg = Float32MultiArray()
-        msg.data = self.current_rpm
+        msg = Float32MultiArray(); msg.data = self.current_rpm
         self.rpm_pub.publish(msg)
 
         if t >= 1.0:
@@ -200,7 +240,6 @@ def main(args=None):
     finally:
         node.destroy_node()
         rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()

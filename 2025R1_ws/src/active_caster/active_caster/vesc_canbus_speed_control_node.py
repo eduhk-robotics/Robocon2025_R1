@@ -13,7 +13,7 @@ from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray
 
 CAN_CHANNEL = 'can0'
-MAX_RPM = 10000
+MAX_RPM = 6000
 MIN_INPUT = 1.0
 MAX_INPUT = 383.0
 

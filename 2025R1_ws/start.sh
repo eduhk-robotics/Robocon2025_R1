@@ -50,6 +50,8 @@ gnome-terminal -- bash -c "ros2 run active_caster damiao_node; exec bash"
 echo "Starting vesc_canbus_speed_node..."
 gnome-terminal -- bash -c "ros2 run active_caster vesc_canbus_speed_control_node; exec bash"
 
+gnome-terminal -- bash -c "ros2 run auto_move_node; exec bash"
+
 # Start navigation_node
 echo "Starting navigation_node..."
 gnome-terminal -- bash -c "ros2 run navigation navigation_node; exec bash"
@@ -71,6 +73,6 @@ gnome-terminal -- bash -c "ros2 run shooter shooter_vesc_node; exec bash"
 
 # Start bounce
 gnome-terminal -- bash -c "ros2 run bounce bounce_control_node; exec bash"
-gnome-terminal -- bash -c "ros2 run bounce bounce_steps_node; exec bash"
+gnome-terminal -- bash -c "ros2 run bounce bounce_relays_node; exec bash"
 
 echo "✅ All nodes launched successfully."

@@ -39,6 +39,7 @@ setup(
             'active_caster_node = navigation.active_caster_node:main',
             'omni_wheel_speed_node = navigation.omni_wheel_speed_node:main',
             'wheel = navigation.wheel:main',
+            'auto_move_node = navigation.auto_move_node:main',
         ],
     },
 )
