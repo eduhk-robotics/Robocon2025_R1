@@ -1,117 +1,91 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from std_msgs.msg import Int32
 import gpiod
 import time
-import os
-import logging
 
-class RelayControlNode(Node):
+class BounceRelaysNode(Node):
     def __init__(self):
-        super().__init__('relay_control_node')
-        logging.getLogger().setLevel(logging.DEBUG)  # Enable debug logging
-        self.publisher_ = self.create_publisher(String, '/relay_status', 10)
-        self.chip_path = '/dev/gpiochip4'
-        self.chip = None
-        self.lines = {}
-        self.relay1_pin = 17  # GPIO 17 (Pin 11) for rack
-        self.relay2_pin = 22  # GPIO 22 (Pin 15) for claw
-        self.relay3_pin = 27  # GPIO 26 (Pin 36) for bouncer
-        self.get_logger().info('Relay Control Node initialized')
+        super().__init__('bounce_relays_node')
+        self.subscription = self.create_subscription(
+            Int32,
+            'bounce_control',
+            self.bounce_control_callback,
+            10)
+        self.get_logger().info('Bounce Relays Node started')
 
+    def hig_gpio(self, pin):
         try:
-            if not os.path.exists(self.chip_path):
-                raise FileNotFoundError(f"GPIO chip device {self.chip_path} not found")
-            self.get_logger().info(f"Accessing {self.chip_path} as user {os.getlogin()}")
-            self.get_logger().info(f"Permissions: {os.stat(self.chip_path).st_mode & 0o777:03o}, Owner: {os.stat(self.chip_path).st_uid}, Group: {os.stat(self.chip_path).st_gid}")
-            self.chip = gpiod.Chip('gpiochip4')
-            for pin in [self.relay1_pin, self.relay2_pin, self.relay3_pin]:
-                line = self.chip.get_line(pin)
-                line.request(consumer='robotics', type=gpiod.LINE_REQ_DIR_OUT)
-                line.set_value(0)  # Initialize to low
-                self.lines[pin] = line
-                self.get_logger().debug(f"Initialized GPIO {pin} successfully")
-            self.get_logger().info("All GPIOs initialized successfully")
+            with gpiod.Chip('gpiochip4') as chip:
+                line = chip.get_line(pin)
+                line.request(consumer='test', type=gpiod.LINE_REQ_DIR_OUT)
+                line.set_value(1)  # High (3.3V)
+                self.get_logger().info(f"GPIO {pin} set to high")
+                self.get_logger().info(f"GPIO {pin} test successful")
         except Exception as e:
-            self.get_logger().error(f"GPIO setup failed: {e}")
-            self.get_logger().error("提示：尝试以下备用方案：")
-            self.get_logger().error("1. 使用 'gpiochip0' 代替（适用于树莓派4）")
-            self.get_logger().error("2. 检查引脚映射（树莓派5使用不同编号）")
-            self.cleanup()
-            raise
+            self.get_logger().error(f"GPIO {pin} test failed: {e}")
 
-    def set_relay(self, relay, value):
-        pin = {1: self.relay1_pin, 2: self.relay2_pin, 3: self.relay3_pin}
-        name = {1: "rack", 2: "claw", 3: "bouncer"}
+    def low_gpio(self, pin):
         try:
-            if pin[relay] not in self.lines:
-                raise ValueError(f"Relay{relay} (GPIO {pin[relay]}) not initialized")
-            self.lines[pin[relay]].set_value(1 if value else 0)  # High for True
-            msg = String()
-            msg.data = f'Relay{relay} ({name[relay]}) set to {value}'
-            self.publisher_.publish(msg)
-            self.get_logger().info(msg.data)
+            with gpiod.Chip('gpiochip4') as chip:
+                line = chip.get_line(pin)
+                line.request(consumer='test', type=gpiod.LINE_REQ_DIR_OUT)
+                line.set_value(0)  # Low
+                self.get_logger().info(f"GPIO {pin} set to low")
+                self.get_logger().info(f"GPIO {pin} test successful")
         except Exception as e:
-            self.get_logger().error(f"Failed to set Relay{relay} (GPIO {pin[relay]}): {e}")
-            raise
+            self.get_logger().error(f"GPIO {pin} test failed: {e}")
 
-    def run_sequence(self):
-        try:
-            self.get_logger().info("Initializing relays to low")
-            self.set_relay(1, False)
-            self.set_relay(2, False)
-            self.set_relay(3, False)
+    def bounce_control_callback(self, msg):
+        state = msg.data
+        self.get_logger().info(f'Received bounce_control: {state}')
 
-            self.get_logger().info("Executing relay sequence")
-            self.set_relay(1, True)  # Relay1 (rack) release
-            time.sleep(1.5)  # Wait 1.5s
-            self.set_relay(2, True)  # Relay2 (claw) release
-            time.sleep(1.5)  # Wait 1.5s
-            self.set_relay(3, False)  # Relay3 (bouncer) drill
-            self.set_relay(3, True)  # Relay3 (bouncer) stop
-            self.set_relay(2, False)  # Relay2 (claw) stop
-            time.sleep(1.5)  # Wait 1.5s
-            
-            time.sleep(1.0)  # Wait 1.0s
-            self.set_relay(1, False)  # Relay1 (rack) stop
-            self.get_logger().info("Relay sequence completed")
-        except Exception as e:
-            self.get_logger().error(f"Relay sequence failed: {e}")
-            raise
+        if state == 0:
+            # Prepare to release ball
+            self.get_logger().info('Preparing to release ball')
+            self.hig_gpio(17)  # Track out
+            time.sleep(0.5)
+            self.low_gpio(27)  # Drill in
+            time.sleep(0.01)
+            self.hig_gpio(22)  # Craw release
+        elif state == 1:
+            # Grip ball
+            time.sleep(0.1)
+            self.get_logger().info('Gripping ball')
+            self.low_gpio(22)  # Crawed
+            time.sleep(0.1)
+            self.low_gpio(17)  # Track in
+        elif state == 2:
+            # Hit ball (assuming a GPIO action for hitting, e.g., toggle a pin)
+            self.get_logger().info('Hitting ball')
+            # Placeholder: Toggle GPIO 23 (or another pin) to simulate hit action
+            self.hig_gpio(17)
+            self.time.sleep(1)
+            self.hig_gpio(27)
+            self.time.sleep(0.1)
+            self.hig_gpio(22)
+            self.time.sleep(0.1)
+            self.low_gpio(27)
+            self.time.sleep(0.4)
+            self.low_gpio(22)
+            self.time.sleep(0.5)
+            self.low_gpio(17)
 
-    def cleanup(self):
-        try:
-            for pin, line in self.lines.items():
-                line.set_value(0)
-                line.release()
-                self.get_logger().debug(f"Released GPIO {pin}")
-            if self.chip:
-                self.chip.close()
-                self.get_logger().debug("Closed chip")
-            self.get_logger().info("GPIO cleaned up")
-        except Exception as e:
-            self.get_logger().error(f"GPIO cleanup failed: {e}")
-        finally:
-            self.chip = None
-            self.lines = {}
-
-    def destroy_node(self):
-        self.cleanup()
-        super().destroy_node()
+        else:
+            self.get_logger().warn(f'Invalid bounce_control value: {state}')
 
 def main(args=None):
     rclpy.init(args=args)
-    node = RelayControlNode()
+    node = BounceRelaysNode()
     try:
-        node.run_sequence()
+        rclpy.spin(node)
     except KeyboardInterrupt:
-        node.get_logger().info("Interrupted by user")
-    except Exception as e:
-        node.get_logger().error(f"Error: {e}")
+        pass
     finally:
         node.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
+    
